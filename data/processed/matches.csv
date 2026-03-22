@@ -1,0 +1,765 @@
+,tournament_id,match_id,match_name,stage_name,match_date,home_team_id,home_team_name,home_team_confederation,away_team_id,away_team_confederation,away_team_name,score,home_team_score,away_team_score,home_team_score_margin,extra_time,penalty_shootout,home_team_score_penalties,away_team_score_penalties,result,home_team_win,away_team_win,draw,win_team_name,win_team_conf
+0,WC-1970,M-1970-01,Mexico vs Soviet Union,group stage,1970-05-31,T-46,Mexico,CONCACAF,T-72,UEFA,Soviet Union,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+1,WC-1970,M-1970-02,Uruguay vs Israel,group stage,1970-06-02,T-84,Uruguay,CONMEBOL,T-40,UEFA,Israel,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Uruguay,CONMEBOL
+2,WC-1970,M-1970-03,England vs Romania,group stage,1970-06-02,T-28,England,UEFA,T-61,UEFA,Romania,1–0,1,0,1,0,0,0,0,home team win,1,0,0,England,UEFA
+3,WC-1970,M-1970-04,Peru vs Bulgaria,group stage,1970-06-02,T-56,Peru,CONMEBOL,T-10,UEFA,Bulgaria,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Peru,CONMEBOL
+4,WC-1970,M-1970-05,Belgium vs El Salvador,group stage,1970-06-03,T-06,Belgium,UEFA,T-27,CONCACAF,El Salvador,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+5,WC-1970,M-1970-06,Italy vs Sweden,group stage,1970-06-03,T-41,Italy,UEFA,T-74,UEFA,Sweden,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+6,WC-1970,M-1970-07,Brazil vs Czechoslovakia,group stage,1970-06-03,T-09,Brazil,CONMEBOL,T-21,UEFA,Czechoslovakia,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+7,WC-1970,M-1970-08,West Germany vs Morocco,group stage,1970-06-03,T-86,West Germany,UEFA,T-47,CAF,Morocco,2–1,2,1,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+8,WC-1970,M-1970-09,Soviet Union vs Belgium,group stage,1970-06-06,T-72,Soviet Union,UEFA,T-06,UEFA,Belgium,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Soviet Union,UEFA
+9,WC-1970,M-1970-10,Uruguay vs Italy,group stage,1970-06-06,T-84,Uruguay,CONMEBOL,T-41,UEFA,Italy,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+10,WC-1970,M-1970-11,Romania vs Czechoslovakia,group stage,1970-06-06,T-61,Romania,UEFA,T-21,UEFA,Czechoslovakia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Romania,UEFA
+11,WC-1970,M-1970-12,Peru vs Morocco,group stage,1970-06-06,T-56,Peru,CONMEBOL,T-47,CAF,Morocco,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Peru,CONMEBOL
+12,WC-1970,M-1970-13,Mexico vs El Salvador,group stage,1970-06-07,T-46,Mexico,CONCACAF,T-27,CONCACAF,El Salvador,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+13,WC-1970,M-1970-14,Sweden vs Israel,group stage,1970-06-07,T-74,Sweden,UEFA,T-40,UEFA,Israel,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+14,WC-1970,M-1970-15,Brazil vs England,group stage,1970-06-07,T-09,Brazil,CONMEBOL,T-28,UEFA,England,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+15,WC-1970,M-1970-16,West Germany vs Bulgaria,group stage,1970-06-07,T-86,West Germany,UEFA,T-10,UEFA,Bulgaria,5–2,5,2,3,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+16,WC-1970,M-1970-17,Soviet Union vs El Salvador,group stage,1970-06-10,T-72,Soviet Union,UEFA,T-27,CONCACAF,El Salvador,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Soviet Union,UEFA
+17,WC-1970,M-1970-18,Sweden vs Uruguay,group stage,1970-06-10,T-74,Sweden,UEFA,T-84,CONMEBOL,Uruguay,1-0,1,0,1,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+18,WC-1970,M-1970-19,Brazil vs Romania,group stage,1970-06-10,T-09,Brazil,CONMEBOL,T-61,UEFA,Romania,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+19,WC-1970,M-1970-20,West Germany vs Peru,group stage,1970-06-10,T-86,West Germany,UEFA,T-56,CONMEBOL,Peru,3–1,3,1,2,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+20,WC-1970,M-1970-21,Mexico vs Belgium,group stage,1970-06-11,T-46,Mexico,CONCACAF,T-06,UEFA,Belgium,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+21,WC-1970,M-1970-22,Italy vs Israel,group stage,1970-06-11,T-41,Italy,UEFA,T-40,UEFA,Israel,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+22,WC-1970,M-1970-23,England vs Czechoslovakia,group stage,1970-06-11,T-28,England,UEFA,T-21,UEFA,Czechoslovakia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,England,UEFA
+23,WC-1970,M-1970-24,Bulgaria vs Morocco,group stage,1970-06-11,T-10,Bulgaria,UEFA,T-47,CAF,Morocco,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+24,WC-1970,M-1970-25,Brazil vs Peru,quarter-finals,1970-06-14,T-09,Brazil,CONMEBOL,T-56,CONMEBOL,Peru,4–2,4,2,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+25,WC-1970,M-1970-26,Italy vs Mexico,quarter-finals,1970-06-14,T-41,Italy,UEFA,T-46,CONCACAF,Mexico,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Italy,UEFA
+26,WC-1970,M-1970-27,Soviet Union vs Uruguay,quarter-finals,1970-06-14,T-72,Soviet Union,UEFA,T-84,CONMEBOL,Uruguay,0–1,0,1,-1,1,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+27,WC-1970,M-1970-28,West Germany vs England,quarter-finals,1970-06-14,T-86,West Germany,UEFA,T-28,UEFA,England,3–2,3,2,1,1,0,0,0,home team win,1,0,0,West Germany,UEFA
+28,WC-1970,M-1970-29,Brazil vs Uruguay,semi-finals,1970-06-17,T-09,Brazil,CONMEBOL,T-84,CONMEBOL,Uruguay,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+29,WC-1970,M-1970-30,Italy vs West Germany,semi-finals,1970-06-17,T-41,Italy,UEFA,T-86,UEFA,West Germany,4–3,4,3,1,1,0,0,0,home team win,1,0,0,Italy,UEFA
+30,WC-1970,M-1970-31,West Germany vs Uruguay,third-place match,1970-06-20,T-86,West Germany,UEFA,T-84,CONMEBOL,Uruguay,1–0,1,0,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+31,WC-1970,M-1970-32,Brazil vs Italy,final,1970-06-21,T-09,Brazil,CONMEBOL,T-41,UEFA,Italy,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+32,WC-1974,M-1974-01,Brazil vs Yugoslavia,group stage,1974-06-13,T-09,Brazil,CONMEBOL,T-87,UEFA,Yugoslavia,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+33,WC-1974,M-1974-02,West Germany vs Chile,group stage,1974-06-14,T-86,West Germany,UEFA,T-13,CONMEBOL,Chile,1–0,1,0,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+34,WC-1974,M-1974-03,East Germany vs Australia,group stage,1974-06-14,T-24,East Germany,UEFA,T-04,AFC,Australia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,East Germany,UEFA
+35,WC-1974,M-1974-04,Zaire vs Scotland,group stage,1974-06-14,T-88,Zaire,CAF,T-64,UEFA,Scotland,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Scotland,UEFA
+36,WC-1974,M-1974-05,Sweden vs Bulgaria,group stage,1974-06-15,T-74,Sweden,UEFA,T-10,UEFA,Bulgaria,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+37,WC-1974,M-1974-06,Uruguay vs Netherlands,group stage,1974-06-15,T-84,Uruguay,CONMEBOL,T-48,UEFA,Netherlands,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+38,WC-1974,M-1974-07,Italy vs Haiti,group stage,1974-06-15,T-41,Italy,UEFA,T-34,CONCACAF,Haiti,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+39,WC-1974,M-1974-08,Poland vs Argentina,group stage,1974-06-15,T-57,Poland,UEFA,T-03,CONMEBOL,Argentina,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Poland,UEFA
+40,WC-1974,M-1974-09,Australia vs West Germany,group stage,1974-06-18,T-04,Australia,AFC,T-86,UEFA,West Germany,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+41,WC-1974,M-1974-10,Chile vs East Germany,group stage,1974-06-18,T-13,Chile,CONMEBOL,T-24,UEFA,East Germany,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+42,WC-1974,M-1974-11,Scotland vs Brazil,group stage,1974-06-18,T-64,Scotland,UEFA,T-09,CONMEBOL,Brazil,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+43,WC-1974,M-1974-12,Yugoslavia vs Zaire,group stage,1974-06-18,T-87,Yugoslavia,UEFA,T-88,CAF,Zaire,9–0,9,0,9,0,0,0,0,home team win,1,0,0,Yugoslavia,UEFA
+44,WC-1974,M-1974-13,Bulgaria vs Uruguay,group stage,1974-06-19,T-10,Bulgaria,UEFA,T-84,CONMEBOL,Uruguay,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+45,WC-1974,M-1974-14,Netherlands vs Sweden,group stage,1974-06-19,T-48,Netherlands,UEFA,T-74,UEFA,Sweden,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+46,WC-1974,M-1974-15,Argentina vs Italy,group stage,1974-06-19,T-03,Argentina,CONMEBOL,T-41,UEFA,Italy,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+47,WC-1974,M-1974-16,Haiti vs Poland,group stage,1974-06-19,T-34,Haiti,CONCACAF,T-57,UEFA,Poland,0–7,0,7,-7,0,0,0,0,away team win,0,1,0,Poland,UEFA
+48,WC-1974,M-1974-17,Australia vs Chile,group stage,1974-06-22,T-04,Australia,AFC,T-13,CONMEBOL,Chile,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+49,WC-1974,M-1974-18,Scotland vs Yugoslavia,group stage,1974-06-22,T-64,Scotland,UEFA,T-87,UEFA,Yugoslavia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+50,WC-1974,M-1974-19,Zaire vs Brazil,group stage,1974-06-22,T-88,Zaire,CAF,T-09,CONMEBOL,Brazil,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+51,WC-1974,M-1974-20,East Germany vs West Germany,group stage,1974-06-22,T-24,East Germany,UEFA,T-86,UEFA,West Germany,1–0,1,0,1,0,0,0,0,home team win,1,0,0,East Germany,UEFA
+52,WC-1974,M-1974-21,Bulgaria vs Netherlands,group stage,1974-06-23,T-10,Bulgaria,UEFA,T-48,UEFA,Netherlands,1–4,1,4,-3,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+53,WC-1974,M-1974-22,Sweden vs Uruguay,group stage,1974-06-23,T-74,Sweden,UEFA,T-84,CONMEBOL,Uruguay,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+54,WC-1974,M-1974-23,Argentina vs Haiti,group stage,1974-06-23,T-03,Argentina,CONMEBOL,T-34,CONCACAF,Haiti,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+55,WC-1974,M-1974-24,Poland vs Italy,group stage,1974-06-23,T-57,Poland,UEFA,T-41,UEFA,Italy,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Poland,UEFA
+56,WC-1974,M-1974-25,Yugoslavia vs West Germany,second group stage,1974-06-26,T-87,Yugoslavia,UEFA,T-86,UEFA,West Germany,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+57,WC-1974,M-1974-26,Brazil vs East Germany,second group stage,1974-06-26,T-09,Brazil,CONMEBOL,T-24,UEFA,East Germany,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+58,WC-1974,M-1974-27,Netherlands vs Argentina,second group stage,1974-06-26,T-48,Netherlands,UEFA,T-03,CONMEBOL,Argentina,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+59,WC-1974,M-1974-28,Sweden vs Poland,second group stage,1974-06-26,T-74,Sweden,UEFA,T-57,UEFA,Poland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Poland,UEFA
+60,WC-1974,M-1974-29,Argentina vs Brazil,second group stage,1974-06-30,T-03,Argentina,CONMEBOL,T-09,CONMEBOL,Brazil,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+61,WC-1974,M-1974-30,East Germany vs Netherlands,second group stage,1974-06-30,T-24,East Germany,UEFA,T-48,UEFA,Netherlands,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+62,WC-1974,M-1974-31,Poland vs Yugoslavia,second group stage,1974-06-30,T-57,Poland,UEFA,T-87,UEFA,Yugoslavia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Poland,UEFA
+63,WC-1974,M-1974-32,West Germany vs Sweden,second group stage,1974-06-30,T-86,West Germany,UEFA,T-74,UEFA,Sweden,4–2,4,2,2,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+64,WC-1974,M-1974-33,Poland vs West Germany,second group stage,1974-07-03,T-57,Poland,UEFA,T-86,UEFA,West Germany,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+65,WC-1974,M-1974-34,Argentina vs East Germany,second group stage,1974-07-03,T-03,Argentina,CONMEBOL,T-24,UEFA,East Germany,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+66,WC-1974,M-1974-35,Netherlands vs Brazil,second group stage,1974-07-03,T-48,Netherlands,UEFA,T-09,CONMEBOL,Brazil,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+67,WC-1974,M-1974-36,Sweden vs Yugoslavia,second group stage,1974-07-03,T-74,Sweden,UEFA,T-87,UEFA,Yugoslavia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+68,WC-1974,M-1974-37,Brazil vs Poland,third-place match,1974-07-06,T-09,Brazil,CONMEBOL,T-57,UEFA,Poland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Poland,UEFA
+69,WC-1974,M-1974-38,Netherlands vs West Germany,final,1974-07-07,T-48,Netherlands,UEFA,T-86,UEFA,West Germany,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+70,WC-1978,M-1978-01,West Germany vs Poland,group stage,1978-06-01,T-86,West Germany,UEFA,T-57,UEFA,Poland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+71,WC-1978,M-1978-02,Italy vs France,group stage,1978-06-02,T-41,Italy,UEFA,T-30,UEFA,France,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+72,WC-1978,M-1978-03,Tunisia vs Mexico,group stage,1978-06-02,T-79,Tunisia,CAF,T-46,CONCACAF,Mexico,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Tunisia,CAF
+73,WC-1978,M-1978-04,Argentina vs Hungary,group stage,1978-06-02,T-03,Argentina,CONMEBOL,T-36,UEFA,Hungary,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+74,WC-1978,M-1978-05,Austria vs Spain,group stage,1978-06-03,T-05,Austria,UEFA,T-73,UEFA,Spain,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Austria,UEFA
+75,WC-1978,M-1978-06,Brazil vs Sweden,group stage,1978-06-03,T-09,Brazil,CONMEBOL,T-74,UEFA,Sweden,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+76,WC-1978,M-1978-07,Netherlands vs Iran,group stage,1978-06-03,T-48,Netherlands,UEFA,T-38,AFC,Iran,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+77,WC-1978,M-1978-08,Peru vs Scotland,group stage,1978-06-03,T-56,Peru,CONMEBOL,T-64,UEFA,Scotland,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Peru,CONMEBOL
+78,WC-1978,M-1978-09,Italy vs Hungary,group stage,1978-06-06,T-41,Italy,UEFA,T-36,UEFA,Hungary,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+79,WC-1978,M-1978-10,Poland vs Tunisia,group stage,1978-06-06,T-57,Poland,UEFA,T-79,CAF,Tunisia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Poland,UEFA
+80,WC-1978,M-1978-11,West Germany vs Mexico,group stage,1978-06-06,T-86,West Germany,UEFA,T-46,CONCACAF,Mexico,6–0,6,0,6,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+81,WC-1978,M-1978-12,Argentina vs France,group stage,1978-06-06,T-03,Argentina,CONMEBOL,T-30,UEFA,France,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+82,WC-1978,M-1978-13,Austria vs Sweden,group stage,1978-06-07,T-05,Austria,UEFA,T-74,UEFA,Sweden,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Austria,UEFA
+83,WC-1978,M-1978-14,Brazil vs Spain,group stage,1978-06-07,T-09,Brazil,CONMEBOL,T-73,UEFA,Spain,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+84,WC-1978,M-1978-15,Netherlands vs Peru,group stage,1978-06-07,T-48,Netherlands,UEFA,T-56,CONMEBOL,Peru,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+85,WC-1978,M-1978-16,Scotland vs Iran,group stage,1978-06-07,T-64,Scotland,UEFA,T-38,AFC,Iran,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+86,WC-1978,M-1978-17,France vs Hungary,group stage,1978-06-10,T-30,France,UEFA,T-36,UEFA,Hungary,3–1,3,1,2,0,0,0,0,home team win,1,0,0,France,UEFA
+87,WC-1978,M-1978-18,Poland vs Mexico,group stage,1978-06-10,T-57,Poland,UEFA,T-46,CONCACAF,Mexico,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Poland,UEFA
+88,WC-1978,M-1978-19,West Germany vs Tunisia,group stage,1978-06-10,T-86,West Germany,UEFA,T-79,CAF,Tunisia,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+89,WC-1978,M-1978-20,Argentina vs Italy,group stage,1978-06-10,T-03,Argentina,CONMEBOL,T-41,UEFA,Italy,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Italy,UEFA
+90,WC-1978,M-1978-21,Brazil vs Austria,group stage,1978-06-11,T-09,Brazil,CONMEBOL,T-05,UEFA,Austria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+91,WC-1978,M-1978-22,Spain vs Sweden,group stage,1978-06-11,T-73,Spain,UEFA,T-74,UEFA,Sweden,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Spain,UEFA
+92,WC-1978,M-1978-23,Peru vs Iran,group stage,1978-06-11,T-56,Peru,CONMEBOL,T-38,AFC,Iran,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Peru,CONMEBOL
+93,WC-1978,M-1978-24,Scotland vs Netherlands,group stage,1978-06-11,T-64,Scotland,UEFA,T-48,UEFA,Netherlands,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Scotland,UEFA
+94,WC-1978,M-1978-25,Austria vs Netherlands,second group stage,1978-06-14,T-05,Austria,UEFA,T-48,UEFA,Netherlands,1–5,1,5,-4,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+95,WC-1978,M-1978-26,Italy vs West Germany,second group stage,1978-06-14,T-41,Italy,UEFA,T-86,UEFA,West Germany,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+96,WC-1978,M-1978-27,Brazil vs Peru,second group stage,1978-06-14,T-09,Brazil,CONMEBOL,T-56,CONMEBOL,Peru,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+97,WC-1978,M-1978-28,Argentina vs Poland,second group stage,1978-06-14,T-03,Argentina,CONMEBOL,T-57,UEFA,Poland,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+98,WC-1978,M-1978-29,Peru vs Poland,second group stage,1978-06-18,T-56,Peru,CONMEBOL,T-57,UEFA,Poland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Poland,UEFA
+99,WC-1978,M-1978-30,Italy vs Austria,second group stage,1978-06-18,T-41,Italy,UEFA,T-05,UEFA,Austria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+100,WC-1978,M-1978-31,Netherlands vs West Germany,second group stage,1978-06-18,T-48,Netherlands,UEFA,T-86,UEFA,West Germany,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+101,WC-1978,M-1978-32,Argentina vs Brazil,second group stage,1978-06-18,T-03,Argentina,CONMEBOL,T-09,CONMEBOL,Brazil,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+102,WC-1978,M-1978-33,Austria vs West Germany,second group stage,1978-06-21,T-05,Austria,UEFA,T-86,UEFA,West Germany,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Austria,UEFA
+103,WC-1978,M-1978-34,Italy vs Netherlands,second group stage,1978-06-21,T-41,Italy,UEFA,T-48,UEFA,Netherlands,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+104,WC-1978,M-1978-35,Brazil vs Poland,second group stage,1978-06-21,T-09,Brazil,CONMEBOL,T-57,UEFA,Poland,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+105,WC-1978,M-1978-36,Argentina vs Peru,second group stage,1978-06-21,T-03,Argentina,CONMEBOL,T-56,CONMEBOL,Peru,6–0,6,0,6,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+106,WC-1978,M-1978-37,Brazil vs Italy,third-place match,1978-06-24,T-09,Brazil,CONMEBOL,T-41,UEFA,Italy,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+107,WC-1978,M-1978-38,Argentina vs Netherlands,final,1978-06-25,T-03,Argentina,CONMEBOL,T-48,UEFA,Netherlands,3–1,3,1,2,1,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+108,WC-1982,M-1982-01,Argentina vs Belgium,group stage,1982-06-13,T-03,Argentina,CONMEBOL,T-06,UEFA,Belgium,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Belgium,UEFA
+109,WC-1982,M-1982-02,Italy vs Poland,group stage,1982-06-14,T-41,Italy,UEFA,T-57,UEFA,Poland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+110,WC-1982,M-1982-03,Brazil vs Soviet Union,group stage,1982-06-14,T-09,Brazil,CONMEBOL,T-72,UEFA,Soviet Union,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+111,WC-1982,M-1982-04,Peru vs Cameroon,group stage,1982-06-15,T-56,Peru,CONMEBOL,T-11,CAF,Cameroon,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+112,WC-1982,M-1982-05,Hungary vs El Salvador,group stage,1982-06-15,T-36,Hungary,UEFA,T-27,CONCACAF,El Salvador,10–1,10,1,9,0,0,0,0,home team win,1,0,0,Hungary,UEFA
+113,WC-1982,M-1982-06,Scotland vs New Zealand,group stage,1982-06-15,T-64,Scotland,UEFA,T-49,OFC,New Zealand,5–2,5,2,3,0,0,0,0,home team win,1,0,0,Scotland,UEFA
+114,WC-1982,M-1982-07,West Germany vs Algeria,group stage,1982-06-16,T-86,West Germany,UEFA,T-01,CAF,Algeria,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Algeria,CAF
+115,WC-1982,M-1982-08,England vs France,group stage,1982-06-16,T-28,England,UEFA,T-30,UEFA,France,3–1,3,1,2,0,0,0,0,home team win,1,0,0,England,UEFA
+116,WC-1982,M-1982-09,Spain vs Honduras,group stage,1982-06-16,T-73,Spain,UEFA,T-35,CONCACAF,Honduras,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+117,WC-1982,M-1982-10,Chile vs Austria,group stage,1982-06-17,T-13,Chile,CONMEBOL,T-05,UEFA,Austria,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Austria,UEFA
+118,WC-1982,M-1982-11,Czechoslovakia vs Kuwait,group stage,1982-06-17,T-21,Czechoslovakia,UEFA,T-45,AFC,Kuwait,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+119,WC-1982,M-1982-12,Yugoslavia vs Northern Ireland,group stage,1982-06-17,T-87,Yugoslavia,UEFA,T-52,UEFA,Northern Ireland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+120,WC-1982,M-1982-13,Italy vs Peru,group stage,1982-06-18,T-41,Italy,UEFA,T-56,CONMEBOL,Peru,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+121,WC-1982,M-1982-14,Argentina vs Hungary,group stage,1982-06-18,T-03,Argentina,CONMEBOL,T-36,UEFA,Hungary,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+122,WC-1982,M-1982-15,Brazil vs Scotland,group stage,1982-06-18,T-09,Brazil,CONMEBOL,T-64,UEFA,Scotland,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+123,WC-1982,M-1982-16,Poland vs Cameroon,group stage,1982-06-19,T-57,Poland,UEFA,T-11,CAF,Cameroon,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+124,WC-1982,M-1982-17,Belgium vs El Salvador,group stage,1982-06-19,T-06,Belgium,UEFA,T-27,CONCACAF,El Salvador,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+125,WC-1982,M-1982-18,Soviet Union vs New Zealand,group stage,1982-06-19,T-72,Soviet Union,UEFA,T-49,OFC,New Zealand,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Soviet Union,UEFA
+126,WC-1982,M-1982-19,West Germany vs Chile,group stage,1982-06-20,T-86,West Germany,UEFA,T-13,CONMEBOL,Chile,4–1,4,1,3,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+127,WC-1982,M-1982-20,England vs Czechoslovakia,group stage,1982-06-20,T-28,England,UEFA,T-21,UEFA,Czechoslovakia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,England,UEFA
+128,WC-1982,M-1982-21,Spain vs Yugoslavia,group stage,1982-06-20,T-73,Spain,UEFA,T-87,UEFA,Yugoslavia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Spain,UEFA
+129,WC-1982,M-1982-22,Algeria vs Austria,group stage,1982-06-21,T-01,Algeria,CAF,T-05,UEFA,Austria,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Austria,UEFA
+130,WC-1982,M-1982-23,France vs Kuwait,group stage,1982-06-21,T-30,France,UEFA,T-45,AFC,Kuwait,4–1,4,1,3,0,0,0,0,home team win,1,0,0,France,UEFA
+131,WC-1982,M-1982-24,Honduras vs Northern Ireland,group stage,1982-06-21,T-35,Honduras,CONCACAF,T-52,UEFA,Northern Ireland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+132,WC-1982,M-1982-25,Poland vs Peru,group stage,1982-06-22,T-57,Poland,UEFA,T-56,CONMEBOL,Peru,5–1,5,1,4,0,0,0,0,home team win,1,0,0,Poland,UEFA
+133,WC-1982,M-1982-26,Belgium vs Hungary,group stage,1982-06-22,T-06,Belgium,UEFA,T-36,UEFA,Hungary,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+134,WC-1982,M-1982-27,Soviet Union vs Scotland,group stage,1982-06-22,T-72,Soviet Union,UEFA,T-64,UEFA,Scotland,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+135,WC-1982,M-1982-28,Italy vs Cameroon,group stage,1982-06-23,T-41,Italy,UEFA,T-11,CAF,Cameroon,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+136,WC-1982,M-1982-29,Argentina vs El Salvador,group stage,1982-06-23,T-03,Argentina,CONMEBOL,T-27,CONCACAF,El Salvador,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+137,WC-1982,M-1982-30,Brazil vs New Zealand,group stage,1982-06-23,T-09,Brazil,CONMEBOL,T-49,OFC,New Zealand,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+138,WC-1982,M-1982-31,Algeria vs Chile,group stage,1982-06-24,T-01,Algeria,CAF,T-13,CONMEBOL,Chile,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Algeria,CAF
+139,WC-1982,M-1982-32,France vs Czechoslovakia,group stage,1982-06-24,T-30,France,UEFA,T-21,UEFA,Czechoslovakia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+140,WC-1982,M-1982-33,Honduras vs Yugoslavia,group stage,1982-06-24,T-35,Honduras,CONCACAF,T-87,UEFA,Yugoslavia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Yugoslavia,UEFA
+141,WC-1982,M-1982-34,West Germany vs Austria,group stage,1982-06-25,T-86,West Germany,UEFA,T-05,UEFA,Austria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+142,WC-1982,M-1982-35,England vs Kuwait,group stage,1982-06-25,T-28,England,UEFA,T-45,AFC,Kuwait,1–0,1,0,1,0,0,0,0,home team win,1,0,0,England,UEFA
+143,WC-1982,M-1982-36,Spain vs Northern Ireland,group stage,1982-06-25,T-73,Spain,UEFA,T-52,UEFA,Northern Ireland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Northern Ireland,UEFA
+144,WC-1982,M-1982-37,Austria vs France,second group stage,1982-06-28,T-05,Austria,UEFA,T-30,UEFA,France,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,France,UEFA
+145,WC-1982,M-1982-38,Poland vs Belgium,second group stage,1982-06-28,T-57,Poland,UEFA,T-06,UEFA,Belgium,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Poland,UEFA
+146,WC-1982,M-1982-39,Italy vs Argentina,second group stage,1982-06-29,T-41,Italy,UEFA,T-03,CONMEBOL,Argentina,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+147,WC-1982,M-1982-40,West Germany vs England,second group stage,1982-06-29,T-86,West Germany,UEFA,T-28,UEFA,England,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+148,WC-1982,M-1982-41,Austria vs Northern Ireland,second group stage,1982-07-01,T-05,Austria,UEFA,T-52,UEFA,Northern Ireland,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+149,WC-1982,M-1982-42,Belgium vs Soviet Union,second group stage,1982-07-01,T-06,Belgium,UEFA,T-72,UEFA,Soviet Union,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Soviet Union,UEFA
+150,WC-1982,M-1982-43,Argentina vs Brazil,second group stage,1982-07-02,T-03,Argentina,CONMEBOL,T-09,CONMEBOL,Brazil,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+151,WC-1982,M-1982-44,West Germany vs Spain,second group stage,1982-07-02,T-86,West Germany,UEFA,T-73,UEFA,Spain,2–1,2,1,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+152,WC-1982,M-1982-45,France vs Northern Ireland,second group stage,1982-07-04,T-30,France,UEFA,T-52,UEFA,Northern Ireland,4–1,4,1,3,0,0,0,0,home team win,1,0,0,France,UEFA
+153,WC-1982,M-1982-46,Soviet Union vs Poland,second group stage,1982-07-04,T-72,Soviet Union,UEFA,T-57,UEFA,Poland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+154,WC-1982,M-1982-47,Italy vs Brazil,second group stage,1982-07-05,T-41,Italy,UEFA,T-09,CONMEBOL,Brazil,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+155,WC-1982,M-1982-48,Spain vs England,second group stage,1982-07-05,T-73,Spain,UEFA,T-28,UEFA,England,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+156,WC-1982,M-1982-49,Poland vs Italy,semi-finals,1982-07-08,T-57,Poland,UEFA,T-41,UEFA,Italy,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Italy,UEFA
+157,WC-1982,M-1982-50,West Germany vs France,semi-finals,1982-07-08,T-86,West Germany,UEFA,T-30,UEFA,France,3–3,3,3,0,1,1,5,4,home team win,1,0,0,West Germany,UEFA
+158,WC-1982,M-1982-51,Poland vs France,third-place match,1982-07-10,T-57,Poland,UEFA,T-30,UEFA,France,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Poland,UEFA
+159,WC-1982,M-1982-52,Italy vs West Germany,final,1982-07-11,T-41,Italy,UEFA,T-86,UEFA,West Germany,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+160,WC-1986,M-1986-01,Bulgaria vs Italy,group stage,1986-05-31,T-10,Bulgaria,UEFA,T-41,UEFA,Italy,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+161,WC-1986,M-1986-02,Spain vs Brazil,group stage,1986-06-01,T-73,Spain,UEFA,T-09,CONMEBOL,Brazil,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+162,WC-1986,M-1986-03,Canada vs France,group stage,1986-06-01,T-12,Canada,CONCACAF,T-30,UEFA,France,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,France,UEFA
+163,WC-1986,M-1986-04,Argentina vs South Korea,group stage,1986-06-02,T-03,Argentina,CONMEBOL,T-71,AFC,South Korea,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+164,WC-1986,M-1986-05,Soviet Union vs Hungary,group stage,1986-06-02,T-72,Soviet Union,UEFA,T-36,UEFA,Hungary,6–0,6,0,6,0,0,0,0,home team win,1,0,0,Soviet Union,UEFA
+165,WC-1986,M-1986-06,Morocco vs Poland,group stage,1986-06-02,T-47,Morocco,CAF,T-57,UEFA,Poland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+166,WC-1986,M-1986-07,Belgium vs Mexico,group stage,1986-06-03,T-06,Belgium,UEFA,T-46,CONCACAF,Mexico,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+167,WC-1986,M-1986-08,Algeria vs Northern Ireland,group stage,1986-06-03,T-01,Algeria,CAF,T-52,UEFA,Northern Ireland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+168,WC-1986,M-1986-09,Portugal vs England,group stage,1986-06-03,T-58,Portugal,UEFA,T-28,UEFA,England,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+169,WC-1986,M-1986-10,Paraguay vs Iraq,group stage,1986-06-04,T-55,Paraguay,CONMEBOL,T-39,AFC,Iraq,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Paraguay,CONMEBOL
+170,WC-1986,M-1986-11,Uruguay vs West Germany,group stage,1986-06-04,T-84,Uruguay,CONMEBOL,T-86,UEFA,West Germany,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+171,WC-1986,M-1986-12,Scotland vs Denmark,group stage,1986-06-04,T-64,Scotland,UEFA,T-22,UEFA,Denmark,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Denmark,UEFA
+172,WC-1986,M-1986-13,Italy vs Argentina,group stage,1986-06-05,T-41,Italy,UEFA,T-03,CONMEBOL,Argentina,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+173,WC-1986,M-1986-14,France vs Soviet Union,group stage,1986-06-05,T-30,France,UEFA,T-72,UEFA,Soviet Union,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+174,WC-1986,M-1986-15,South Korea vs Bulgaria,group stage,1986-06-05,T-71,South Korea,AFC,T-10,UEFA,Bulgaria,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+175,WC-1986,M-1986-16,Hungary vs Canada,group stage,1986-06-06,T-36,Hungary,UEFA,T-12,CONCACAF,Canada,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Hungary,UEFA
+176,WC-1986,M-1986-17,Brazil vs Algeria,group stage,1986-06-06,T-09,Brazil,CONMEBOL,T-01,CAF,Algeria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+177,WC-1986,M-1986-18,England vs Morocco,group stage,1986-06-06,T-28,England,UEFA,T-47,CAF,Morocco,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+178,WC-1986,M-1986-19,Mexico vs Paraguay,group stage,1986-06-07,T-46,Mexico,CONCACAF,T-55,CONMEBOL,Paraguay,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+179,WC-1986,M-1986-20,Northern Ireland vs Spain,group stage,1986-06-07,T-52,Northern Ireland,UEFA,T-73,UEFA,Spain,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+180,WC-1986,M-1986-21,Poland vs Portugal,group stage,1986-06-07,T-57,Poland,UEFA,T-58,UEFA,Portugal,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Poland,UEFA
+181,WC-1986,M-1986-22,Iraq vs Belgium,group stage,1986-06-08,T-39,Iraq,AFC,T-06,UEFA,Belgium,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Belgium,UEFA
+182,WC-1986,M-1986-23,West Germany vs Scotland,group stage,1986-06-08,T-86,West Germany,UEFA,T-64,UEFA,Scotland,2–1,2,1,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+183,WC-1986,M-1986-24,Denmark vs Uruguay,group stage,1986-06-08,T-22,Denmark,UEFA,T-84,CONMEBOL,Uruguay,6–1,6,1,5,0,0,0,0,home team win,1,0,0,Denmark,UEFA
+184,WC-1986,M-1986-25,Hungary vs France,group stage,1986-06-09,T-36,Hungary,UEFA,T-30,UEFA,France,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,France,UEFA
+185,WC-1986,M-1986-26,Soviet Union vs Canada,group stage,1986-06-09,T-72,Soviet Union,UEFA,T-12,CONCACAF,Canada,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Soviet Union,UEFA
+186,WC-1986,M-1986-27,Argentina vs Bulgaria,group stage,1986-06-10,T-03,Argentina,CONMEBOL,T-10,UEFA,Bulgaria,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+187,WC-1986,M-1986-28,South Korea vs Italy,group stage,1986-06-10,T-71,South Korea,AFC,T-41,UEFA,Italy,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Italy,UEFA
+188,WC-1986,M-1986-29,Iraq vs Mexico,group stage,1986-06-11,T-39,Iraq,AFC,T-46,CONCACAF,Mexico,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+189,WC-1986,M-1986-30,Paraguay vs Belgium,group stage,1986-06-11,T-55,Paraguay,CONMEBOL,T-06,UEFA,Belgium,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+190,WC-1986,M-1986-31,England vs Poland,group stage,1986-06-11,T-28,England,UEFA,T-57,UEFA,Poland,3–0,3,0,3,0,0,0,0,home team win,1,0,0,England,UEFA
+191,WC-1986,M-1986-32,Portugal vs Morocco,group stage,1986-06-11,T-58,Portugal,UEFA,T-47,CAF,Morocco,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Morocco,CAF
+192,WC-1986,M-1986-33,Algeria vs Spain,group stage,1986-06-12,T-01,Algeria,CAF,T-73,UEFA,Spain,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Spain,UEFA
+193,WC-1986,M-1986-34,Northern Ireland vs Brazil,group stage,1986-06-12,T-52,Northern Ireland,UEFA,T-09,CONMEBOL,Brazil,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+194,WC-1986,M-1986-35,Denmark vs West Germany,group stage,1986-06-13,T-22,Denmark,UEFA,T-86,UEFA,West Germany,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Denmark,UEFA
+195,WC-1986,M-1986-36,Scotland vs Uruguay,group stage,1986-06-13,T-64,Scotland,UEFA,T-84,CONMEBOL,Uruguay,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+196,WC-1986,M-1986-37,Mexico vs Bulgaria,round of 16,1986-06-15,T-46,Mexico,CONCACAF,T-10,UEFA,Bulgaria,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+197,WC-1986,M-1986-38,Soviet Union vs Belgium,round of 16,1986-06-15,T-72,Soviet Union,UEFA,T-06,UEFA,Belgium,3–4,3,4,-1,1,0,0,0,away team win,0,1,0,Belgium,UEFA
+198,WC-1986,M-1986-39,Brazil vs Poland,round of 16,1986-06-16,T-09,Brazil,CONMEBOL,T-57,UEFA,Poland,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+199,WC-1986,M-1986-40,Argentina vs Uruguay,round of 16,1986-06-16,T-03,Argentina,CONMEBOL,T-84,CONMEBOL,Uruguay,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+200,WC-1986,M-1986-41,Italy vs France,round of 16,1986-06-17,T-41,Italy,UEFA,T-30,UEFA,France,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,France,UEFA
+201,WC-1986,M-1986-42,Morocco vs West Germany,round of 16,1986-06-17,T-47,Morocco,CAF,T-86,UEFA,West Germany,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+202,WC-1986,M-1986-43,England vs Paraguay,round of 16,1986-06-18,T-28,England,UEFA,T-55,CONMEBOL,Paraguay,3–0,3,0,3,0,0,0,0,home team win,1,0,0,England,UEFA
+203,WC-1986,M-1986-44,Denmark vs Spain,round of 16,1986-06-18,T-22,Denmark,UEFA,T-73,UEFA,Spain,1–5,1,5,-4,0,0,0,0,away team win,0,1,0,Spain,UEFA
+204,WC-1986,M-1986-45,Brazil vs France,quarter-finals,1986-06-21,T-09,Brazil,CONMEBOL,T-30,UEFA,France,1–1,1,1,0,1,1,3,4,away team win,0,1,0,France,UEFA
+205,WC-1986,M-1986-46,West Germany vs Mexico,quarter-finals,1986-06-21,T-86,West Germany,UEFA,T-46,CONCACAF,Mexico,0–0,0,0,0,1,1,4,1,home team win,1,0,0,West Germany,UEFA
+206,WC-1986,M-1986-47,Argentina vs England,quarter-finals,1986-06-22,T-03,Argentina,CONMEBOL,T-28,UEFA,England,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+207,WC-1986,M-1986-48,Spain vs Belgium,quarter-finals,1986-06-22,T-73,Spain,UEFA,T-06,UEFA,Belgium,1–1,1,1,0,1,1,4,5,away team win,0,1,0,Belgium,UEFA
+208,WC-1986,M-1986-49,France vs West Germany,semi-finals,1986-06-25,T-30,France,UEFA,T-86,UEFA,West Germany,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+209,WC-1986,M-1986-50,Argentina vs Belgium,semi-finals,1986-06-25,T-03,Argentina,CONMEBOL,T-06,UEFA,Belgium,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+210,WC-1986,M-1986-51,Belgium vs France,third-place match,1986-06-28,T-06,Belgium,UEFA,T-30,UEFA,France,2–4,2,4,-2,1,0,0,0,away team win,0,1,0,France,UEFA
+211,WC-1986,M-1986-52,Argentina vs West Germany,final,1986-06-29,T-03,Argentina,CONMEBOL,T-86,UEFA,West Germany,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+212,WC-1990,M-1990-01,Argentina vs Cameroon,group stage,1990-06-08,T-03,Argentina,CONMEBOL,T-11,CAF,Cameroon,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Cameroon,CAF
+213,WC-1990,M-1990-02,Soviet Union vs Romania,group stage,1990-06-09,T-72,Soviet Union,UEFA,T-61,UEFA,Romania,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Romania,UEFA
+214,WC-1990,M-1990-03,United Arab Emirates vs Colombia,group stage,1990-06-09,T-82,United Arab Emirates,AFC,T-16,CONMEBOL,Colombia,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Colombia,CONMEBOL
+215,WC-1990,M-1990-04,Italy vs Austria,group stage,1990-06-09,T-41,Italy,UEFA,T-05,UEFA,Austria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+216,WC-1990,M-1990-05,United States vs Czechoslovakia,group stage,1990-06-10,T-83,United States,CONCACAF,T-21,UEFA,Czechoslovakia,1–5,1,5,-4,0,0,0,0,away team win,0,1,0,Czechoslovakia,UEFA
+217,WC-1990,M-1990-06,Brazil vs Sweden,group stage,1990-06-10,T-09,Brazil,CONMEBOL,T-74,UEFA,Sweden,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+218,WC-1990,M-1990-07,West Germany vs Yugoslavia,group stage,1990-06-10,T-86,West Germany,UEFA,T-87,UEFA,Yugoslavia,4–1,4,1,3,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+219,WC-1990,M-1990-08,Costa Rica vs Scotland,group stage,1990-06-11,T-17,Costa Rica,CONCACAF,T-64,UEFA,Scotland,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Costa Rica,CONCACAF
+220,WC-1990,M-1990-09,England vs Republic of Ireland,group stage,1990-06-11,T-28,England,UEFA,T-60,UEFA,Republic of Ireland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+221,WC-1990,M-1990-10,Belgium vs South Korea,group stage,1990-06-12,T-06,Belgium,UEFA,T-71,AFC,South Korea,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+222,WC-1990,M-1990-11,Netherlands vs Egypt,group stage,1990-06-12,T-48,Netherlands,UEFA,T-26,CAF,Egypt,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+223,WC-1990,M-1990-12,Uruguay vs Spain,group stage,1990-06-13,T-84,Uruguay,CONMEBOL,T-73,UEFA,Spain,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+224,WC-1990,M-1990-13,Argentina vs Soviet Union,group stage,1990-06-13,T-03,Argentina,CONMEBOL,T-72,UEFA,Soviet Union,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+225,WC-1990,M-1990-14,Cameroon vs Romania,group stage,1990-06-14,T-11,Cameroon,CAF,T-61,UEFA,Romania,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Cameroon,CAF
+226,WC-1990,M-1990-15,Yugoslavia vs Colombia,group stage,1990-06-14,T-87,Yugoslavia,UEFA,T-16,CONMEBOL,Colombia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Yugoslavia,UEFA
+227,WC-1990,M-1990-16,Italy vs United States,group stage,1990-06-14,T-41,Italy,UEFA,T-83,CONCACAF,United States,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+228,WC-1990,M-1990-17,Austria vs Czechoslovakia,group stage,1990-06-15,T-05,Austria,UEFA,T-21,UEFA,Czechoslovakia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Czechoslovakia,UEFA
+229,WC-1990,M-1990-18,West Germany vs United Arab Emirates,group stage,1990-06-15,T-86,West Germany,UEFA,T-82,AFC,United Arab Emirates,5–1,5,1,4,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+230,WC-1990,M-1990-19,Brazil vs Costa Rica,group stage,1990-06-16,T-09,Brazil,CONMEBOL,T-17,CONCACAF,Costa Rica,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+231,WC-1990,M-1990-20,Sweden vs Scotland,group stage,1990-06-16,T-74,Sweden,UEFA,T-64,UEFA,Scotland,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Scotland,UEFA
+232,WC-1990,M-1990-21,England vs Netherlands,group stage,1990-06-16,T-28,England,UEFA,T-48,UEFA,Netherlands,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+233,WC-1990,M-1990-22,Republic of Ireland vs Egypt,group stage,1990-06-17,T-60,Republic of Ireland,UEFA,T-26,CAF,Egypt,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+234,WC-1990,M-1990-23,Belgium vs Uruguay,group stage,1990-06-17,T-06,Belgium,UEFA,T-84,CONMEBOL,Uruguay,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+235,WC-1990,M-1990-24,South Korea vs Spain,group stage,1990-06-17,T-71,South Korea,AFC,T-73,UEFA,Spain,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Spain,UEFA
+236,WC-1990,M-1990-25,Argentina vs Romania,group stage,1990-06-18,T-03,Argentina,CONMEBOL,T-61,UEFA,Romania,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+237,WC-1990,M-1990-26,Cameroon vs Soviet Union,group stage,1990-06-18,T-11,Cameroon,CAF,T-72,UEFA,Soviet Union,0–4,0,4,-4,0,0,0,0,away team win,0,1,0,Soviet Union,UEFA
+238,WC-1990,M-1990-27,West Germany vs Colombia,group stage,1990-06-19,T-86,West Germany,UEFA,T-16,CONMEBOL,Colombia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+239,WC-1990,M-1990-28,Yugoslavia vs United Arab Emirates,group stage,1990-06-19,T-87,Yugoslavia,UEFA,T-82,AFC,United Arab Emirates,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Yugoslavia,UEFA
+240,WC-1990,M-1990-29,Austria vs United States,group stage,1990-06-19,T-05,Austria,UEFA,T-83,CONCACAF,United States,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Austria,UEFA
+241,WC-1990,M-1990-30,Italy vs Czechoslovakia,group stage,1990-06-19,T-41,Italy,UEFA,T-21,UEFA,Czechoslovakia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+242,WC-1990,M-1990-31,Brazil vs Scotland,group stage,1990-06-20,T-09,Brazil,CONMEBOL,T-64,UEFA,Scotland,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+243,WC-1990,M-1990-32,Sweden vs Costa Rica,group stage,1990-06-20,T-74,Sweden,UEFA,T-17,CONCACAF,Costa Rica,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Costa Rica,CONCACAF
+244,WC-1990,M-1990-33,Belgium vs Spain,group stage,1990-06-21,T-06,Belgium,UEFA,T-73,UEFA,Spain,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+245,WC-1990,M-1990-34,South Korea vs Uruguay,group stage,1990-06-21,T-71,South Korea,AFC,T-84,CONMEBOL,Uruguay,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+246,WC-1990,M-1990-35,England vs Egypt,group stage,1990-06-21,T-28,England,UEFA,T-26,CAF,Egypt,1–0,1,0,1,0,0,0,0,home team win,1,0,0,England,UEFA
+247,WC-1990,M-1990-36,Republic of Ireland vs Netherlands,group stage,1990-06-21,T-60,Republic of Ireland,UEFA,T-48,UEFA,Netherlands,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+248,WC-1990,M-1990-37,Cameroon vs Colombia,round of 16,1990-06-23,T-11,Cameroon,CAF,T-16,CONMEBOL,Colombia,2–1,2,1,1,1,0,0,0,home team win,1,0,0,Cameroon,CAF
+249,WC-1990,M-1990-38,Czechoslovakia vs Costa Rica,round of 16,1990-06-23,T-21,Czechoslovakia,UEFA,T-17,CONCACAF,Costa Rica,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Czechoslovakia,UEFA
+250,WC-1990,M-1990-39,Brazil vs Argentina,round of 16,1990-06-24,T-09,Brazil,CONMEBOL,T-03,CONMEBOL,Argentina,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Argentina,CONMEBOL
+251,WC-1990,M-1990-40,West Germany vs Netherlands,round of 16,1990-06-24,T-86,West Germany,UEFA,T-48,UEFA,Netherlands,2–1,2,1,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+252,WC-1990,M-1990-41,Republic of Ireland vs Romania,round of 16,1990-06-25,T-60,Republic of Ireland,UEFA,T-61,UEFA,Romania,0–0,0,0,0,1,1,5,4,home team win,1,0,0,Republic of Ireland,UEFA
+253,WC-1990,M-1990-42,Italy vs Uruguay,round of 16,1990-06-25,T-41,Italy,UEFA,T-84,CONMEBOL,Uruguay,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+254,WC-1990,M-1990-43,Spain vs Yugoslavia,round of 16,1990-06-26,T-73,Spain,UEFA,T-87,UEFA,Yugoslavia,1–2,1,2,-1,1,0,0,0,away team win,0,1,0,Yugoslavia,UEFA
+255,WC-1990,M-1990-44,England vs Belgium,round of 16,1990-06-26,T-28,England,UEFA,T-06,UEFA,Belgium,1–0,1,0,1,1,0,0,0,home team win,1,0,0,England,UEFA
+256,WC-1990,M-1990-45,Argentina vs Yugoslavia,quarter-finals,1990-06-30,T-03,Argentina,CONMEBOL,T-87,UEFA,Yugoslavia,0–0,0,0,0,1,1,3,2,home team win,1,0,0,Argentina,CONMEBOL
+257,WC-1990,M-1990-46,Republic of Ireland vs Italy,quarter-finals,1990-06-30,T-60,Republic of Ireland,UEFA,T-41,UEFA,Italy,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Italy,UEFA
+258,WC-1990,M-1990-47,Czechoslovakia vs West Germany,quarter-finals,1990-07-01,T-21,Czechoslovakia,UEFA,T-86,UEFA,West Germany,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,West Germany,UEFA
+259,WC-1990,M-1990-48,Cameroon vs England,quarter-finals,1990-07-01,T-11,Cameroon,CAF,T-28,UEFA,England,2–3,2,3,-1,1,0,0,0,away team win,0,1,0,England,UEFA
+260,WC-1990,M-1990-49,Argentina vs Italy,semi-finals,1990-07-03,T-03,Argentina,CONMEBOL,T-41,UEFA,Italy,1–1,1,1,0,1,1,4,3,home team win,1,0,0,Argentina,CONMEBOL
+261,WC-1990,M-1990-50,West Germany vs England,semi-finals,1990-07-04,T-86,West Germany,UEFA,T-28,UEFA,England,1–1,1,1,0,1,1,4,3,home team win,1,0,0,West Germany,UEFA
+262,WC-1990,M-1990-51,Italy vs England,third-place match,1990-07-07,T-41,Italy,UEFA,T-28,UEFA,England,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+263,WC-1990,M-1990-52,West Germany vs Argentina,final,1990-07-08,T-86,West Germany,UEFA,T-03,CONMEBOL,Argentina,1–0,1,0,1,0,0,0,0,home team win,1,0,0,West Germany,UEFA
+264,WC-1994,M-1994-01,Germany vs Bolivia,group stage,1994-06-17,T-31,Germany,UEFA,T-07,CONMEBOL,Bolivia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+265,WC-1994,M-1994-02,Spain vs South Korea,group stage,1994-06-17,T-73,Spain,UEFA,T-71,AFC,South Korea,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+266,WC-1994,M-1994-03,United States vs Switzerland,group stage,1994-06-18,T-83,United States,CONCACAF,T-75,UEFA,Switzerland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+267,WC-1994,M-1994-04,Italy vs Republic of Ireland,group stage,1994-06-18,T-41,Italy,UEFA,T-60,UEFA,Republic of Ireland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Republic of Ireland,UEFA
+268,WC-1994,M-1994-05,Colombia vs Romania,group stage,1994-06-18,T-16,Colombia,CONMEBOL,T-61,UEFA,Romania,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Romania,UEFA
+269,WC-1994,M-1994-06,Belgium vs Morocco,group stage,1994-06-19,T-06,Belgium,UEFA,T-47,CAF,Morocco,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+270,WC-1994,M-1994-07,Norway vs Mexico,group stage,1994-06-19,T-53,Norway,UEFA,T-46,CONCACAF,Mexico,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Norway,UEFA
+271,WC-1994,M-1994-08,Cameroon vs Sweden,group stage,1994-06-19,T-11,Cameroon,CAF,T-74,UEFA,Sweden,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+272,WC-1994,M-1994-09,Brazil vs Russia,group stage,1994-06-20,T-09,Brazil,CONMEBOL,T-62,UEFA,Russia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+273,WC-1994,M-1994-10,Netherlands vs Saudi Arabia,group stage,1994-06-20,T-48,Netherlands,UEFA,T-63,AFC,Saudi Arabia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+274,WC-1994,M-1994-11,Argentina vs Greece,group stage,1994-06-21,T-03,Argentina,CONMEBOL,T-33,UEFA,Greece,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+275,WC-1994,M-1994-12,Germany vs Spain,group stage,1994-06-21,T-31,Germany,UEFA,T-73,UEFA,Spain,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+276,WC-1994,M-1994-13,Nigeria vs Bulgaria,group stage,1994-06-21,T-50,Nigeria,CAF,T-10,UEFA,Bulgaria,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Nigeria,CAF
+277,WC-1994,M-1994-14,Romania vs Switzerland,group stage,1994-06-22,T-61,Romania,UEFA,T-75,UEFA,Switzerland,1–4,1,4,-3,0,0,0,0,away team win,0,1,0,Switzerland,UEFA
+278,WC-1994,M-1994-15,United States vs Colombia,group stage,1994-06-22,T-83,United States,CONCACAF,T-16,CONMEBOL,Colombia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,United States,CONCACAF
+279,WC-1994,M-1994-16,Italy vs Norway,group stage,1994-06-23,T-41,Italy,UEFA,T-53,UEFA,Norway,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+280,WC-1994,M-1994-17,South Korea vs Bolivia,group stage,1994-06-23,T-71,South Korea,AFC,T-07,CONMEBOL,Bolivia,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+281,WC-1994,M-1994-18,Mexico vs Republic of Ireland,group stage,1994-06-24,T-46,Mexico,CONCACAF,T-60,UEFA,Republic of Ireland,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+282,WC-1994,M-1994-19,Brazil vs Cameroon,group stage,1994-06-24,T-09,Brazil,CONMEBOL,T-11,CAF,Cameroon,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+283,WC-1994,M-1994-20,Sweden vs Russia,group stage,1994-06-24,T-74,Sweden,UEFA,T-62,UEFA,Russia,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+284,WC-1994,M-1994-21,Belgium vs Netherlands,group stage,1994-06-25,T-06,Belgium,UEFA,T-48,UEFA,Netherlands,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+285,WC-1994,M-1994-22,Saudi Arabia vs Morocco,group stage,1994-06-25,T-63,Saudi Arabia,AFC,T-47,CAF,Morocco,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Saudi Arabia,AFC
+286,WC-1994,M-1994-23,Argentina vs Nigeria,group stage,1994-06-25,T-03,Argentina,CONMEBOL,T-50,CAF,Nigeria,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+287,WC-1994,M-1994-24,Bulgaria vs Greece,group stage,1994-06-26,T-10,Bulgaria,UEFA,T-33,UEFA,Greece,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Bulgaria,UEFA
+288,WC-1994,M-1994-25,Switzerland vs Colombia,group stage,1994-06-26,T-75,Switzerland,UEFA,T-16,CONMEBOL,Colombia,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Colombia,CONMEBOL
+289,WC-1994,M-1994-26,United States vs Romania,group stage,1994-06-26,T-83,United States,CONCACAF,T-61,UEFA,Romania,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Romania,UEFA
+290,WC-1994,M-1994-27,Bolivia vs Spain,group stage,1994-06-27,T-07,Bolivia,CONMEBOL,T-73,UEFA,Spain,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Spain,UEFA
+291,WC-1994,M-1994-28,Germany vs South Korea,group stage,1994-06-27,T-31,Germany,UEFA,T-71,AFC,South Korea,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+292,WC-1994,M-1994-29,Italy vs Mexico,group stage,1994-06-28,T-41,Italy,UEFA,T-46,CONCACAF,Mexico,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+293,WC-1994,M-1994-30,Republic of Ireland vs Norway,group stage,1994-06-28,T-60,Republic of Ireland,UEFA,T-53,UEFA,Norway,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+294,WC-1994,M-1994-31,Russia vs Cameroon,group stage,1994-06-28,T-62,Russia,UEFA,T-11,CAF,Cameroon,6–1,6,1,5,0,0,0,0,home team win,1,0,0,Russia,UEFA
+295,WC-1994,M-1994-32,Brazil vs Sweden,group stage,1994-06-28,T-09,Brazil,CONMEBOL,T-74,UEFA,Sweden,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+296,WC-1994,M-1994-33,Belgium vs Saudi Arabia,group stage,1994-06-29,T-06,Belgium,UEFA,T-63,AFC,Saudi Arabia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Saudi Arabia,AFC
+297,WC-1994,M-1994-34,Morocco vs Netherlands,group stage,1994-06-29,T-47,Morocco,CAF,T-48,UEFA,Netherlands,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+298,WC-1994,M-1994-35,Argentina vs Bulgaria,group stage,1994-06-30,T-03,Argentina,CONMEBOL,T-10,UEFA,Bulgaria,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Bulgaria,UEFA
+299,WC-1994,M-1994-36,Greece vs Nigeria,group stage,1994-06-30,T-33,Greece,UEFA,T-50,CAF,Nigeria,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Nigeria,CAF
+300,WC-1994,M-1994-37,Germany vs Belgium,round of 16,1994-07-02,T-31,Germany,UEFA,T-06,UEFA,Belgium,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+301,WC-1994,M-1994-38,Spain vs Switzerland,round of 16,1994-07-02,T-73,Spain,UEFA,T-75,UEFA,Switzerland,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Spain,UEFA
+302,WC-1994,M-1994-39,Saudi Arabia vs Sweden,round of 16,1994-07-03,T-63,Saudi Arabia,AFC,T-74,UEFA,Sweden,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Sweden,UEFA
+303,WC-1994,M-1994-40,Romania vs Argentina,round of 16,1994-07-03,T-61,Romania,UEFA,T-03,CONMEBOL,Argentina,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Romania,UEFA
+304,WC-1994,M-1994-41,Netherlands vs Republic of Ireland,round of 16,1994-07-04,T-48,Netherlands,UEFA,T-60,UEFA,Republic of Ireland,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+305,WC-1994,M-1994-42,Brazil vs United States,round of 16,1994-07-04,T-09,Brazil,CONMEBOL,T-83,CONCACAF,United States,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+306,WC-1994,M-1994-43,Nigeria vs Italy,round of 16,1994-07-05,T-50,Nigeria,CAF,T-41,UEFA,Italy,1–2,1,2,-1,1,0,0,0,away team win,0,1,0,Italy,UEFA
+307,WC-1994,M-1994-44,Mexico vs Bulgaria,round of 16,1994-07-05,T-46,Mexico,CONCACAF,T-10,UEFA,Bulgaria,1–1,1,1,0,1,1,1,3,away team win,0,1,0,Bulgaria,UEFA
+308,WC-1994,M-1994-45,Italy vs Spain,quarter-finals,1994-07-09,T-41,Italy,UEFA,T-73,UEFA,Spain,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+309,WC-1994,M-1994-46,Netherlands vs Brazil,quarter-finals,1994-07-09,T-48,Netherlands,UEFA,T-09,CONMEBOL,Brazil,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+310,WC-1994,M-1994-47,Bulgaria vs Germany,quarter-finals,1994-07-10,T-10,Bulgaria,UEFA,T-31,UEFA,Germany,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Bulgaria,UEFA
+311,WC-1994,M-1994-48,Romania vs Sweden,quarter-finals,1994-07-10,T-61,Romania,UEFA,T-74,UEFA,Sweden,2–2,2,2,0,1,1,4,5,away team win,0,1,0,Sweden,UEFA
+312,WC-1994,M-1994-49,Bulgaria vs Italy,semi-finals,1994-07-13,T-10,Bulgaria,UEFA,T-41,UEFA,Italy,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Italy,UEFA
+313,WC-1994,M-1994-50,Sweden vs Brazil,semi-finals,1994-07-13,T-74,Sweden,UEFA,T-09,CONMEBOL,Brazil,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+314,WC-1994,M-1994-51,Sweden vs Bulgaria,third-place match,1994-07-16,T-74,Sweden,UEFA,T-10,UEFA,Bulgaria,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+315,WC-1994,M-1994-52,Brazil vs Italy,final,1994-07-17,T-09,Brazil,CONMEBOL,T-41,UEFA,Italy,0–0,0,0,0,1,1,3,2,home team win,1,0,0,Brazil,CONMEBOL
+316,WC-1998,M-1998-01,Brazil vs Scotland,group stage,1998-06-10,T-09,Brazil,CONMEBOL,T-64,UEFA,Scotland,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+317,WC-1998,M-1998-02,Morocco vs Norway,group stage,1998-06-10,T-47,Morocco,CAF,T-53,UEFA,Norway,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+318,WC-1998,M-1998-03,Italy vs Chile,group stage,1998-06-11,T-41,Italy,UEFA,T-13,CONMEBOL,Chile,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+319,WC-1998,M-1998-04,Cameroon vs Austria,group stage,1998-06-11,T-11,Cameroon,CAF,T-05,UEFA,Austria,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+320,WC-1998,M-1998-05,Paraguay vs Bulgaria,group stage,1998-06-12,T-55,Paraguay,CONMEBOL,T-10,UEFA,Bulgaria,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+321,WC-1998,M-1998-06,Saudi Arabia vs Denmark,group stage,1998-06-12,T-63,Saudi Arabia,AFC,T-22,UEFA,Denmark,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Denmark,UEFA
+322,WC-1998,M-1998-07,France vs South Africa,group stage,1998-06-12,T-30,France,UEFA,T-70,CAF,South Africa,3–0,3,0,3,0,0,0,0,home team win,1,0,0,France,UEFA
+323,WC-1998,M-1998-08,Spain vs Nigeria,group stage,1998-06-13,T-73,Spain,UEFA,T-50,CAF,Nigeria,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Nigeria,CAF
+324,WC-1998,M-1998-09,South Korea vs Mexico,group stage,1998-06-13,T-71,South Korea,AFC,T-46,CONCACAF,Mexico,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+325,WC-1998,M-1998-10,Netherlands vs Belgium,group stage,1998-06-13,T-48,Netherlands,UEFA,T-06,UEFA,Belgium,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+326,WC-1998,M-1998-11,Argentina vs Japan,group stage,1998-06-14,T-03,Argentina,CONMEBOL,T-44,AFC,Japan,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+327,WC-1998,M-1998-12,Yugoslavia vs Iran,group stage,1998-06-14,T-87,Yugoslavia,UEFA,T-38,AFC,Iran,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Yugoslavia,UEFA
+328,WC-1998,M-1998-13,Jamaica vs Croatia,group stage,1998-06-14,T-43,Jamaica,CONCACAF,T-18,UEFA,Croatia,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+329,WC-1998,M-1998-14,England vs Tunisia,group stage,1998-06-15,T-28,England,UEFA,T-79,CAF,Tunisia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,England,UEFA
+330,WC-1998,M-1998-15,Romania vs Colombia,group stage,1998-06-15,T-61,Romania,UEFA,T-16,CONMEBOL,Colombia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Romania,UEFA
+331,WC-1998,M-1998-16,Germany vs United States,group stage,1998-06-15,T-31,Germany,UEFA,T-83,CONCACAF,United States,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Germany,UEFA
+332,WC-1998,M-1998-17,Scotland vs Norway,group stage,1998-06-16,T-64,Scotland,UEFA,T-53,UEFA,Norway,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+333,WC-1998,M-1998-18,Brazil vs Morocco,group stage,1998-06-16,T-09,Brazil,CONMEBOL,T-47,CAF,Morocco,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+334,WC-1998,M-1998-19,Chile vs Austria,group stage,1998-06-17,T-13,Chile,CONMEBOL,T-05,UEFA,Austria,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+335,WC-1998,M-1998-20,Italy vs Cameroon,group stage,1998-06-17,T-41,Italy,UEFA,T-11,CAF,Cameroon,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Italy,UEFA
+336,WC-1998,M-1998-21,South Africa vs Denmark,group stage,1998-06-18,T-70,South Africa,CAF,T-22,UEFA,Denmark,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+337,WC-1998,M-1998-22,France vs Saudi Arabia,group stage,1998-06-18,T-30,France,UEFA,T-63,AFC,Saudi Arabia,4–0,4,0,4,0,0,0,0,home team win,1,0,0,France,UEFA
+338,WC-1998,M-1998-23,Nigeria vs Bulgaria,group stage,1998-06-19,T-50,Nigeria,CAF,T-10,UEFA,Bulgaria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Nigeria,CAF
+339,WC-1998,M-1998-24,Spain vs Paraguay,group stage,1998-06-19,T-73,Spain,UEFA,T-55,CONMEBOL,Paraguay,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+340,WC-1998,M-1998-25,Japan vs Croatia,group stage,1998-06-20,T-44,Japan,AFC,T-18,UEFA,Croatia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+341,WC-1998,M-1998-26,Belgium vs Mexico,group stage,1998-06-20,T-06,Belgium,UEFA,T-46,CONCACAF,Mexico,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+342,WC-1998,M-1998-27,Netherlands vs South Korea,group stage,1998-06-20,T-48,Netherlands,UEFA,T-71,AFC,South Korea,5–0,5,0,5,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+343,WC-1998,M-1998-28,Germany vs Yugoslavia,group stage,1998-06-21,T-31,Germany,UEFA,T-87,UEFA,Yugoslavia,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+344,WC-1998,M-1998-29,Argentina vs Jamaica,group stage,1998-06-21,T-03,Argentina,CONMEBOL,T-43,CONCACAF,Jamaica,5–0,5,0,5,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+345,WC-1998,M-1998-30,United States vs Iran,group stage,1998-06-21,T-83,United States,CONCACAF,T-38,AFC,Iran,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Iran,AFC
+346,WC-1998,M-1998-31,Colombia vs Tunisia,group stage,1998-06-22,T-16,Colombia,CONMEBOL,T-79,CAF,Tunisia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Colombia,CONMEBOL
+347,WC-1998,M-1998-32,Romania vs England,group stage,1998-06-22,T-61,Romania,UEFA,T-28,UEFA,England,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Romania,UEFA
+348,WC-1998,M-1998-33,Chile vs Cameroon,group stage,1998-06-23,T-13,Chile,CONMEBOL,T-11,CAF,Cameroon,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+349,WC-1998,M-1998-34,Italy vs Austria,group stage,1998-06-23,T-41,Italy,UEFA,T-05,UEFA,Austria,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+350,WC-1998,M-1998-35,Brazil vs Norway,group stage,1998-06-23,T-09,Brazil,CONMEBOL,T-53,UEFA,Norway,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Norway,UEFA
+351,WC-1998,M-1998-36,Scotland vs Morocco,group stage,1998-06-23,T-64,Scotland,UEFA,T-47,CAF,Morocco,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Morocco,CAF
+352,WC-1998,M-1998-37,France vs Denmark,group stage,1998-06-24,T-30,France,UEFA,T-22,UEFA,Denmark,2–1,2,1,1,0,0,0,0,home team win,1,0,0,France,UEFA
+353,WC-1998,M-1998-38,South Africa vs Saudi Arabia,group stage,1998-06-24,T-70,South Africa,CAF,T-63,AFC,Saudi Arabia,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+354,WC-1998,M-1998-39,Nigeria vs Paraguay,group stage,1998-06-24,T-50,Nigeria,CAF,T-55,CONMEBOL,Paraguay,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Paraguay,CONMEBOL
+355,WC-1998,M-1998-40,Spain vs Bulgaria,group stage,1998-06-24,T-73,Spain,UEFA,T-10,UEFA,Bulgaria,6–1,6,1,5,0,0,0,0,home team win,1,0,0,Spain,UEFA
+356,WC-1998,M-1998-41,Belgium vs South Korea,group stage,1998-06-25,T-06,Belgium,UEFA,T-71,AFC,South Korea,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+357,WC-1998,M-1998-42,Netherlands vs Mexico,group stage,1998-06-25,T-48,Netherlands,UEFA,T-46,CONCACAF,Mexico,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+358,WC-1998,M-1998-43,Germany vs Iran,group stage,1998-06-25,T-31,Germany,UEFA,T-38,AFC,Iran,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Germany,UEFA
+359,WC-1998,M-1998-44,United States vs Yugoslavia,group stage,1998-06-25,T-83,United States,CONCACAF,T-87,UEFA,Yugoslavia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Yugoslavia,UEFA
+360,WC-1998,M-1998-45,Argentina vs Croatia,group stage,1998-06-26,T-03,Argentina,CONMEBOL,T-18,UEFA,Croatia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+361,WC-1998,M-1998-46,Japan vs Jamaica,group stage,1998-06-26,T-44,Japan,AFC,T-43,CONCACAF,Jamaica,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Jamaica,CONCACAF
+362,WC-1998,M-1998-47,Colombia vs England,group stage,1998-06-26,T-16,Colombia,CONMEBOL,T-28,UEFA,England,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,England,UEFA
+363,WC-1998,M-1998-48,Romania vs Tunisia,group stage,1998-06-26,T-61,Romania,UEFA,T-79,CAF,Tunisia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+364,WC-1998,M-1998-49,Italy vs Norway,round of 16,1998-06-27,T-41,Italy,UEFA,T-53,UEFA,Norway,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+365,WC-1998,M-1998-50,Brazil vs Chile,round of 16,1998-06-27,T-09,Brazil,CONMEBOL,T-13,CONMEBOL,Chile,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+366,WC-1998,M-1998-51,France vs Paraguay,round of 16,1998-06-28,T-30,France,UEFA,T-55,CONMEBOL,Paraguay,1–0,1,0,1,1,0,0,0,home team win,1,0,0,France,UEFA
+367,WC-1998,M-1998-52,Nigeria vs Denmark,round of 16,1998-06-28,T-50,Nigeria,CAF,T-22,UEFA,Denmark,1–4,1,4,-3,0,0,0,0,away team win,0,1,0,Denmark,UEFA
+368,WC-1998,M-1998-53,Germany vs Mexico,round of 16,1998-06-29,T-31,Germany,UEFA,T-46,CONCACAF,Mexico,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+369,WC-1998,M-1998-54,Netherlands vs Yugoslavia,round of 16,1998-06-29,T-48,Netherlands,UEFA,T-87,UEFA,Yugoslavia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+370,WC-1998,M-1998-55,Romania vs Croatia,round of 16,1998-06-30,T-61,Romania,UEFA,T-18,UEFA,Croatia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+371,WC-1998,M-1998-56,Argentina vs England,round of 16,1998-06-30,T-03,Argentina,CONMEBOL,T-28,UEFA,England,2–2,2,2,0,1,1,4,3,home team win,1,0,0,Argentina,CONMEBOL
+372,WC-1998,M-1998-57,Italy vs France,quarter-finals,1998-07-03,T-41,Italy,UEFA,T-30,UEFA,France,0–0,0,0,0,1,1,3,4,away team win,0,1,0,France,UEFA
+373,WC-1998,M-1998-58,Brazil vs Denmark,quarter-finals,1998-07-03,T-09,Brazil,CONMEBOL,T-22,UEFA,Denmark,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+374,WC-1998,M-1998-59,Netherlands vs Argentina,quarter-finals,1998-07-04,T-48,Netherlands,UEFA,T-03,CONMEBOL,Argentina,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+375,WC-1998,M-1998-60,Germany vs Croatia,quarter-finals,1998-07-04,T-31,Germany,UEFA,T-18,UEFA,Croatia,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+376,WC-1998,M-1998-61,Brazil vs Netherlands,semi-finals,1998-07-07,T-09,Brazil,CONMEBOL,T-48,UEFA,Netherlands,1–1,1,1,0,1,1,4,2,home team win,1,0,0,Brazil,CONMEBOL
+377,WC-1998,M-1998-62,France vs Croatia,semi-finals,1998-07-08,T-30,France,UEFA,T-18,UEFA,Croatia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,France,UEFA
+378,WC-1998,M-1998-63,Netherlands vs Croatia,third-place match,1998-07-11,T-48,Netherlands,UEFA,T-18,UEFA,Croatia,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+379,WC-1998,M-1998-64,Brazil vs France,final,1998-07-12,T-09,Brazil,CONMEBOL,T-30,UEFA,France,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,France,UEFA
+380,WC-2002,M-2002-01,France vs Senegal,group stage,2002-05-31,T-30,France,UEFA,T-65,CAF,Senegal,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Senegal,CAF
+381,WC-2002,M-2002-02,Republic of Ireland vs Cameroon,group stage,2002-06-01,T-60,Republic of Ireland,UEFA,T-11,CAF,Cameroon,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+382,WC-2002,M-2002-03,Uruguay vs Denmark,group stage,2002-06-01,T-84,Uruguay,CONMEBOL,T-22,UEFA,Denmark,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Denmark,UEFA
+383,WC-2002,M-2002-04,Germany vs Saudi Arabia,group stage,2002-06-01,T-31,Germany,UEFA,T-63,AFC,Saudi Arabia,8–0,8,0,8,0,0,0,0,home team win,1,0,0,Germany,UEFA
+384,WC-2002,M-2002-05,Argentina vs Nigeria,group stage,2002-06-02,T-03,Argentina,CONMEBOL,T-50,CAF,Nigeria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+385,WC-2002,M-2002-06,Paraguay vs South Africa,group stage,2002-06-02,T-55,Paraguay,CONMEBOL,T-70,CAF,South Africa,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+386,WC-2002,M-2002-07,England vs Sweden,group stage,2002-06-02,T-28,England,UEFA,T-74,UEFA,Sweden,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+387,WC-2002,M-2002-08,Spain vs Slovenia,group stage,2002-06-02,T-73,Spain,UEFA,T-69,UEFA,Slovenia,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Spain,UEFA
+388,WC-2002,M-2002-09,Croatia vs Mexico,group stage,2002-06-03,T-18,Croatia,UEFA,T-46,CONCACAF,Mexico,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+389,WC-2002,M-2002-10,Brazil vs Turkey,group stage,2002-06-03,T-09,Brazil,CONMEBOL,T-80,UEFA,Turkey,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+390,WC-2002,M-2002-11,Italy vs Ecuador,group stage,2002-06-03,T-41,Italy,UEFA,T-25,CONMEBOL,Ecuador,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+391,WC-2002,M-2002-12,China vs Costa Rica,group stage,2002-06-04,T-14,China,AFC,T-17,CONCACAF,Costa Rica,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Costa Rica,CONCACAF
+392,WC-2002,M-2002-13,Japan vs Belgium,group stage,2002-06-04,T-44,Japan,AFC,T-06,UEFA,Belgium,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+393,WC-2002,M-2002-14,South Korea vs Poland,group stage,2002-06-04,T-71,South Korea,AFC,T-57,UEFA,Poland,2–0,2,0,2,0,0,0,0,home team win,1,0,0,South Korea,AFC
+394,WC-2002,M-2002-15,Russia vs Tunisia,group stage,2002-06-05,T-62,Russia,UEFA,T-79,CAF,Tunisia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Russia,UEFA
+395,WC-2002,M-2002-16,United States vs Portugal,group stage,2002-06-05,T-83,United States,CONCACAF,T-58,UEFA,Portugal,3–2,3,2,1,0,0,0,0,home team win,1,0,0,United States,CONCACAF
+396,WC-2002,M-2002-17,Germany vs Republic of Ireland,group stage,2002-06-05,T-31,Germany,UEFA,T-60,UEFA,Republic of Ireland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+397,WC-2002,M-2002-18,Denmark vs Senegal,group stage,2002-06-06,T-22,Denmark,UEFA,T-65,CAF,Senegal,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+398,WC-2002,M-2002-19,Cameroon vs Saudi Arabia,group stage,2002-06-06,T-11,Cameroon,CAF,T-63,AFC,Saudi Arabia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Cameroon,CAF
+399,WC-2002,M-2002-20,France vs Uruguay,group stage,2002-06-06,T-30,France,UEFA,T-84,CONMEBOL,Uruguay,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+400,WC-2002,M-2002-21,Sweden vs Nigeria,group stage,2002-06-07,T-74,Sweden,UEFA,T-50,CAF,Nigeria,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+401,WC-2002,M-2002-22,Spain vs Paraguay,group stage,2002-06-07,T-73,Spain,UEFA,T-55,CONMEBOL,Paraguay,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Spain,UEFA
+402,WC-2002,M-2002-23,Argentina vs England,group stage,2002-06-07,T-03,Argentina,CONMEBOL,T-28,UEFA,England,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,England,UEFA
+403,WC-2002,M-2002-24,South Africa vs Slovenia,group stage,2002-06-08,T-70,South Africa,CAF,T-69,UEFA,Slovenia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,South Africa,CAF
+404,WC-2002,M-2002-25,Italy vs Croatia,group stage,2002-06-08,T-41,Italy,UEFA,T-18,UEFA,Croatia,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+405,WC-2002,M-2002-26,Brazil vs China,group stage,2002-06-08,T-09,Brazil,CONMEBOL,T-14,AFC,China,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+406,WC-2002,M-2002-27,Mexico vs Ecuador,group stage,2002-06-09,T-46,Mexico,CONCACAF,T-25,CONMEBOL,Ecuador,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+407,WC-2002,M-2002-28,Costa Rica vs Turkey,group stage,2002-06-09,T-17,Costa Rica,CONCACAF,T-80,UEFA,Turkey,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+408,WC-2002,M-2002-29,Japan vs Russia,group stage,2002-06-09,T-44,Japan,AFC,T-62,UEFA,Russia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Japan,AFC
+409,WC-2002,M-2002-30,South Korea vs United States,group stage,2002-06-10,T-71,South Korea,AFC,T-83,CONCACAF,United States,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+410,WC-2002,M-2002-31,Tunisia vs Belgium,group stage,2002-06-10,T-79,Tunisia,CAF,T-06,UEFA,Belgium,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+411,WC-2002,M-2002-32,Portugal vs Poland,group stage,2002-06-10,T-58,Portugal,UEFA,T-57,UEFA,Poland,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+412,WC-2002,M-2002-33,Denmark vs France,group stage,2002-06-11,T-22,Denmark,UEFA,T-30,UEFA,France,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Denmark,UEFA
+413,WC-2002,M-2002-34,Senegal vs Uruguay,group stage,2002-06-11,T-65,Senegal,CAF,T-84,CONMEBOL,Uruguay,3–3,3,3,0,0,0,0,0,draw,0,0,1,,
+414,WC-2002,M-2002-35,Cameroon vs Germany,group stage,2002-06-11,T-11,Cameroon,CAF,T-31,UEFA,Germany,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Germany,UEFA
+415,WC-2002,M-2002-36,Saudi Arabia vs Republic of Ireland,group stage,2002-06-11,T-63,Saudi Arabia,AFC,T-60,UEFA,Republic of Ireland,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Republic of Ireland,UEFA
+416,WC-2002,M-2002-37,Nigeria vs England,group stage,2002-06-12,T-50,Nigeria,CAF,T-28,UEFA,England,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+417,WC-2002,M-2002-38,Sweden vs Argentina,group stage,2002-06-12,T-74,Sweden,UEFA,T-03,CONMEBOL,Argentina,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+418,WC-2002,M-2002-39,Slovenia vs Paraguay,group stage,2002-06-12,T-69,Slovenia,UEFA,T-55,CONMEBOL,Paraguay,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Paraguay,CONMEBOL
+419,WC-2002,M-2002-40,South Africa vs Spain,group stage,2002-06-12,T-70,South Africa,CAF,T-73,UEFA,Spain,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+420,WC-2002,M-2002-41,Costa Rica vs Brazil,group stage,2002-06-13,T-17,Costa Rica,CONCACAF,T-09,CONMEBOL,Brazil,2–5,2,5,-3,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+421,WC-2002,M-2002-42,Turkey vs China,group stage,2002-06-13,T-80,Turkey,UEFA,T-14,AFC,China,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Turkey,UEFA
+422,WC-2002,M-2002-43,Ecuador vs Croatia,group stage,2002-06-13,T-25,Ecuador,CONMEBOL,T-18,UEFA,Croatia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Ecuador,CONMEBOL
+423,WC-2002,M-2002-44,Mexico vs Italy,group stage,2002-06-13,T-46,Mexico,CONCACAF,T-41,UEFA,Italy,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+424,WC-2002,M-2002-45,Belgium vs Russia,group stage,2002-06-14,T-06,Belgium,UEFA,T-62,UEFA,Russia,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+425,WC-2002,M-2002-46,Tunisia vs Japan,group stage,2002-06-14,T-79,Tunisia,CAF,T-44,AFC,Japan,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Japan,AFC
+426,WC-2002,M-2002-47,Poland vs United States,group stage,2002-06-14,T-57,Poland,UEFA,T-83,CONCACAF,United States,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Poland,UEFA
+427,WC-2002,M-2002-48,Portugal vs South Korea,group stage,2002-06-14,T-58,Portugal,UEFA,T-71,AFC,South Korea,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,South Korea,AFC
+428,WC-2002,M-2002-49,Germany vs Paraguay,round of 16,2002-06-15,T-31,Germany,UEFA,T-55,CONMEBOL,Paraguay,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+429,WC-2002,M-2002-50,Denmark vs England,round of 16,2002-06-15,T-22,Denmark,UEFA,T-28,UEFA,England,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,England,UEFA
+430,WC-2002,M-2002-51,Sweden vs Senegal,round of 16,2002-06-16,T-74,Sweden,UEFA,T-65,CAF,Senegal,1–2,1,2,-1,1,0,0,0,away team win,0,1,0,Senegal,CAF
+431,WC-2002,M-2002-52,Spain vs Republic of Ireland,round of 16,2002-06-16,T-73,Spain,UEFA,T-60,UEFA,Republic of Ireland,1–1,1,1,0,1,1,3,2,home team win,1,0,0,Spain,UEFA
+432,WC-2002,M-2002-53,Mexico vs United States,round of 16,2002-06-17,T-46,Mexico,CONCACAF,T-83,CONCACAF,United States,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,United States,CONCACAF
+433,WC-2002,M-2002-54,Brazil vs Belgium,round of 16,2002-06-17,T-09,Brazil,CONMEBOL,T-06,UEFA,Belgium,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+434,WC-2002,M-2002-55,Japan vs Turkey,round of 16,2002-06-18,T-44,Japan,AFC,T-80,UEFA,Turkey,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Turkey,UEFA
+435,WC-2002,M-2002-56,South Korea vs Italy,round of 16,2002-06-18,T-71,South Korea,AFC,T-41,UEFA,Italy,2–1,2,1,1,1,0,0,0,home team win,1,0,0,South Korea,AFC
+436,WC-2002,M-2002-57,England vs Brazil,quarter-finals,2002-06-21,T-28,England,UEFA,T-09,CONMEBOL,Brazil,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+437,WC-2002,M-2002-58,Germany vs United States,quarter-finals,2002-06-21,T-31,Germany,UEFA,T-83,CONCACAF,United States,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+438,WC-2002,M-2002-59,Spain vs South Korea,quarter-finals,2002-06-22,T-73,Spain,UEFA,T-71,AFC,South Korea,0–0,0,0,0,1,1,3,5,away team win,0,1,0,South Korea,AFC
+439,WC-2002,M-2002-60,Senegal vs Turkey,quarter-finals,2002-06-22,T-65,Senegal,CAF,T-80,UEFA,Turkey,0–1,0,1,-1,1,0,0,0,away team win,0,1,0,Turkey,UEFA
+440,WC-2002,M-2002-61,Germany vs South Korea,semi-finals,2002-06-25,T-31,Germany,UEFA,T-71,AFC,South Korea,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+441,WC-2002,M-2002-62,Brazil vs Turkey,semi-finals,2002-06-26,T-09,Brazil,CONMEBOL,T-80,UEFA,Turkey,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+442,WC-2002,M-2002-63,South Korea vs Turkey,third-place match,2002-06-29,T-71,South Korea,AFC,T-80,UEFA,Turkey,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Turkey,UEFA
+443,WC-2002,M-2002-64,Germany vs Brazil,final,2002-06-30,T-31,Germany,UEFA,T-09,CONMEBOL,Brazil,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+444,WC-2006,M-2006-01,Germany vs Costa Rica,group stage,2006-06-09,T-31,Germany,UEFA,T-17,CONCACAF,Costa Rica,4–2,4,2,2,0,0,0,0,home team win,1,0,0,Germany,UEFA
+445,WC-2006,M-2006-02,Poland vs Ecuador,group stage,2006-06-09,T-57,Poland,UEFA,T-25,CONMEBOL,Ecuador,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Ecuador,CONMEBOL
+446,WC-2006,M-2006-03,England vs Paraguay,group stage,2006-06-10,T-28,England,UEFA,T-55,CONMEBOL,Paraguay,1–0,1,0,1,0,0,0,0,home team win,1,0,0,England,UEFA
+447,WC-2006,M-2006-04,Trinidad and Tobago vs Sweden,group stage,2006-06-10,T-78,Trinidad and Tobago,CONCACAF,T-74,UEFA,Sweden,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+448,WC-2006,M-2006-05,Argentina vs Ivory Coast,group stage,2006-06-10,T-03,Argentina,CONMEBOL,T-42,CAF,Ivory Coast,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+449,WC-2006,M-2006-06,Serbia and Montenegro vs Netherlands,group stage,2006-06-11,T-67,Serbia and Montenegro,UEFA,T-48,UEFA,Netherlands,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+450,WC-2006,M-2006-07,Mexico vs Iran,group stage,2006-06-11,T-46,Mexico,CONCACAF,T-38,AFC,Iran,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+451,WC-2006,M-2006-08,Angola vs Portugal,group stage,2006-06-11,T-02,Angola,CAF,T-58,UEFA,Portugal,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Portugal,UEFA
+452,WC-2006,M-2006-09,Australia vs Japan,group stage,2006-06-12,T-04,Australia,AFC,T-44,AFC,Japan,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Australia,AFC
+453,WC-2006,M-2006-10,United States vs Czech Republic,group stage,2006-06-12,T-83,United States,CONCACAF,T-20,UEFA,Czech Republic,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Czech Republic,UEFA
+454,WC-2006,M-2006-11,Italy vs Ghana,group stage,2006-06-12,T-41,Italy,UEFA,T-32,CAF,Ghana,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Italy,UEFA
+455,WC-2006,M-2006-12,South Korea vs Togo,group stage,2006-06-13,T-71,South Korea,AFC,T-77,CAF,Togo,2–1,2,1,1,0,0,0,0,home team win,1,0,0,South Korea,AFC
+456,WC-2006,M-2006-13,France vs Switzerland,group stage,2006-06-13,T-30,France,UEFA,T-75,UEFA,Switzerland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+457,WC-2006,M-2006-14,Brazil vs Croatia,group stage,2006-06-13,T-09,Brazil,CONMEBOL,T-18,UEFA,Croatia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+458,WC-2006,M-2006-15,Spain vs Ukraine,group stage,2006-06-14,T-73,Spain,UEFA,T-81,UEFA,Ukraine,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Spain,UEFA
+459,WC-2006,M-2006-16,Tunisia vs Saudi Arabia,group stage,2006-06-14,T-79,Tunisia,CAF,T-63,AFC,Saudi Arabia,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+460,WC-2006,M-2006-17,Germany vs Poland,group stage,2006-06-14,T-31,Germany,UEFA,T-57,UEFA,Poland,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+461,WC-2006,M-2006-18,Ecuador vs Costa Rica,group stage,2006-06-15,T-25,Ecuador,CONMEBOL,T-17,CONCACAF,Costa Rica,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Ecuador,CONMEBOL
+462,WC-2006,M-2006-19,England vs Trinidad and Tobago,group stage,2006-06-15,T-28,England,UEFA,T-78,CONCACAF,Trinidad and Tobago,2–0,2,0,2,0,0,0,0,home team win,1,0,0,England,UEFA
+463,WC-2006,M-2006-20,Sweden vs Paraguay,group stage,2006-06-15,T-74,Sweden,UEFA,T-55,CONMEBOL,Paraguay,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+464,WC-2006,M-2006-21,Argentina vs Serbia and Montenegro,group stage,2006-06-16,T-03,Argentina,CONMEBOL,T-67,UEFA,Serbia and Montenegro,6–0,6,0,6,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+465,WC-2006,M-2006-22,Netherlands vs Ivory Coast,group stage,2006-06-16,T-48,Netherlands,UEFA,T-42,CAF,Ivory Coast,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+466,WC-2006,M-2006-23,Mexico vs Angola,group stage,2006-06-16,T-46,Mexico,CONCACAF,T-02,CAF,Angola,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+467,WC-2006,M-2006-24,Portugal vs Iran,group stage,2006-06-17,T-58,Portugal,UEFA,T-38,AFC,Iran,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+468,WC-2006,M-2006-25,Czech Republic vs Ghana,group stage,2006-06-17,T-20,Czech Republic,UEFA,T-32,CAF,Ghana,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Ghana,CAF
+469,WC-2006,M-2006-26,Italy vs United States,group stage,2006-06-17,T-41,Italy,UEFA,T-83,CONCACAF,United States,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+470,WC-2006,M-2006-27,Japan vs Croatia,group stage,2006-06-18,T-44,Japan,AFC,T-18,UEFA,Croatia,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+471,WC-2006,M-2006-28,Brazil vs Australia,group stage,2006-06-18,T-09,Brazil,CONMEBOL,T-04,AFC,Australia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+472,WC-2006,M-2006-29,France vs South Korea,group stage,2006-06-18,T-30,France,UEFA,T-71,AFC,South Korea,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+473,WC-2006,M-2006-30,Togo vs Switzerland,group stage,2006-06-19,T-77,Togo,CAF,T-75,UEFA,Switzerland,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Switzerland,UEFA
+474,WC-2006,M-2006-31,Saudi Arabia vs Ukraine,group stage,2006-06-19,T-63,Saudi Arabia,AFC,T-81,UEFA,Ukraine,0–4,0,4,-4,0,0,0,0,away team win,0,1,0,Ukraine,UEFA
+475,WC-2006,M-2006-32,Spain vs Tunisia,group stage,2006-06-19,T-73,Spain,UEFA,T-79,CAF,Tunisia,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Spain,UEFA
+476,WC-2006,M-2006-33,Costa Rica vs Poland,group stage,2006-06-20,T-17,Costa Rica,CONCACAF,T-57,UEFA,Poland,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Poland,UEFA
+477,WC-2006,M-2006-34,Ecuador vs Germany,group stage,2006-06-20,T-25,Ecuador,CONMEBOL,T-31,UEFA,Germany,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Germany,UEFA
+478,WC-2006,M-2006-35,Paraguay vs Trinidad and Tobago,group stage,2006-06-20,T-55,Paraguay,CONMEBOL,T-78,CONCACAF,Trinidad and Tobago,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Paraguay,CONMEBOL
+479,WC-2006,M-2006-36,Sweden vs England,group stage,2006-06-20,T-74,Sweden,UEFA,T-28,UEFA,England,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+480,WC-2006,M-2006-37,Iran vs Angola,group stage,2006-06-21,T-38,Iran,AFC,T-02,CAF,Angola,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+481,WC-2006,M-2006-38,Portugal vs Mexico,group stage,2006-06-21,T-58,Portugal,UEFA,T-46,CONCACAF,Mexico,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+482,WC-2006,M-2006-39,Ivory Coast vs Serbia and Montenegro,group stage,2006-06-21,T-42,Ivory Coast,CAF,T-67,UEFA,Serbia and Montenegro,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Ivory Coast,CAF
+483,WC-2006,M-2006-40,Netherlands vs Argentina,group stage,2006-06-21,T-48,Netherlands,UEFA,T-03,CONMEBOL,Argentina,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+484,WC-2006,M-2006-41,Czech Republic vs Italy,group stage,2006-06-22,T-20,Czech Republic,UEFA,T-41,UEFA,Italy,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Italy,UEFA
+485,WC-2006,M-2006-42,Ghana vs United States,group stage,2006-06-22,T-32,Ghana,CAF,T-83,CONCACAF,United States,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Ghana,CAF
+486,WC-2006,M-2006-43,Croatia vs Australia,group stage,2006-06-22,T-18,Croatia,UEFA,T-04,AFC,Australia,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+487,WC-2006,M-2006-44,Japan vs Brazil,group stage,2006-06-22,T-44,Japan,AFC,T-09,CONMEBOL,Brazil,1–4,1,4,-3,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+488,WC-2006,M-2006-45,Saudi Arabia vs Spain,group stage,2006-06-23,T-63,Saudi Arabia,AFC,T-73,UEFA,Spain,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+489,WC-2006,M-2006-46,Ukraine vs Tunisia,group stage,2006-06-23,T-81,Ukraine,UEFA,T-79,CAF,Tunisia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Ukraine,UEFA
+490,WC-2006,M-2006-47,Switzerland vs South Korea,group stage,2006-06-23,T-75,Switzerland,UEFA,T-71,AFC,South Korea,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Switzerland,UEFA
+491,WC-2006,M-2006-48,Togo vs France,group stage,2006-06-23,T-77,Togo,CAF,T-30,UEFA,France,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,France,UEFA
+492,WC-2006,M-2006-49,Germany vs Sweden,round of 16,2006-06-24,T-31,Germany,UEFA,T-74,UEFA,Sweden,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Germany,UEFA
+493,WC-2006,M-2006-50,Argentina vs Mexico,round of 16,2006-06-24,T-03,Argentina,CONMEBOL,T-46,CONCACAF,Mexico,2–1,2,1,1,1,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+494,WC-2006,M-2006-51,England vs Ecuador,round of 16,2006-06-25,T-28,England,UEFA,T-25,CONMEBOL,Ecuador,1–0,1,0,1,0,0,0,0,home team win,1,0,0,England,UEFA
+495,WC-2006,M-2006-52,Portugal vs Netherlands,round of 16,2006-06-25,T-58,Portugal,UEFA,T-48,UEFA,Netherlands,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+496,WC-2006,M-2006-53,Italy vs Australia,round of 16,2006-06-26,T-41,Italy,UEFA,T-04,AFC,Australia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Italy,UEFA
+497,WC-2006,M-2006-54,Switzerland vs Ukraine,round of 16,2006-06-26,T-75,Switzerland,UEFA,T-81,UEFA,Ukraine,0–0,0,0,0,1,1,0,3,away team win,0,1,0,Ukraine,UEFA
+498,WC-2006,M-2006-55,Brazil vs Ghana,round of 16,2006-06-27,T-09,Brazil,CONMEBOL,T-32,CAF,Ghana,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+499,WC-2006,M-2006-56,Spain vs France,round of 16,2006-06-27,T-73,Spain,UEFA,T-30,UEFA,France,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,France,UEFA
+500,WC-2006,M-2006-57,Germany vs Argentina,quarter-finals,2006-06-30,T-31,Germany,UEFA,T-03,CONMEBOL,Argentina,1–1,1,1,0,1,1,4,2,home team win,1,0,0,Germany,UEFA
+501,WC-2006,M-2006-58,Italy vs Ukraine,quarter-finals,2006-06-30,T-41,Italy,UEFA,T-81,UEFA,Ukraine,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Italy,UEFA
+502,WC-2006,M-2006-59,England vs Portugal,quarter-finals,2006-07-01,T-28,England,UEFA,T-58,UEFA,Portugal,0–0,0,0,0,1,1,1,3,away team win,0,1,0,Portugal,UEFA
+503,WC-2006,M-2006-60,Brazil vs France,quarter-finals,2006-07-01,T-09,Brazil,CONMEBOL,T-30,UEFA,France,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,France,UEFA
+504,WC-2006,M-2006-61,Germany vs Italy,semi-finals,2006-07-04,T-31,Germany,UEFA,T-41,UEFA,Italy,0–2,0,2,-2,1,0,0,0,away team win,0,1,0,Italy,UEFA
+505,WC-2006,M-2006-62,Portugal vs France,semi-finals,2006-07-05,T-58,Portugal,UEFA,T-30,UEFA,France,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,France,UEFA
+506,WC-2006,M-2006-63,Germany vs Portugal,third-place match,2006-07-08,T-31,Germany,UEFA,T-58,UEFA,Portugal,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Germany,UEFA
+507,WC-2006,M-2006-64,Italy vs France,final,2006-07-09,T-41,Italy,UEFA,T-30,UEFA,France,1–1,1,1,0,1,1,5,3,home team win,1,0,0,Italy,UEFA
+508,WC-2010,M-2010-01,South Africa vs Mexico,group stage,2010-06-11,T-70,South Africa,CAF,T-46,CONCACAF,Mexico,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+509,WC-2010,M-2010-02,Uruguay vs France,group stage,2010-06-11,T-84,Uruguay,CONMEBOL,T-30,UEFA,France,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+510,WC-2010,M-2010-03,South Korea vs Greece,group stage,2010-06-12,T-71,South Korea,AFC,T-33,UEFA,Greece,2–0,2,0,2,0,0,0,0,home team win,1,0,0,South Korea,AFC
+511,WC-2010,M-2010-04,Argentina vs Nigeria,group stage,2010-06-12,T-03,Argentina,CONMEBOL,T-50,CAF,Nigeria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+512,WC-2010,M-2010-05,England vs United States,group stage,2010-06-12,T-28,England,UEFA,T-83,CONCACAF,United States,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+513,WC-2010,M-2010-06,Algeria vs Slovenia,group stage,2010-06-13,T-01,Algeria,CAF,T-69,UEFA,Slovenia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Slovenia,UEFA
+514,WC-2010,M-2010-07,Serbia vs Ghana,group stage,2010-06-13,T-66,Serbia,UEFA,T-32,CAF,Ghana,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Ghana,CAF
+515,WC-2010,M-2010-08,Germany vs Australia,group stage,2010-06-13,T-31,Germany,UEFA,T-04,AFC,Australia,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Germany,UEFA
+516,WC-2010,M-2010-09,Netherlands vs Denmark,group stage,2010-06-14,T-48,Netherlands,UEFA,T-22,UEFA,Denmark,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+517,WC-2010,M-2010-10,Japan vs Cameroon,group stage,2010-06-14,T-44,Japan,AFC,T-11,CAF,Cameroon,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Japan,AFC
+518,WC-2010,M-2010-11,Italy vs Paraguay,group stage,2010-06-14,T-41,Italy,UEFA,T-55,CONMEBOL,Paraguay,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+519,WC-2010,M-2010-12,New Zealand vs Slovakia,group stage,2010-06-15,T-49,New Zealand,OFC,T-68,UEFA,Slovakia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+520,WC-2010,M-2010-13,Ivory Coast vs Portugal,group stage,2010-06-15,T-42,Ivory Coast,CAF,T-58,UEFA,Portugal,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+521,WC-2010,M-2010-14,Brazil vs North Korea,group stage,2010-06-15,T-09,Brazil,CONMEBOL,T-51,AFC,North Korea,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+522,WC-2010,M-2010-15,Honduras vs Chile,group stage,2010-06-16,T-35,Honduras,CONCACAF,T-13,CONMEBOL,Chile,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Chile,CONMEBOL
+523,WC-2010,M-2010-16,Spain vs Switzerland,group stage,2010-06-16,T-73,Spain,UEFA,T-75,UEFA,Switzerland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Switzerland,UEFA
+524,WC-2010,M-2010-17,South Africa vs Uruguay,group stage,2010-06-16,T-70,South Africa,CAF,T-84,CONMEBOL,Uruguay,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+525,WC-2010,M-2010-18,Argentina vs South Korea,group stage,2010-06-17,T-03,Argentina,CONMEBOL,T-71,AFC,South Korea,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+526,WC-2010,M-2010-19,Greece vs Nigeria,group stage,2010-06-17,T-33,Greece,UEFA,T-50,CAF,Nigeria,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Greece,UEFA
+527,WC-2010,M-2010-20,France vs Mexico,group stage,2010-06-17,T-30,France,UEFA,T-46,CONCACAF,Mexico,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+528,WC-2010,M-2010-21,Germany vs Serbia,group stage,2010-06-18,T-31,Germany,UEFA,T-66,UEFA,Serbia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Serbia,UEFA
+529,WC-2010,M-2010-22,Slovenia vs United States,group stage,2010-06-18,T-69,Slovenia,UEFA,T-83,CONCACAF,United States,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+530,WC-2010,M-2010-23,England vs Algeria,group stage,2010-06-18,T-28,England,UEFA,T-01,CAF,Algeria,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+531,WC-2010,M-2010-24,Netherlands vs Japan,group stage,2010-06-19,T-48,Netherlands,UEFA,T-44,AFC,Japan,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+532,WC-2010,M-2010-25,Ghana vs Australia,group stage,2010-06-19,T-32,Ghana,CAF,T-04,AFC,Australia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+533,WC-2010,M-2010-26,Cameroon vs Denmark,group stage,2010-06-19,T-11,Cameroon,CAF,T-22,UEFA,Denmark,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Denmark,UEFA
+534,WC-2010,M-2010-27,Slovakia vs Paraguay,group stage,2010-06-20,T-68,Slovakia,UEFA,T-55,CONMEBOL,Paraguay,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Paraguay,CONMEBOL
+535,WC-2010,M-2010-28,Italy vs New Zealand,group stage,2010-06-20,T-41,Italy,UEFA,T-49,OFC,New Zealand,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+536,WC-2010,M-2010-29,Brazil vs Ivory Coast,group stage,2010-06-20,T-09,Brazil,CONMEBOL,T-42,CAF,Ivory Coast,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+537,WC-2010,M-2010-30,Portugal vs North Korea,group stage,2010-06-21,T-58,Portugal,UEFA,T-51,AFC,North Korea,7–0,7,0,7,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+538,WC-2010,M-2010-31,Chile vs Switzerland,group stage,2010-06-21,T-13,Chile,CONMEBOL,T-75,UEFA,Switzerland,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Chile,CONMEBOL
+539,WC-2010,M-2010-32,Spain vs Honduras,group stage,2010-06-21,T-73,Spain,UEFA,T-35,CONCACAF,Honduras,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Spain,UEFA
+540,WC-2010,M-2010-33,France vs South Africa,group stage,2010-06-22,T-30,France,UEFA,T-70,CAF,South Africa,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,South Africa,CAF
+541,WC-2010,M-2010-34,Mexico vs Uruguay,group stage,2010-06-22,T-46,Mexico,CONCACAF,T-84,CONMEBOL,Uruguay,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+542,WC-2010,M-2010-35,Greece vs Argentina,group stage,2010-06-22,T-33,Greece,UEFA,T-03,CONMEBOL,Argentina,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Argentina,CONMEBOL
+543,WC-2010,M-2010-36,Nigeria vs South Korea,group stage,2010-06-22,T-50,Nigeria,CAF,T-71,AFC,South Korea,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+544,WC-2010,M-2010-37,Slovenia vs England,group stage,2010-06-23,T-69,Slovenia,UEFA,T-28,UEFA,England,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,England,UEFA
+545,WC-2010,M-2010-38,United States vs Algeria,group stage,2010-06-23,T-83,United States,CONCACAF,T-01,CAF,Algeria,1–0,1,0,1,0,0,0,0,home team win,1,0,0,United States,CONCACAF
+546,WC-2010,M-2010-39,Australia vs Serbia,group stage,2010-06-23,T-04,Australia,AFC,T-66,UEFA,Serbia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Australia,AFC
+547,WC-2010,M-2010-40,Ghana vs Germany,group stage,2010-06-23,T-32,Ghana,CAF,T-31,UEFA,Germany,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Germany,UEFA
+548,WC-2010,M-2010-41,Paraguay vs New Zealand,group stage,2010-06-24,T-55,Paraguay,CONMEBOL,T-49,OFC,New Zealand,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+549,WC-2010,M-2010-42,Slovakia vs Italy,group stage,2010-06-24,T-68,Slovakia,UEFA,T-41,UEFA,Italy,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Slovakia,UEFA
+550,WC-2010,M-2010-43,Cameroon vs Netherlands,group stage,2010-06-24,T-11,Cameroon,CAF,T-48,UEFA,Netherlands,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+551,WC-2010,M-2010-44,Denmark vs Japan,group stage,2010-06-24,T-22,Denmark,UEFA,T-44,AFC,Japan,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Japan,AFC
+552,WC-2010,M-2010-45,North Korea vs Ivory Coast,group stage,2010-06-25,T-51,North Korea,AFC,T-42,CAF,Ivory Coast,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Ivory Coast,CAF
+553,WC-2010,M-2010-46,Portugal vs Brazil,group stage,2010-06-25,T-58,Portugal,UEFA,T-09,CONMEBOL,Brazil,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+554,WC-2010,M-2010-47,Chile vs Spain,group stage,2010-06-25,T-13,Chile,CONMEBOL,T-73,UEFA,Spain,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+555,WC-2010,M-2010-48,Switzerland vs Honduras,group stage,2010-06-25,T-75,Switzerland,UEFA,T-35,CONCACAF,Honduras,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+556,WC-2010,M-2010-49,Uruguay vs South Korea,round of 16,2010-06-26,T-84,Uruguay,CONMEBOL,T-71,AFC,South Korea,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Uruguay,CONMEBOL
+557,WC-2010,M-2010-50,United States vs Ghana,round of 16,2010-06-26,T-83,United States,CONCACAF,T-32,CAF,Ghana,1–2,1,2,-1,1,0,0,0,away team win,0,1,0,Ghana,CAF
+558,WC-2010,M-2010-51,Germany vs England,round of 16,2010-06-27,T-31,Germany,UEFA,T-28,UEFA,England,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Germany,UEFA
+559,WC-2010,M-2010-52,Argentina vs Mexico,round of 16,2010-06-27,T-03,Argentina,CONMEBOL,T-46,CONCACAF,Mexico,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+560,WC-2010,M-2010-53,Netherlands vs Slovakia,round of 16,2010-06-28,T-48,Netherlands,UEFA,T-68,UEFA,Slovakia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+561,WC-2010,M-2010-54,Brazil vs Chile,round of 16,2010-06-28,T-09,Brazil,CONMEBOL,T-13,CONMEBOL,Chile,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+562,WC-2010,M-2010-55,Paraguay vs Japan,round of 16,2010-06-29,T-55,Paraguay,CONMEBOL,T-44,AFC,Japan,0–0,0,0,0,1,1,5,3,home team win,1,0,0,Paraguay,CONMEBOL
+563,WC-2010,M-2010-56,Spain vs Portugal,round of 16,2010-06-29,T-73,Spain,UEFA,T-58,UEFA,Portugal,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Spain,UEFA
+564,WC-2010,M-2010-57,Netherlands vs Brazil,quarter-finals,2010-07-02,T-48,Netherlands,UEFA,T-09,CONMEBOL,Brazil,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+565,WC-2010,M-2010-58,Uruguay vs Ghana,quarter-finals,2010-07-02,T-84,Uruguay,CONMEBOL,T-32,CAF,Ghana,1–1,1,1,0,1,1,4,2,home team win,1,0,0,Uruguay,CONMEBOL
+566,WC-2010,M-2010-59,Argentina vs Germany,quarter-finals,2010-07-03,T-03,Argentina,CONMEBOL,T-31,UEFA,Germany,0–4,0,4,-4,0,0,0,0,away team win,0,1,0,Germany,UEFA
+567,WC-2010,M-2010-60,Paraguay vs Spain,quarter-finals,2010-07-03,T-55,Paraguay,CONMEBOL,T-73,UEFA,Spain,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+568,WC-2010,M-2010-61,Uruguay vs Netherlands,semi-finals,2010-07-06,T-84,Uruguay,CONMEBOL,T-48,UEFA,Netherlands,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+569,WC-2010,M-2010-62,Germany vs Spain,semi-finals,2010-07-07,T-31,Germany,UEFA,T-73,UEFA,Spain,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+570,WC-2010,M-2010-63,Uruguay vs Germany,third-place match,2010-07-10,T-84,Uruguay,CONMEBOL,T-31,UEFA,Germany,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Germany,UEFA
+571,WC-2010,M-2010-64,Netherlands vs Spain,final,2010-07-11,T-48,Netherlands,UEFA,T-73,UEFA,Spain,0–1,0,1,-1,1,0,0,0,away team win,0,1,0,Spain,UEFA
+572,WC-2014,M-2014-01,Brazil vs Croatia,group stage,2014-06-12,T-09,Brazil,CONMEBOL,T-18,UEFA,Croatia,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+573,WC-2014,M-2014-02,Mexico vs Cameroon,group stage,2014-06-13,T-46,Mexico,CONCACAF,T-11,CAF,Cameroon,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Mexico,CONCACAF
+574,WC-2014,M-2014-03,Spain vs Netherlands,group stage,2014-06-13,T-73,Spain,UEFA,T-48,UEFA,Netherlands,1–5,1,5,-4,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+575,WC-2014,M-2014-04,Chile vs Australia,group stage,2014-06-13,T-13,Chile,CONMEBOL,T-04,AFC,Australia,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Chile,CONMEBOL
+576,WC-2014,M-2014-05,Colombia vs Greece,group stage,2014-06-14,T-16,Colombia,CONMEBOL,T-33,UEFA,Greece,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Colombia,CONMEBOL
+577,WC-2014,M-2014-06,Uruguay vs Costa Rica,group stage,2014-06-14,T-84,Uruguay,CONMEBOL,T-17,CONCACAF,Costa Rica,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Costa Rica,CONCACAF
+578,WC-2014,M-2014-07,England vs Italy,group stage,2014-06-14,T-28,England,UEFA,T-41,UEFA,Italy,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Italy,UEFA
+579,WC-2014,M-2014-08,Ivory Coast vs Japan,group stage,2014-06-14,T-42,Ivory Coast,CAF,T-44,AFC,Japan,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Ivory Coast,CAF
+580,WC-2014,M-2014-09,Switzerland vs Ecuador,group stage,2014-06-15,T-75,Switzerland,UEFA,T-25,CONMEBOL,Ecuador,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Switzerland,UEFA
+581,WC-2014,M-2014-10,France vs Honduras,group stage,2014-06-15,T-30,France,UEFA,T-35,CONCACAF,Honduras,3–0,3,0,3,0,0,0,0,home team win,1,0,0,France,UEFA
+582,WC-2014,M-2014-11,Argentina vs Bosnia and Herzegovina,group stage,2014-06-15,T-03,Argentina,CONMEBOL,T-08,UEFA,Bosnia and Herzegovina,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+583,WC-2014,M-2014-12,Germany vs Portugal,group stage,2014-06-16,T-31,Germany,UEFA,T-58,UEFA,Portugal,4–0,4,0,4,0,0,0,0,home team win,1,0,0,Germany,UEFA
+584,WC-2014,M-2014-13,Iran vs Nigeria,group stage,2014-06-16,T-38,Iran,AFC,T-50,CAF,Nigeria,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+585,WC-2014,M-2014-14,Ghana vs United States,group stage,2014-06-16,T-32,Ghana,CAF,T-83,CONCACAF,United States,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,United States,CONCACAF
+586,WC-2014,M-2014-15,Belgium vs Algeria,group stage,2014-06-17,T-06,Belgium,UEFA,T-01,CAF,Algeria,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+587,WC-2014,M-2014-16,Brazil vs Mexico,group stage,2014-06-17,T-09,Brazil,CONMEBOL,T-46,CONCACAF,Mexico,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+588,WC-2014,M-2014-17,Russia vs South Korea,group stage,2014-06-17,T-62,Russia,UEFA,T-71,AFC,South Korea,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+589,WC-2014,M-2014-18,Australia vs Netherlands,group stage,2014-06-18,T-04,Australia,AFC,T-48,UEFA,Netherlands,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+590,WC-2014,M-2014-19,Spain vs Chile,group stage,2014-06-18,T-73,Spain,UEFA,T-13,CONMEBOL,Chile,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Chile,CONMEBOL
+591,WC-2014,M-2014-20,Cameroon vs Croatia,group stage,2014-06-18,T-11,Cameroon,CAF,T-18,UEFA,Croatia,0–4,0,4,-4,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+592,WC-2014,M-2014-21,Colombia vs Ivory Coast,group stage,2014-06-19,T-16,Colombia,CONMEBOL,T-42,CAF,Ivory Coast,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Colombia,CONMEBOL
+593,WC-2014,M-2014-22,Uruguay vs England,group stage,2014-06-19,T-84,Uruguay,CONMEBOL,T-28,UEFA,England,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Uruguay,CONMEBOL
+594,WC-2014,M-2014-23,Japan vs Greece,group stage,2014-06-19,T-44,Japan,AFC,T-33,UEFA,Greece,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+595,WC-2014,M-2014-24,Italy vs Costa Rica,group stage,2014-06-20,T-41,Italy,UEFA,T-17,CONCACAF,Costa Rica,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Costa Rica,CONCACAF
+596,WC-2014,M-2014-25,Switzerland vs France,group stage,2014-06-20,T-75,Switzerland,UEFA,T-30,UEFA,France,2–5,2,5,-3,0,0,0,0,away team win,0,1,0,France,UEFA
+597,WC-2014,M-2014-26,Honduras vs Ecuador,group stage,2014-06-20,T-35,Honduras,CONCACAF,T-25,CONMEBOL,Ecuador,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Ecuador,CONMEBOL
+598,WC-2014,M-2014-27,Argentina vs Iran,group stage,2014-06-21,T-03,Argentina,CONMEBOL,T-38,AFC,Iran,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+599,WC-2014,M-2014-28,Germany vs Ghana,group stage,2014-06-21,T-31,Germany,UEFA,T-32,CAF,Ghana,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+600,WC-2014,M-2014-29,Nigeria vs Bosnia and Herzegovina,group stage,2014-06-21,T-50,Nigeria,CAF,T-08,UEFA,Bosnia and Herzegovina,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Nigeria,CAF
+601,WC-2014,M-2014-30,Belgium vs Russia,group stage,2014-06-22,T-06,Belgium,UEFA,T-62,UEFA,Russia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+602,WC-2014,M-2014-31,South Korea vs Algeria,group stage,2014-06-22,T-71,South Korea,AFC,T-01,CAF,Algeria,2–4,2,4,-2,0,0,0,0,away team win,0,1,0,Algeria,CAF
+603,WC-2014,M-2014-32,United States vs Portugal,group stage,2014-06-22,T-83,United States,CONCACAF,T-58,UEFA,Portugal,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+604,WC-2014,M-2014-33,Australia vs Spain,group stage,2014-06-23,T-04,Australia,AFC,T-73,UEFA,Spain,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Spain,UEFA
+605,WC-2014,M-2014-34,Netherlands vs Chile,group stage,2014-06-23,T-48,Netherlands,UEFA,T-13,CONMEBOL,Chile,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+606,WC-2014,M-2014-35,Cameroon vs Brazil,group stage,2014-06-23,T-11,Cameroon,CAF,T-09,CONMEBOL,Brazil,1–4,1,4,-3,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+607,WC-2014,M-2014-36,Croatia vs Mexico,group stage,2014-06-23,T-18,Croatia,UEFA,T-46,CONCACAF,Mexico,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+608,WC-2014,M-2014-37,Costa Rica vs England,group stage,2014-06-24,T-17,Costa Rica,CONCACAF,T-28,UEFA,England,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+609,WC-2014,M-2014-38,Italy vs Uruguay,group stage,2014-06-24,T-41,Italy,UEFA,T-84,CONMEBOL,Uruguay,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+610,WC-2014,M-2014-39,Japan vs Colombia,group stage,2014-06-24,T-44,Japan,AFC,T-16,CONMEBOL,Colombia,1–4,1,4,-3,0,0,0,0,away team win,0,1,0,Colombia,CONMEBOL
+611,WC-2014,M-2014-40,Greece vs Ivory Coast,group stage,2014-06-24,T-33,Greece,UEFA,T-42,CAF,Ivory Coast,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Greece,UEFA
+612,WC-2014,M-2014-41,Bosnia and Herzegovina vs Iran,group stage,2014-06-25,T-08,Bosnia and Herzegovina,UEFA,T-38,AFC,Iran,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Bosnia and Herzegovina,UEFA
+613,WC-2014,M-2014-42,Nigeria vs Argentina,group stage,2014-06-25,T-50,Nigeria,CAF,T-03,CONMEBOL,Argentina,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Argentina,CONMEBOL
+614,WC-2014,M-2014-43,Honduras vs Switzerland,group stage,2014-06-25,T-35,Honduras,CONCACAF,T-75,UEFA,Switzerland,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Switzerland,UEFA
+615,WC-2014,M-2014-44,Ecuador vs France,group stage,2014-06-25,T-25,Ecuador,CONMEBOL,T-30,UEFA,France,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+616,WC-2014,M-2014-45,Portugal vs Ghana,group stage,2014-06-26,T-58,Portugal,UEFA,T-32,CAF,Ghana,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+617,WC-2014,M-2014-46,United States vs Germany,group stage,2014-06-26,T-83,United States,CONCACAF,T-31,UEFA,Germany,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Germany,UEFA
+618,WC-2014,M-2014-47,Algeria vs Russia,group stage,2014-06-26,T-01,Algeria,CAF,T-62,UEFA,Russia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+619,WC-2014,M-2014-48,South Korea vs Belgium,group stage,2014-06-26,T-71,South Korea,AFC,T-06,UEFA,Belgium,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Belgium,UEFA
+620,WC-2014,M-2014-49,Brazil vs Chile,round of 16,2014-06-28,T-09,Brazil,CONMEBOL,T-13,CONMEBOL,Chile,1–1,1,1,0,1,1,3,2,home team win,1,0,0,Brazil,CONMEBOL
+621,WC-2014,M-2014-50,Colombia vs Uruguay,round of 16,2014-06-28,T-16,Colombia,CONMEBOL,T-84,CONMEBOL,Uruguay,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Colombia,CONMEBOL
+622,WC-2014,M-2014-51,Netherlands vs Mexico,round of 16,2014-06-29,T-48,Netherlands,UEFA,T-46,CONCACAF,Mexico,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+623,WC-2014,M-2014-52,Costa Rica vs Greece,round of 16,2014-06-29,T-17,Costa Rica,CONCACAF,T-33,UEFA,Greece,1–1,1,1,0,1,1,5,3,home team win,1,0,0,Costa Rica,CONCACAF
+624,WC-2014,M-2014-53,France vs Nigeria,round of 16,2014-06-30,T-30,France,UEFA,T-50,CAF,Nigeria,2–0,2,0,2,0,0,0,0,home team win,1,0,0,France,UEFA
+625,WC-2014,M-2014-54,Germany vs Algeria,round of 16,2014-06-30,T-31,Germany,UEFA,T-01,CAF,Algeria,2–1,2,1,1,1,0,0,0,home team win,1,0,0,Germany,UEFA
+626,WC-2014,M-2014-55,Argentina vs Switzerland,round of 16,2014-07-01,T-03,Argentina,CONMEBOL,T-75,UEFA,Switzerland,1–0,1,0,1,1,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+627,WC-2014,M-2014-56,Belgium vs United States,round of 16,2014-07-01,T-06,Belgium,UEFA,T-83,CONCACAF,United States,2–1,2,1,1,1,0,0,0,home team win,1,0,0,Belgium,UEFA
+628,WC-2014,M-2014-57,France vs Germany,quarter-finals,2014-07-04,T-30,France,UEFA,T-31,UEFA,Germany,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Germany,UEFA
+629,WC-2014,M-2014-58,Brazil vs Colombia,quarter-finals,2014-07-04,T-09,Brazil,CONMEBOL,T-16,CONMEBOL,Colombia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+630,WC-2014,M-2014-59,Argentina vs Belgium,quarter-finals,2014-07-05,T-03,Argentina,CONMEBOL,T-06,UEFA,Belgium,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+631,WC-2014,M-2014-60,Netherlands vs Costa Rica,quarter-finals,2014-07-05,T-48,Netherlands,UEFA,T-17,CONCACAF,Costa Rica,0–0,0,0,0,1,1,4,3,home team win,1,0,0,Netherlands,UEFA
+632,WC-2014,M-2014-61,Brazil vs Germany,semi-finals,2014-07-08,T-09,Brazil,CONMEBOL,T-31,UEFA,Germany,1–7,1,7,-6,0,0,0,0,away team win,0,1,0,Germany,UEFA
+633,WC-2014,M-2014-62,Netherlands vs Argentina,semi-finals,2014-07-09,T-48,Netherlands,UEFA,T-03,CONMEBOL,Argentina,0–0,0,0,0,1,1,2,4,away team win,0,1,0,Argentina,CONMEBOL
+634,WC-2014,M-2014-63,Brazil vs Netherlands,third-place match,2014-07-12,T-09,Brazil,CONMEBOL,T-48,UEFA,Netherlands,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+635,WC-2014,M-2014-64,Germany vs Argentina,final,2014-07-13,T-31,Germany,UEFA,T-03,CONMEBOL,Argentina,1–0,1,0,1,1,0,0,0,home team win,1,0,0,Germany,UEFA
+636,WC-2018,M-2018-01,Russia vs Saudi Arabia,group stage,2018-06-14,T-62,Russia,UEFA,T-63,AFC,Saudi Arabia,5–0,5,0,5,0,0,0,0,home team win,1,0,0,Russia,UEFA
+637,WC-2018,M-2018-02,Egypt vs Uruguay,group stage,2018-06-15,T-26,Egypt,CAF,T-84,CONMEBOL,Uruguay,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+638,WC-2018,M-2018-03,Morocco vs Iran,group stage,2018-06-15,T-47,Morocco,CAF,T-38,AFC,Iran,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Iran,AFC
+639,WC-2018,M-2018-04,Portugal vs Spain,group stage,2018-06-15,T-58,Portugal,UEFA,T-73,UEFA,Spain,3–3,3,3,0,0,0,0,0,draw,0,0,1,,
+640,WC-2018,M-2018-05,France vs Australia,group stage,2018-06-16,T-30,France,UEFA,T-04,AFC,Australia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,France,UEFA
+641,WC-2018,M-2018-06,Argentina vs Iceland,group stage,2018-06-16,T-03,Argentina,CONMEBOL,T-37,UEFA,Iceland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+642,WC-2018,M-2018-07,Peru vs Denmark,group stage,2018-06-16,T-56,Peru,CONMEBOL,T-22,UEFA,Denmark,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Denmark,UEFA
+643,WC-2018,M-2018-08,Croatia vs Nigeria,group stage,2018-06-16,T-18,Croatia,UEFA,T-50,CAF,Nigeria,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Croatia,UEFA
+644,WC-2018,M-2018-09,Costa Rica vs Serbia,group stage,2018-06-17,T-17,Costa Rica,CONCACAF,T-66,UEFA,Serbia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Serbia,UEFA
+645,WC-2018,M-2018-10,Germany vs Mexico,group stage,2018-06-17,T-31,Germany,UEFA,T-46,CONCACAF,Mexico,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+646,WC-2018,M-2018-11,Brazil vs Switzerland,group stage,2018-06-17,T-09,Brazil,CONMEBOL,T-75,UEFA,Switzerland,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+647,WC-2018,M-2018-12,Sweden vs South Korea,group stage,2018-06-18,T-74,Sweden,UEFA,T-71,AFC,South Korea,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+648,WC-2018,M-2018-13,Belgium vs Panama,group stage,2018-06-18,T-06,Belgium,UEFA,T-54,CONCACAF,Panama,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+649,WC-2018,M-2018-14,Tunisia vs England,group stage,2018-06-18,T-79,Tunisia,CAF,T-28,UEFA,England,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,England,UEFA
+650,WC-2018,M-2018-15,Colombia vs Japan,group stage,2018-06-19,T-16,Colombia,CONMEBOL,T-44,AFC,Japan,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Japan,AFC
+651,WC-2018,M-2018-16,Poland vs Senegal,group stage,2018-06-19,T-57,Poland,UEFA,T-65,CAF,Senegal,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Senegal,CAF
+652,WC-2018,M-2018-17,Russia vs Egypt,group stage,2018-06-19,T-62,Russia,UEFA,T-26,CAF,Egypt,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Russia,UEFA
+653,WC-2018,M-2018-18,Portugal vs Morocco,group stage,2018-06-20,T-58,Portugal,UEFA,T-47,CAF,Morocco,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+654,WC-2018,M-2018-19,Uruguay vs Saudi Arabia,group stage,2018-06-20,T-84,Uruguay,CONMEBOL,T-63,AFC,Saudi Arabia,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Uruguay,CONMEBOL
+655,WC-2018,M-2018-20,Iran vs Spain,group stage,2018-06-20,T-38,Iran,AFC,T-73,UEFA,Spain,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Spain,UEFA
+656,WC-2018,M-2018-21,Denmark vs Australia,group stage,2018-06-21,T-22,Denmark,UEFA,T-04,AFC,Australia,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+657,WC-2018,M-2018-22,France vs Peru,group stage,2018-06-21,T-30,France,UEFA,T-56,CONMEBOL,Peru,1–0,1,0,1,0,0,0,0,home team win,1,0,0,France,UEFA
+658,WC-2018,M-2018-23,Argentina vs Croatia,group stage,2018-06-21,T-03,Argentina,CONMEBOL,T-18,UEFA,Croatia,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+659,WC-2018,M-2018-24,Brazil vs Costa Rica,group stage,2018-06-22,T-09,Brazil,CONMEBOL,T-17,CONCACAF,Costa Rica,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+660,WC-2018,M-2018-25,Nigeria vs Iceland,group stage,2018-06-22,T-50,Nigeria,CAF,T-37,UEFA,Iceland,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Nigeria,CAF
+661,WC-2018,M-2018-26,Serbia vs Switzerland,group stage,2018-06-22,T-66,Serbia,UEFA,T-75,UEFA,Switzerland,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Switzerland,UEFA
+662,WC-2018,M-2018-27,Belgium vs Tunisia,group stage,2018-06-23,T-06,Belgium,UEFA,T-79,CAF,Tunisia,5–2,5,2,3,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+663,WC-2018,M-2018-28,South Korea vs Mexico,group stage,2018-06-23,T-71,South Korea,AFC,T-46,CONCACAF,Mexico,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+664,WC-2018,M-2018-29,Germany vs Sweden,group stage,2018-06-23,T-31,Germany,UEFA,T-74,UEFA,Sweden,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Germany,UEFA
+665,WC-2018,M-2018-30,England vs Panama,group stage,2018-06-24,T-28,England,UEFA,T-54,CONCACAF,Panama,6–1,6,1,5,0,0,0,0,home team win,1,0,0,England,UEFA
+666,WC-2018,M-2018-31,Japan vs Senegal,group stage,2018-06-24,T-44,Japan,AFC,T-65,CAF,Senegal,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+667,WC-2018,M-2018-32,Poland vs Colombia,group stage,2018-06-24,T-57,Poland,UEFA,T-16,CONMEBOL,Colombia,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Colombia,CONMEBOL
+668,WC-2018,M-2018-33,Saudi Arabia vs Egypt,group stage,2018-06-25,T-63,Saudi Arabia,AFC,T-26,CAF,Egypt,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Saudi Arabia,AFC
+669,WC-2018,M-2018-34,Uruguay vs Russia,group stage,2018-06-25,T-84,Uruguay,CONMEBOL,T-62,UEFA,Russia,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Uruguay,CONMEBOL
+670,WC-2018,M-2018-35,Spain vs Morocco,group stage,2018-06-25,T-73,Spain,UEFA,T-47,CAF,Morocco,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+671,WC-2018,M-2018-36,Iran vs Portugal,group stage,2018-06-25,T-38,Iran,AFC,T-58,UEFA,Portugal,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+672,WC-2018,M-2018-37,Australia vs Peru,group stage,2018-06-26,T-04,Australia,AFC,T-56,CONMEBOL,Peru,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Peru,CONMEBOL
+673,WC-2018,M-2018-38,Denmark vs France,group stage,2018-06-26,T-22,Denmark,UEFA,T-30,UEFA,France,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+674,WC-2018,M-2018-39,Iceland vs Croatia,group stage,2018-06-26,T-37,Iceland,UEFA,T-18,UEFA,Croatia,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Croatia,UEFA
+675,WC-2018,M-2018-40,Nigeria vs Argentina,group stage,2018-06-26,T-50,Nigeria,CAF,T-03,CONMEBOL,Argentina,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Argentina,CONMEBOL
+676,WC-2018,M-2018-41,South Korea vs Germany,group stage,2018-06-27,T-71,South Korea,AFC,T-31,UEFA,Germany,2–0,2,0,2,0,0,0,0,home team win,1,0,0,South Korea,AFC
+677,WC-2018,M-2018-42,Mexico vs Sweden,group stage,2018-06-27,T-46,Mexico,CONCACAF,T-74,UEFA,Sweden,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,Sweden,UEFA
+678,WC-2018,M-2018-43,Serbia vs Brazil,group stage,2018-06-27,T-66,Serbia,UEFA,T-09,CONMEBOL,Brazil,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Brazil,CONMEBOL
+679,WC-2018,M-2018-44,Switzerland vs Costa Rica,group stage,2018-06-27,T-75,Switzerland,UEFA,T-17,CONCACAF,Costa Rica,2–2,2,2,0,0,0,0,0,draw,0,0,1,,
+680,WC-2018,M-2018-45,Japan vs Poland,group stage,2018-06-28,T-44,Japan,AFC,T-57,UEFA,Poland,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Poland,UEFA
+681,WC-2018,M-2018-46,Senegal vs Colombia,group stage,2018-06-28,T-65,Senegal,CAF,T-16,CONMEBOL,Colombia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Colombia,CONMEBOL
+682,WC-2018,M-2018-47,England vs Belgium,group stage,2018-06-28,T-28,England,UEFA,T-06,UEFA,Belgium,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Belgium,UEFA
+683,WC-2018,M-2018-48,Panama vs Tunisia,group stage,2018-06-28,T-54,Panama,CONCACAF,T-79,CAF,Tunisia,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Tunisia,CAF
+684,WC-2018,M-2018-49,France vs Argentina,round of 16,2018-06-30,T-30,France,UEFA,T-03,CONMEBOL,Argentina,4–3,4,3,1,0,0,0,0,home team win,1,0,0,France,UEFA
+685,WC-2018,M-2018-50,Uruguay vs Portugal,round of 16,2018-06-30,T-84,Uruguay,CONMEBOL,T-58,UEFA,Portugal,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Uruguay,CONMEBOL
+686,WC-2018,M-2018-51,Spain vs Russia,round of 16,2018-07-01,T-73,Spain,UEFA,T-62,UEFA,Russia,1–1,1,1,0,1,1,3,4,away team win,0,1,0,Russia,UEFA
+687,WC-2018,M-2018-52,Croatia vs Denmark,round of 16,2018-07-01,T-18,Croatia,UEFA,T-22,UEFA,Denmark,1–1,1,1,0,1,1,3,2,home team win,1,0,0,Croatia,UEFA
+688,WC-2018,M-2018-53,Brazil vs Mexico,round of 16,2018-07-02,T-09,Brazil,CONMEBOL,T-46,CONCACAF,Mexico,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+689,WC-2018,M-2018-54,Belgium vs Japan,round of 16,2018-07-02,T-06,Belgium,UEFA,T-44,AFC,Japan,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+690,WC-2018,M-2018-55,Sweden vs Switzerland,round of 16,2018-07-03,T-74,Sweden,UEFA,T-75,UEFA,Switzerland,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Sweden,UEFA
+691,WC-2018,M-2018-56,Colombia vs England,round of 16,2018-07-03,T-16,Colombia,CONMEBOL,T-28,UEFA,England,1–1,1,1,0,1,1,3,4,away team win,0,1,0,England,UEFA
+692,WC-2018,M-2018-57,Uruguay vs France,quarter-finals,2018-07-06,T-84,Uruguay,CONMEBOL,T-30,UEFA,France,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,France,UEFA
+693,WC-2018,M-2018-58,Brazil vs Belgium,quarter-finals,2018-07-06,T-09,Brazil,CONMEBOL,T-06,UEFA,Belgium,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Belgium,UEFA
+694,WC-2018,M-2018-59,Sweden vs England,quarter-finals,2018-07-07,T-74,Sweden,UEFA,T-28,UEFA,England,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,England,UEFA
+695,WC-2018,M-2018-60,Russia vs Croatia,quarter-finals,2018-07-07,T-62,Russia,UEFA,T-18,UEFA,Croatia,2–2,2,2,0,1,1,3,4,away team win,0,1,0,Croatia,UEFA
+696,WC-2018,M-2018-61,France vs Belgium,semi-finals,2018-07-10,T-30,France,UEFA,T-06,UEFA,Belgium,1–0,1,0,1,0,0,0,0,home team win,1,0,0,France,UEFA
+697,WC-2018,M-2018-62,Croatia vs England,semi-finals,2018-07-11,T-18,Croatia,UEFA,T-28,UEFA,England,2–1,2,1,1,1,0,0,0,home team win,1,0,0,Croatia,UEFA
+698,WC-2018,M-2018-63,Belgium vs England,third-place match,2018-07-14,T-06,Belgium,UEFA,T-28,UEFA,England,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+699,WC-2018,M-2018-64,France vs Croatia,final,2018-07-15,T-30,France,UEFA,T-18,UEFA,Croatia,4–2,4,2,2,0,0,0,0,home team win,1,0,0,France,UEFA
+700,WC-2022,M-2022-01,Qatar vs Ecuador,group stage,2022-11-20,T-59,Qatar,AFC,T-25,CONMEBOL,Ecuador,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Ecuador,CONMEBOL
+701,WC-2022,M-2022-02,England vs Iran,group stage,2022-11-21,T-28,England,UEFA,T-38,AFC,Iran,6–2,6,2,4,0,0,0,0,home team win,1,0,0,England,UEFA
+702,WC-2022,M-2022-03,Senegal vs Netherlands,group stage,2022-11-21,T-65,Senegal,CAF,T-48,UEFA,Netherlands,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Netherlands,UEFA
+703,WC-2022,M-2022-04,United States vs Wales,group stage,2022-11-21,T-83,United States,CONCACAF,T-85,UEFA,Wales,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+704,WC-2022,M-2022-05,Argentina vs Saudi Arabia,group stage,2022-11-22,T-03,Argentina,CONMEBOL,T-63,AFC,Saudi Arabia,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Saudi Arabia,AFC
+705,WC-2022,M-2022-06,Denmark vs Tunisia,group stage,2022-11-22,T-22,Denmark,UEFA,T-79,CAF,Tunisia,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+706,WC-2022,M-2022-07,Mexico vs Poland,group stage,2022-11-22,T-46,Mexico,CONCACAF,T-57,UEFA,Poland,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+707,WC-2022,M-2022-08,France vs Australia,group stage,2022-11-22,T-30,France,UEFA,T-04,AFC,Australia,4–1,4,1,3,0,0,0,0,home team win,1,0,0,France,UEFA
+708,WC-2022,M-2022-09,Morocco vs Croatia,group stage,2022-11-23,T-47,Morocco,CAF,T-18,UEFA,Croatia,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+709,WC-2022,M-2022-10,Germany vs Japan,group stage,2022-11-23,T-31,Germany,UEFA,T-44,AFC,Japan,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Japan,AFC
+710,WC-2022,M-2022-11,Spain vs Costa Rica,group stage,2022-11-23,T-73,Spain,UEFA,T-17,CONCACAF,Costa Rica,7–0,7,0,7,0,0,0,0,home team win,1,0,0,Spain,UEFA
+711,WC-2022,M-2022-12,Belgium vs Canada,group stage,2022-11-23,T-06,Belgium,UEFA,T-12,CONCACAF,Canada,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Belgium,UEFA
+712,WC-2022,M-2022-13,Switzerland vs Cameroon,group stage,2022-11-24,T-75,Switzerland,UEFA,T-11,CAF,Cameroon,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Switzerland,UEFA
+713,WC-2022,M-2022-14,Uruguay vs South Korea,group stage,2022-11-24,T-84,Uruguay,CONMEBOL,T-71,AFC,South Korea,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+714,WC-2022,M-2022-15,Portugal vs Ghana,group stage,2022-11-24,T-58,Portugal,UEFA,T-32,CAF,Ghana,3–2,3,2,1,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+715,WC-2022,M-2022-16,Brazil vs Serbia,group stage,2022-11-24,T-09,Brazil,CONMEBOL,T-66,UEFA,Serbia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+716,WC-2022,M-2022-17,Wales vs Iran,group stage,2022-11-25,T-85,Wales,UEFA,T-38,AFC,Iran,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Iran,AFC
+717,WC-2022,M-2022-18,Qatar vs Senegal,group stage,2022-11-25,T-59,Qatar,AFC,T-65,CAF,Senegal,1–3,1,3,-2,0,0,0,0,away team win,0,1,0,Senegal,CAF
+718,WC-2022,M-2022-19,Netherlands vs Ecuador,group stage,2022-11-25,T-48,Netherlands,UEFA,T-25,CONMEBOL,Ecuador,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+719,WC-2022,M-2022-20,England vs United States,group stage,2022-11-25,T-28,England,UEFA,T-83,CONCACAF,United States,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+720,WC-2022,M-2022-21,Tunisia vs Australia,group stage,2022-11-26,T-79,Tunisia,CAF,T-04,AFC,Australia,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Australia,AFC
+721,WC-2022,M-2022-22,Poland vs Saudi Arabia,group stage,2022-11-26,T-57,Poland,UEFA,T-63,AFC,Saudi Arabia,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Poland,UEFA
+722,WC-2022,M-2022-23,France vs Denmark,group stage,2022-11-26,T-30,France,UEFA,T-22,UEFA,Denmark,2–1,2,1,1,0,0,0,0,home team win,1,0,0,France,UEFA
+723,WC-2022,M-2022-24,Argentina vs Mexico,group stage,2022-11-26,T-03,Argentina,CONMEBOL,T-46,CONCACAF,Mexico,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+724,WC-2022,M-2022-25,Japan vs Costa Rica,group stage,2022-11-27,T-44,Japan,AFC,T-17,CONCACAF,Costa Rica,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,Costa Rica,CONCACAF
+725,WC-2022,M-2022-26,Belgium vs Morocco,group stage,2022-11-27,T-06,Belgium,UEFA,T-47,CAF,Morocco,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Morocco,CAF
+726,WC-2022,M-2022-27,Croatia vs Canada,group stage,2022-11-27,T-18,Croatia,UEFA,T-12,CONCACAF,Canada,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Croatia,UEFA
+727,WC-2022,M-2022-28,Spain vs Germany,group stage,2022-11-27,T-73,Spain,UEFA,T-31,UEFA,Germany,1–1,1,1,0,0,0,0,0,draw,0,0,1,,
+728,WC-2022,M-2022-29,Cameroon vs Serbia,group stage,2022-11-28,T-11,Cameroon,CAF,T-66,UEFA,Serbia,3–3,3,3,0,0,0,0,0,draw,0,0,1,,
+729,WC-2022,M-2022-30,South Korea vs Ghana,group stage,2022-11-28,T-71,South Korea,AFC,T-32,CAF,Ghana,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Ghana,CAF
+730,WC-2022,M-2022-31,Brazil vs Switzerland,group stage,2022-11-28,T-09,Brazil,CONMEBOL,T-75,UEFA,Switzerland,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+731,WC-2022,M-2022-32,Portugal vs Uruguay,group stage,2022-11-28,T-58,Portugal,UEFA,T-84,CONMEBOL,Uruguay,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+732,WC-2022,M-2022-33,Ecuador vs Senegal,group stage,2022-11-29,T-25,Ecuador,CONMEBOL,T-65,CAF,Senegal,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Senegal,CAF
+733,WC-2022,M-2022-34,Netherlands vs Qatar,group stage,2022-11-29,T-48,Netherlands,UEFA,T-59,AFC,Qatar,2–0,2,0,2,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+734,WC-2022,M-2022-35,Iran vs United States,group stage,2022-11-29,T-38,Iran,AFC,T-83,CONCACAF,United States,0–1,0,1,-1,0,0,0,0,away team win,0,1,0,United States,CONCACAF
+735,WC-2022,M-2022-36,Wales vs England,group stage,2022-11-29,T-85,Wales,UEFA,T-28,UEFA,England,0–3,0,3,-3,0,0,0,0,away team win,0,1,0,England,UEFA
+736,WC-2022,M-2022-37,Australia vs Denmark,group stage,2022-11-30,T-04,Australia,AFC,T-22,UEFA,Denmark,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Australia,AFC
+737,WC-2022,M-2022-38,Tunisia vs France,group stage,2022-11-30,T-79,Tunisia,CAF,T-30,UEFA,France,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Tunisia,CAF
+738,WC-2022,M-2022-39,Poland vs Argentina,group stage,2022-11-30,T-57,Poland,UEFA,T-03,CONMEBOL,Argentina,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Argentina,CONMEBOL
+739,WC-2022,M-2022-40,Saudi Arabia vs Mexico,group stage,2022-11-30,T-63,Saudi Arabia,AFC,T-46,CONCACAF,Mexico,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Mexico,CONCACAF
+740,WC-2022,M-2022-41,Canada vs Morocco,group stage,2022-12-01,T-12,Canada,CONCACAF,T-47,CAF,Morocco,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,Morocco,CAF
+741,WC-2022,M-2022-42,Croatia vs Belgium,group stage,2022-12-01,T-18,Croatia,UEFA,T-06,UEFA,Belgium,0–0,0,0,0,0,0,0,0,draw,0,0,1,,
+742,WC-2022,M-2022-43,Costa Rica vs Germany,group stage,2022-12-01,T-17,Costa Rica,CONCACAF,T-31,UEFA,Germany,2–4,2,4,-2,0,0,0,0,away team win,0,1,0,Germany,UEFA
+743,WC-2022,M-2022-44,Japan vs Spain,group stage,2022-12-01,T-44,Japan,AFC,T-73,UEFA,Spain,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Japan,AFC
+744,WC-2022,M-2022-45,Ghana vs Uruguay,group stage,2022-12-02,T-32,Ghana,CAF,T-84,CONMEBOL,Uruguay,0–2,0,2,-2,0,0,0,0,away team win,0,1,0,Uruguay,CONMEBOL
+745,WC-2022,M-2022-46,South Korea vs Portugal,group stage,2022-12-02,T-71,South Korea,AFC,T-58,UEFA,Portugal,2–1,2,1,1,0,0,0,0,home team win,1,0,0,South Korea,AFC
+746,WC-2022,M-2022-47,Cameroon vs Brazil,group stage,2022-12-02,T-11,Cameroon,CAF,T-09,CONMEBOL,Brazil,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Cameroon,CAF
+747,WC-2022,M-2022-48,Serbia vs Switzerland,group stage,2022-12-02,T-66,Serbia,UEFA,T-75,UEFA,Switzerland,2–3,2,3,-1,0,0,0,0,away team win,0,1,0,Switzerland,UEFA
+748,WC-2022,M-2022-49,Netherlands vs United States,round of 16,2022-12-03,T-48,Netherlands,UEFA,T-83,CONCACAF,United States,3–1,3,1,2,0,0,0,0,home team win,1,0,0,Netherlands,UEFA
+749,WC-2022,M-2022-50,Argentina vs Australia,round of 16,2022-12-03,T-03,Argentina,CONMEBOL,T-04,AFC,Australia,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+750,WC-2022,M-2022-51,France vs Poland,round of 16,2022-12-04,T-30,France,UEFA,T-57,UEFA,Poland,3–1,3,1,2,0,0,0,0,home team win,1,0,0,France,UEFA
+751,WC-2022,M-2022-52,England vs Senegal,round of 16,2022-12-04,T-28,England,UEFA,T-65,CAF,Senegal,3–0,3,0,3,0,0,0,0,home team win,1,0,0,England,UEFA
+752,WC-2022,M-2022-53,Japan vs Croatia,round of 16,2022-12-05,T-44,Japan,AFC,T-18,UEFA,Croatia,1–1,1,1,0,1,1,1,3,away team win,0,1,0,Croatia,UEFA
+753,WC-2022,M-2022-54,Brazil vs South Korea,round of 16,2022-12-05,T-09,Brazil,CONMEBOL,T-71,AFC,South Korea,4–1,4,1,3,0,0,0,0,home team win,1,0,0,Brazil,CONMEBOL
+754,WC-2022,M-2022-55,Morocco vs Spain,round of 16,2022-12-06,T-47,Morocco,CAF,T-73,UEFA,Spain,0–0,0,0,0,1,1,3,0,home team win,1,0,0,Morocco,CAF
+755,WC-2022,M-2022-56,Portugal vs Switzerland,round of 16,2022-12-06,T-58,Portugal,UEFA,T-75,UEFA,Switzerland,6–1,6,1,5,0,0,0,0,home team win,1,0,0,Portugal,UEFA
+756,WC-2022,M-2022-57,Croatia vs Brazil,quarter-finals,2022-12-09,T-18,Croatia,UEFA,T-09,CONMEBOL,Brazil,1–1,1,1,0,1,1,4,2,home team win,1,0,0,Croatia,UEFA
+757,WC-2022,M-2022-58,Netherlands vs Argentina,quarter-finals,2022-12-09,T-48,Netherlands,UEFA,T-03,CONMEBOL,Argentina,2–2,2,2,0,1,1,3,4,away team win,0,1,0,Argentina,CONMEBOL
+758,WC-2022,M-2022-59,Morocco vs Portugal,quarter-finals,2022-12-10,T-47,Morocco,CAF,T-58,UEFA,Portugal,1–0,1,0,1,0,0,0,0,home team win,1,0,0,Morocco,CAF
+759,WC-2022,M-2022-60,England vs France,quarter-finals,2022-12-10,T-28,England,UEFA,T-30,UEFA,France,1–2,1,2,-1,0,0,0,0,away team win,0,1,0,France,UEFA
+760,WC-2022,M-2022-61,Argentina vs Croatia,semi-finals,2022-12-13,T-03,Argentina,CONMEBOL,T-18,UEFA,Croatia,3–0,3,0,3,0,0,0,0,home team win,1,0,0,Argentina,CONMEBOL
+761,WC-2022,M-2022-62,France vs Morocco,semi-finals,2022-12-14,T-30,France,UEFA,T-47,CAF,Morocco,2–0,2,0,2,0,0,0,0,home team win,1,0,0,France,UEFA
+762,WC-2022,M-2022-63,Croatia vs Morocco,third-place match,2022-12-17,T-18,Croatia,UEFA,T-47,CAF,Morocco,2–1,2,1,1,0,0,0,0,home team win,1,0,0,Croatia,UEFA
+763,WC-2022,M-2022-64,Argentina vs France,final,2022-12-18,T-03,Argentina,CONMEBOL,T-30,UEFA,France,3–3,3,3,0,1,1,4,2,home team win,1,0,0,Argentina,CONMEBOL
