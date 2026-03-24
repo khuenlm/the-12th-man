@@ -1,0 +1,158 @@
+{
+    "AFC": {
+        "AFC": {
+            "mean_card": 1.55556,
+            "match_count": 9
+        },
+        "CAF": {
+            "mean_card": 2.5,
+            "match_count": 24
+        },
+        "CONCACAF": {
+            "mean_card": 2.46667,
+            "match_count": 30
+        },
+        "CONMEBOL": {
+            "mean_card": 2.03448,
+            "match_count": 29
+        },
+        "OFC": {
+            "mean_card": null,
+            "match_count": 1
+        },
+        "UEFA": {
+            "mean_card": 1.80723,
+            "match_count": 83
+        }
+    },
+    "CAF": {
+        "AFC": {
+            "mean_card": 1.44444,
+            "match_count": 18
+        },
+        "CAF": {
+            "mean_card": null,
+            "match_count": 0
+        },
+        "CONCACAF": {
+            "mean_card": 1.625,
+            "match_count": 16
+        },
+        "CONMEBOL": {
+            "mean_card": 1.8,
+            "match_count": 25
+        },
+        "OFC": {
+            "mean_card": null,
+            "match_count": 2
+        },
+        "UEFA": {
+            "mean_card": 1.64151,
+            "match_count": 53
+        }
+    },
+    "CONCACAF": {
+        "AFC": {
+            "mean_card": 1.78571,
+            "match_count": 14
+        },
+        "CAF": {
+            "mean_card": 1.68182,
+            "match_count": 22
+        },
+        "CONCACAF": {
+            "mean_card": null,
+            "match_count": 1
+        },
+        "CONMEBOL": {
+            "mean_card": 1.51111,
+            "match_count": 45
+        },
+        "OFC": {
+            "mean_card": null,
+            "match_count": 2
+        },
+        "UEFA": {
+            "mean_card": 1.53333,
+            "match_count": 90
+        }
+    },
+    "CONMEBOL": {
+        "AFC": {
+            "mean_card": 2.06667,
+            "match_count": 30
+        },
+        "CAF": {
+            "mean_card": 1.90196,
+            "match_count": 51
+        },
+        "CONCACAF": {
+            "mean_card": 1.7,
+            "match_count": 30
+        },
+        "CONMEBOL": {
+            "mean_card": 1.57143,
+            "match_count": 7
+        },
+        "OFC": {
+            "mean_card": null,
+            "match_count": 0
+        },
+        "UEFA": {
+            "mean_card": 1.63265,
+            "match_count": 196
+        }
+    },
+    "OFC": {
+        "AFC": {
+            "mean_card": null,
+            "match_count": 1
+        },
+        "CAF": {
+            "mean_card": 1.0,
+            "match_count": 3
+        },
+        "CONCACAF": {
+            "mean_card": null,
+            "match_count": 0
+        },
+        "CONMEBOL": {
+            "mean_card": null,
+            "match_count": 0
+        },
+        "OFC": {
+            "mean_card": null,
+            "match_count": 0
+        },
+        "UEFA": {
+            "mean_card": 0.5,
+            "match_count": 4
+        }
+    },
+    "UEFA": {
+        "AFC": {
+            "mean_card": 2.04688,
+            "match_count": 64
+        },
+        "CAF": {
+            "mean_card": 2.01639,
+            "match_count": 61
+        },
+        "CONCACAF": {
+            "mean_card": 2.06,
+            "match_count": 50
+        },
+        "CONMEBOL": {
+            "mean_card": 1.60795,
+            "match_count": 176
+        },
+        "OFC": {
+            "mean_card": null,
+            "match_count": 1
+        },
+        "UEFA": {
+            "mean_card": 1.51795,
+            "match_count": 390
+        }
+    }
+}
