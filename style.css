@@ -1,0 +1,27 @@
+p {
+    font-family: 'Source Sans 3';
+    font-size: 20px;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Source Sans 3';
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container_h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 12px;
+}
