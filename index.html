@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src = "https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
     <link rel="icon" href="new_favicon.png" sizes="100x100">
     <link href="style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Sans 3' rel='stylesheet'>   
@@ -39,18 +40,38 @@
             <h4>Methodology</h4>
                 <p>Yellow cards issued per team per match are used as the primary measure of referee discipline. For each match, the referee's confederation is compared against the team's confederation to derive a same-confederation flag. A bias index — the difference in mean yellow cards between same-confederation and cross-confederation matchups — is computed overall, per referee confederation, and per tournament stage. Statistical significance is assessed using the Mann-Whitney U test.</p>
             <h4>Project Repository</h4>
-                <p>Check out the project's source code at this <a 
-                    href = "https://github.com/khuenlm/the-12th-man"
-                    target = "_blank"
-                    onmouseover = "showGitTip()"
-                    onmousemove = "moveTip(event)"
-                    onmouseout = "hideTip()">GitHub repository</a><br></p>
+                <p>Check out the project's source code at this <a href = "https://github.com/khuenlm/the-12th-man"
+                                                                    target = "_blank"
+                                                                    onmouseover = "showGitTip()"
+                                                                    onmousemove = "moveGitTip(event)"
+                                                                    onmouseout = "hideTip()">GitHub repository</a><br></p>
 
     </section>
 
     <section>
         <h2>Explore The Visualization</h2>
-        <div class="visualization"></div>
+            <div class="container-tab">
+                <input type = "button" 
+                    class = "tab-button button-clicked" 
+                    value = "1 - Confederation Bias Matrix"
+                    onclick = "clickNavButton(this, 'tab-1')">
+                <input type = "button" 
+                    class = "tab-button" 
+                    value = "2 - The Match-Level Evidence"
+                    onclick = "clickNavButton(this, 'tab-2')">
+                <input type = "button" 
+                    class = "tab-button" 
+                    value = "3 - Bias Over Time"
+                    onclick = "clickNavButton(this, 'tab-3')">
+                <input type = "button" 
+                    class = "tab-button" 
+                    value = "4 - High Stakes Spotlight"
+                    onclick = "clickNavButton(this, 'tab-4')">
+            </div>
+        <div class="visualization visualization-selected" id = "tab-1"></div>
+        <div class="visualization" id = "tab-2"></div>
+        <div class="visualization" id = "tab-3"></div>
+        <div class="visualization" id = "tab-4"></div>
     </section>
 
     <section>
@@ -63,6 +84,7 @@
     </div>
 
     <script src = "tip_function.js"></script>
+    <script src = "nav_function.js"></script>
     <script src = "d3_viz.js"></script>
 </body>
 </html>

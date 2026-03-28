@@ -16,8 +16,8 @@ function showGitTip() {
 }
 
 function moveGitTip(event) {
-    tip.style("left", (event.pageX - 60) + "px")
-       .style("top", (event.pageY + 10) + "px")
+    tip.style("left", (event.pageX + 50) + "px")
+       .style("top", (event.pageY + 30) + "px")
 }
 
 function hideTip() {
@@ -31,6 +31,6 @@ function showLinkedInTip() {
 }
 
 function moveTip(event) {
-    tip.style("left", (event.pageX - 60) + "px")
-       .style("top", (event.pageY + 10) + "px")
+    tip.style("left", (event.pageX + 20) + "px")
+       .style("top", (event.pageY + 30) + "px")
 }
