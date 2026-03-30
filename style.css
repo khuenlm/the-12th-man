@@ -83,10 +83,6 @@ h2 {
     display: block
 }
 
-#tab-1 {
-    background-color: lightgreen;
-}
-
 #tab-2 {
     background-color: lightblue;
 }
@@ -99,17 +95,33 @@ h2 {
     background-color: lightyellow;
 }
 
-.tip {
+.tooltip {
     background: white;
-    opacity: 1;
+    opacity: 0;
     color: black;
     padding: 8px 12px;
     border: 2px solid #333;   /* frame */
     border-radius: 6px;
     font-size: 20px;
-    font-weight: 500;
+    position: absolute;
     pointer-events: none;
     justify-content: center;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.d3-tip {
+  background: white;
+  opacity: 1;
+  color: black;
+  font-size: 15px;
+  font-family: "Source Sans 3";
+  pointer-events: none;
+  text-align: center;
+}
+
+.cell-label {
+    font-family: 'Source Sans 3';
+    font-size: 25px;
+    color: black
 }
