@@ -36,7 +36,7 @@ for ref_conf in df_ref_team_match.index:
         match_count = int(df_match_count.loc[ref_conf, team_conf])
         mean_card = df_ref_team_match.loc[ref_conf, team_conf]
         export[ref_conf][team_conf] = {
-            "mean_card": round(mean_card, 5) if match_count >= 3 else None,
+            "mean_card": round(mean_card, 5) if match_count >= 1 else None,
             "match_count": match_count 
         }
 
