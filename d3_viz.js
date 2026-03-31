@@ -1,14 +1,14 @@
 const width = document.getElementById('tab-1').clientWidth;
-const height = document.getElementById('tab-1').clientHeight;
+const height = 750;
 
 const margin = {
-  top: 50,
+  top: 70,
   right: 40,
   bottom: 30,
   left: 60
 }
 
-let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 750)
+let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
 let svg2 = d3.select("#tab-2").append("svg").attr("width", '100%').attr("height", 750)
 let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 750)
 let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
@@ -37,6 +37,19 @@ const gy = svg1.append("g")
                .style("font-family", "Source Sans 3")
                .attr("transform", `translate(${margin.left * 5 + 10}, 50)`)
 
+const tooltip = d3.select("body")
+                  .append("div")
+                  .attr("class", "tooltip")
+                  .style("position", "fixed")
+                  .style("background-color", "white")
+                  .style("padding", "10px")
+                  .style("border", "1px solid black")
+                  .style("border-radius", "10px")
+                  .style("font-family", "Source Sans 3")
+                  .style("text-align", "center")
+                  .style("opacity", 0)
+                  .style("pointer-events", "none")
+
 d3.json("data/viz/heatmap.json").then(function(data) {
     console.log(data)
     gx.call(d3.axisTop(xScale)
@@ -56,13 +69,6 @@ d3.json("data/viz/heatmap.json").then(function(data) {
         });
     });
 
-    let cellTip = d3.tip()
-                    .attr("class", "d3-tip")
-                    .direction("s")
-                    .offset([103, 60])
-
-    svg1.call(cellTip)
-
     const values = cells.filter(d => d.mean_card !== null && d.match_count >= 1).map(d => d.mean_card);
 
     const colorScale = d3.scaleSequential()
@@ -75,21 +81,26 @@ d3.json("data/viz/heatmap.json").then(function(data) {
                            .append("g")
                            .attr("class", "cell")
                            .on("mouseover", function(event, d) {
-                                cellTip.html(function() {return`<strong>${d.refConf} REF &#8594; ${d.teamConf} TEAM</strong><br>
+                                tooltip.style("opacity", 1)
+                                       .html(`<strong>${d.refConf} REF &#8594; ${d.teamConf} TEAM</strong><br>
                                                             Mean cards: ${d.mean_card === null ? "N/A" : d.mean_card.toFixed(3)}<br>
-                                                            Matches: ${d.match_count}`})
-                                cellTip.show(event, d3.select(this).select("rect").node())
+                                                            Matches: ${d.match_count}`)
                                 svg1.selectAll("g.cell rect")
                                     .attr("opacity", "0.6")
                                 d3.select(this)
                                   .select("rect")
                                   .attr("opacity", 1)
-                                  .attr("stroke", "black")
-                                  .attr("stroke-width", "3")
+                                  .attr("stroke", d => d.refConf === d.teamConf ? "#FFCE1B" : "black")
+                                  .attr("stroke-width", d => d.refConf === d.teamConf ? "5" : "3")
                                   .attr("cursor", "pointer")
                            })
+                           .on("mousemove", function(event, d) {
+                                tooltip.style("left", (event.pageX + 120) + "px")
+                                       .style("top", (event.pageY + 15) + "px")
+                                       .style("position", "absolute")
+                           })
                            .on("mouseout", function(event, d) {
-                                cellTip.hide(event, d3.select(this).select("rect").node())
+                                tooltip.style("opacity", 0)
                                 svg1.selectAll("g.cell rect")
                                     .attr("opacity", 1)
                                     .attr("stroke", d => d.refConf === d.teamConf ? "#FFCE1B" : "none")
@@ -99,8 +110,8 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     cellGroups.append("rect")
               .attr("x", d => xScale(d.teamConf) - 23)
               .attr("y", d => yScale(d.refConf) + 28)
-              .attr("width", margin.top * 2)
-              .attr("height", margin.top * 2)
+              .attr("width", 100)
+              .attr("height", 100)
               .attr("stroke", d => d.refConf === d.teamConf ? "#FFCE1B" : "none")
               .attr("stroke-width", d => d.refConf === d.teamConf ? "5" : "0")
               .attr("fill", d => d.mean_card === null ? '#cccccc' : colorScale(d.mean_card))
@@ -111,5 +122,67 @@ d3.json("data/viz/heatmap.json").then(function(data) {
               .attr("y", d => yScale(d.refConf) + 85)
               .attr("text-anchor", "middle")
               .text(d => d.mean_card === null ? "N/A" : d.mean_card.toFixed(3))
+
+    svg1.append("text")
+        .attr("class", "axis-labels")                    
+        .text("Team Confederation")
+        .attr("transform", `translate(${margin.left * 9.5}, 25)`)
+        .style("opacity", 0.5)
+
+    svg1.append("text")
+        .attr("class", "axis-labels")                    
+        .text("Referee Confederation")
+        .attr("transform", d => "translate(190, 480), rotate(-90)")
+        .style("opacity", 0.5)
         
+    const defs = svg1.append("defs")
+    
+    const linearGradient = defs.append("linearGradient")
+                               .attr("id", "legend-gradient");
+
+    linearGradient.selectAll("stop")
+                  .data([
+                    { offset: "0%", color: "#43aa8b" },
+                    { offset: "100%", color: "#e84855" }
+                  ])
+                  .enter()
+                  .append("stop")
+                  .attr("offset", d => d.offset)
+                  .attr("stop-color", d => d.color);
+
+    const legendWidth = 300;
+    const legendHeight = 15;
+
+    const legendX = 500;
+    const legendY = 750;
+
+    svg1.append("rect")
+        .attr("x", legendX)
+        .attr("y", legendY)
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .style("fill", "url(#legend-gradient)");
+
+    const legendScale = d3.scaleLinear()
+                          .domain([d3.min(values), d3.max(values)])
+                          .range([0, legendWidth]);
+
+    const legendAxis = d3.axisBottom(legendScale)
+                         .tickSize(0)
+                         .tickFormat("");
+
+    svg1.append("g")
+        .attr("transform", `translate(${legendX}, ${legendY + legendHeight})`)
+        .call(legendAxis);
+
+    svg1.append("text")
+        .attr("class", "legend-labels") 
+        .text("Less Cards")
+        .attr("transform", "translate(460, 790)")
+        .attr("font-family", "Source Sans 3")
+
+    svg1.append("text")
+        .attr("class", "legend-labels") 
+        .text("More Cards")
+        .attr("transform", "translate(760, 790)")
 })

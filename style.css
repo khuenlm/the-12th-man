@@ -97,31 +97,28 @@ h2 {
 
 .tooltip {
     background: white;
-    opacity: 0;
+    opacity: 1;
     color: black;
-    padding: 8px 12px;
-    border: 2px solid #333;   /* frame */
-    border-radius: 6px;
-    font-size: 20px;
-    position: absolute;
+    font-size: 15px;
+    font-family: "Source Sans 3";
     pointer-events: none;
-    justify-content: center;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.d3-tip {
-  background: white;
-  opacity: 1;
-  color: black;
-  font-size: 15px;
-  font-family: "Source Sans 3";
-  pointer-events: none;
-  text-align: center;
 }
 
 .cell-label {
     font-family: 'Source Sans 3';
     font-size: 25px;
     color: black
+}
+
+.legend-labels {
+    font-family: 'Source Sans 3';
+}
+
+.viz-dsc {
+    font-family: 'Source Sans 3';
+    font-size: 15px; 
+    color: gray;
+    margin-left: 200px;
+    margin-right: 150px;
 }
