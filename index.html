@@ -44,7 +44,7 @@
                 <p>Check out the project's source code at this <a href = "https://github.com/khuenlm/the-12th-man"
                                                                     target = "_blank"
                                                                     onmouseover = "showGitTip()"
-                                                                    onmousemove = "moveGitTip(event)"
+                                                                    onmousemove = "moveTip(event)"
                                                                     onmouseout = "hideTip()">GitHub repository</a><br></p>
 
     </section>
@@ -55,24 +55,24 @@
                 <input type = "button" 
                     class = "tab-button button-clicked" 
                     value = "1 - Confederation Bias Matrix"
-                    onclick = "clickNavButton(this, 'tab-1')">
+                    onclick = "clickNavButton(this, 'tab-1', 'des1')">
                 <input type = "button" 
                     class = "tab-button" 
                     value = "2 - The Match-Level Evidence"
-                    onclick = "clickNavButton(this, 'tab-2')">
+                    onclick = "clickNavButton(this, 'tab-2', 'des2')">
                 <input type = "button" 
                     class = "tab-button" 
                     value = "3 - Bias Over Time"
-                    onclick = "clickNavButton(this, 'tab-3')">
+                    onclick = "clickNavButton(this, 'tab-3', 'des3')">
                 <input type = "button" 
                     class = "tab-button" 
                     value = "4 - High Stakes Spotlight"
-                    onclick = "clickNavButton(this, 'tab-4')">
-            </div>
-        <div class = "viz-dsc"><br>
-            Each cell shows the mean yellow cards issued to teams from a given confederation (columns) when refereed by officials from another confederation (rows). Diagonal cells — where referee and team share the same confederation — are highlighted in gold. Grey cells indicate insufficient data (n < 2).
-            <br><br>
-        </div>
+                    onclick = "clickNavButton(this, 'tab-4', 'des4')">
+            </div><br>
+            <div class="description description-selected" id = "des1"></div>
+            <div class="description" id = "des2"></div>
+            <div class="description" id = "des3"></div>
+            <div class="description" id = "des4"></div>
         <div class="visualization visualization-selected" id = "tab-1"></div>
         <div class="visualization" id = "tab-2"></div>
         <div class="visualization" id = "tab-3"></div>

@@ -1,17 +1,30 @@
 const width = document.getElementById('tab-1').clientWidth;
 const height = 750;
 
+console.log(width);
+
 const margin = {
   top: 70,
   right: 40,
   bottom: 30,
-  left: 60
+  left: 62
 }
 
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
-let svg2 = d3.select("#tab-2").append("svg").attr("width", '100%').attr("height", 750)
+let svg2 = d3.select("#tab-2").append("svg").attr("width", '100%').attr("height", 800)
 let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 750)
 let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
+
+let description1 = d3.select("#des1")
+                     .append("p")
+                     .html(`Each cell of the heat map below shows the mean yellow cards issued to teams \
+                            from a given confederation (displayed in columns) when refereed by officials from \
+                            another confederation (displayed in rows). Diagonal cells, where referee and team are \
+                            from the same confederation, are highlighted in gold. Grey cells indicate insufficient data (n < 2).`)
+
+let description2 = d3.select("#des2")
+                     .append("p")
+                     .html(`Hello from the University of Illinois`)
 
 const xScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
@@ -52,6 +65,7 @@ const tooltip = d3.select("body")
 
 d3.json("data/viz/heatmap.json").then(function(data) {
     console.log(data)
+ 
     gx.call(d3.axisTop(xScale)
               .tickSizeOuter(0));
     gy.call(d3.axisLeft(yScale)
@@ -95,8 +109,8 @@ d3.json("data/viz/heatmap.json").then(function(data) {
                                   .attr("cursor", "pointer")
                            })
                            .on("mousemove", function(event, d) {
-                                tooltip.style("left", (event.pageX + 120) + "px")
-                                       .style("top", (event.pageY + 15) + "px")
+                                tooltip.style("left", (event.pageX - 80) + "px")
+                                       .style("top", (event.pageY - 125) + "px")
                                        .style("position", "absolute")
                            })
                            .on("mouseout", function(event, d) {
@@ -132,7 +146,7 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Referee Confederation")
-        .attr("transform", d => "translate(190, 480), rotate(-90)")
+        .attr("transform", d => "translate(190, 450), rotate(-90)")
         .style("opacity", 0.5)
         
     const defs = svg1.append("defs")
@@ -186,3 +200,172 @@ d3.json("data/viz/heatmap.json").then(function(data) {
         .text("More Cards")
         .attr("transform", "translate(760, 790)")
 })
+
+function returnBeeData(data, centerX, scaleY, colWidth) {
+        groupCard = {}
+
+        data.forEach(d => {
+            const key = d.yellow_card;
+            if (groupCard[key] === undefined) {
+                groupCard[key] = [];
+            }
+            groupCard[key].push(d);
+        })
+
+        const R = 5; 
+        const dots = [];
+        const maxPerRow = Math.floor(colWidth / (R * 2 + 1)); 
+
+        Object.keys(groupCard).forEach(d => {
+            const group = groupCard[d];
+            const groupLength = group.length;
+            const yPosition = scaleY(+d);
+            let place = 0; 
+            
+            while (place < groupLength) {
+                const rowCount = Math.min(groupLength - place, maxPerRow);
+                const row = Math.floor(place / maxPerRow);
+                const startX = centerX - (rowCount - 1) * (R * 2 + 1) / 2;
+                const yPos = yPosition - row * (R * 2 + 1.5);
+
+                for (let i = 0; i < rowCount; i++) {
+                    dots.push({
+                        x: startX + i*(R*2+1),
+                        y: yPos,
+                        datum: group[place + i]
+                    });
+                }
+                place += rowCount;
+            }
+        })
+
+        return dots
+    }
+
+d3.json("data/viz/beeswarm.json").then(function(data) {
+    console.log(data);
+
+    const yScaleBee = d3.scaleLinear()
+                        .domain(d3.extent(data, d => d.yellow_card))
+                        .range([700, 0])
+    
+    const yBee = svg2.append("g")
+                     .attr("class", "y-axis")
+                     .style("font-size", "16px")
+                     .style("font-weight", 'bold')
+                     .style("font-family", "Source Sans 3")
+                     .attr("transform", `translate(20, 50)`)
+
+    const y_grid = svg2.append("g")
+                  .attr("class", "y-grid")
+                  .attr("transform", "translate(20, 50)")
+
+    y_grid.call(d3.axisLeft(yScaleBee)
+                  .tickSizeInner(-width)
+                  .tickSizeOuter(0)
+                  .tickFormat(""));
+    
+    yBee.call(d3.axisLeft(yScaleBee));
+
+    sameConf = data.filter(d => d.same_conf == true);
+    diffConf = data.filter(d => d.same_conf == false); 
+
+    const columnWidth = 680;
+    const sameCenter = 320;
+    const diffCenter = 950;
+
+    const sameDots = returnBeeData(sameConf, sameCenter, yScaleBee, 550);
+    const diffDots = returnBeeData(diffConf, diffCenter, yScaleBee, columnWidth);
+
+
+    svg2.selectAll("circle.same")
+        .data(sameDots)
+        .enter()
+        .append("circle")
+        .attr("class", "same")
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y + 50)
+        .attr("r", 3)
+        .attr("fill", "#43aa8b")
+        .on("mouseover", function(event, d) {
+                                tooltip.style("opacity", 1)
+                                       .html(` <strong>${d.datum.team_name}</strong><br>
+                                                <span style="color:#888">${d.datum.match_id.split('-')[1]} World Cup</span><br>
+                                                ${d.datum.team_confederation} vs ${d.datum.ref_confederation} referee<br>
+                                                Yellow cards: ${d.datum.yellow_card}<br>
+                                                ✅ Same confederation`)
+                                svg2.selectAll("circle")
+                                    .attr("opacity", "0.6")
+                                d3.select(this)
+                                  .attr("r", 10)
+                                  .attr("opacity", 1)
+                                  .attr("stroke", "black")
+                                  .attr("cursor", "pointer")
+                           })
+                           .on("mousemove", function(event, d) {
+                                tooltip.style("left", (event.pageX - 40) + "px")
+                                       .style("top", (event.pageY + 10) + "px")
+                                       .style("position", "absolute")
+                           })
+                           .on("mouseout", function(event, d) {
+                                tooltip.style("opacity", 0)
+                                svg2.selectAll("circle")
+                                    .attr("r", 3)
+                                    .attr("opacity", 1)
+                                    .attr("stroke", "none")
+                            })
+
+    svg2.selectAll("circle.diff")
+        .data(diffDots)
+        .enter()
+        .append("circle")
+        .attr("class", "diff")
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y + 50)
+        .attr("r", 3)
+        .attr("fill", "#e84855")
+        .on("mouseover", function(event, d) {
+                                tooltip.style("opacity", 1)
+                                       .html(` <strong>${d.datum.team_name}</strong><br>
+                                                <span style="color:#888">${d.datum.match_id.split('-')[1]} World Cup</span><br>
+                                                ${d.datum.team_confederation} vs ${d.datum.ref_confederation} referee<br>
+                                                Yellow cards: ${d.datum.yellow_card}<br>
+                                                ❌ Different confederation`)
+                                svg2.selectAll("circle")
+                                    .attr("opacity", "0.6")
+                                
+                                d3.select(this)
+                                  .attr("r", 10)
+                                  .attr("opacity", 1)
+                                  .attr("stroke", "black")
+                                  .attr("cursor", "pointer")
+                           })
+                           .on("mousemove", function(event, d) {
+                                tooltip.style("left", (event.pageX - 40) + "px")
+                                       .style("top", (event.pageY + 10) + "px")
+                                       .style("position", "absolute")
+                           })
+                           .on("mouseout", function(event, d) {
+                                tooltip.style("opacity", 0)
+                                svg2.selectAll("circle")
+                                    .attr("r", 3)
+                                    .attr("opacity", 1)
+                                    .attr("stroke", "none")
+                            })
+    
+    svg2.append("text")
+        .attr("class", "same-conf-labels") 
+        .text("Same Confederation")
+        .attr("transform", `translate(${sameCenter - 80}, ${height + 30})`)
+
+    svg2.append("text")
+        .attr("class", "same-conf-labels") 
+        .text("Different Confederation")
+        .attr("transform", `translate(${diffCenter - 75}, ${height + 30})`)
+
+    svg2.append("text")
+        .attr("class", "axislabel")
+        .attr("x", margin.left - 35)
+        .attr("y", margin.top - 20)
+        .text("Yellow Cards Issued")
+}) 

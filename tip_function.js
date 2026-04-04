@@ -15,11 +15,6 @@ function showGitTip() {
        .html(`<em>Go to project's repository?</em`)
 }
 
-function moveGitTip(event) {
-    tip.style("left", (event.pageX + 50) + "px")
-       .style("top", (event.pageY + 30) + "px")
-}
-
 function hideTip() {
     tip.style("opacity", 0)
 }
@@ -31,6 +26,6 @@ function showLinkedInTip() {
 }
 
 function moveTip(event) {
-    tip.style("left", (event.pageX + 20) + "px")
-       .style("top", (event.pageY + 30) + "px")
+    tip.style("left", (event.pageX - 60) + "px")
+       .style("top", (event.pageY + 10) + "px")
 }

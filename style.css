@@ -3,11 +3,6 @@ p {
     font-size: 20px;
 }
 
-html{
-    overflow-x: hidden;
-    zoom: 0.9
-}
-
 body {
     font-family: 'Source Sans 3';
     overflow-x: hidden;
@@ -83,10 +78,6 @@ h2 {
     display: block
 }
 
-#tab-2 {
-    background-color: lightblue;
-}
-
 #tab-3 {
     background-color: lightpink;
 }
@@ -115,10 +106,37 @@ h2 {
     font-family: 'Source Sans 3';
 }
 
-.viz-dsc {
+.description {
     font-family: 'Source Sans 3';
     font-size: 15px; 
     color: gray;
-    margin-left: 200px;
-    margin-right: 150px;
+    margin-left: 170px;
+    margin-right: 130px;
+    text-align: center;
+    display: none
+}
+
+.description-selected {
+    font-family: 'Source Sans 3';
+    font-size: 15px; 
+    color: gray;
+    margin-left: 170px;
+    margin-right: 130px;
+    text-align: center;
+    display: block
+}
+
+.same-conf-labels, .axislabel {
+    font-family: 'Source Sans 3';
+    font-size: 20px;
+}
+
+.y-grid{
+  stroke: #e5e5e5;
+  stroke-opacity: 0.1;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 90% !important;
 }
