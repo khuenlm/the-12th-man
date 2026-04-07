@@ -11,7 +11,7 @@ const margin = {
 }
 
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
-let svg2 = d3.select("#tab-2").append("svg").attr("width", '100%').attr("height", 800)
+let svg2 = d3.select("#tab-2").append("svg").attr("width", '100%').attr("height", 850)
 let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 750)
 let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
 
@@ -201,171 +201,141 @@ d3.json("data/viz/heatmap.json").then(function(data) {
         .attr("transform", "translate(760, 790)")
 })
 
-function returnBeeData(data, centerX, scaleY, colWidth) {
-        groupCard = {}
+function getCardCounts(data) {
+    let count = {}
+    data.forEach(d => {
+        const key = d.yellow_card;
+        count[key] = (count[key] || 0) + 1;
+    })
 
-        data.forEach(d => {
-            const key = d.yellow_card;
-            if (groupCard[key] === undefined) {
-                groupCard[key] = [];
-            }
-            groupCard[key].push(d);
-        })
+    const sorted = data.map(d => d.yellow_card).sort((a, b) => (a - b));
+    const size = sorted.length;
+    const median = sorted[Math.floor(size / 2)];
+    const q1 = sorted[Math.floor(size / 4)];
+    const q3 = sorted[Math.floor(size * 3 / 4)];
+    const maxCount = Math.max(...Object.values(count));
 
-        const R = 5; 
-        const dots = [];
-        const maxPerRow = Math.floor(colWidth / (R * 2 + 1)); 
+    return {count, sorted, size, median, q1, q3, maxCount};
+}
 
-        Object.keys(groupCard).forEach(d => {
-            const group = groupCard[d];
-            const groupLength = group.length;
-            const yPosition = scaleY(+d);
-            let place = 0; 
-            
-            while (place < groupLength) {
-                const rowCount = Math.min(groupLength - place, maxPerRow);
-                const row = Math.floor(place / maxPerRow);
-                const startX = centerX - (rowCount - 1) * (R * 2 + 1) / 2;
-                const yPos = yPosition - row * (R * 2 + 1.5);
+const violinWidth = 500;  
+const centerSame = 420;
+const centerDiff = 920;
+const MAX_CARDS = 9; 
 
-                for (let i = 0; i < rowCount; i++) {
-                    dots.push({
-                        x: startX + i*(R*2+1),
-                        y: yPos,
-                        datum: group[place + i]
-                    });
-                }
-                place += rowCount;
-            }
-        })
+function returnPoints(stats, centerX, globalMax, yscale) {
+    const maxHalfWidth = 250;
+    
+    const points = [];
 
-        return dots
+    for (let i = MAX_CARDS; i >= 0; i--) {
+        const c = stats.count[i] || 0;
+        const halfWidth = c * maxHalfWidth / globalMax;
+        const yPos = yscale(i);
+        points.push({x: centerX + halfWidth, y: yPos});
+    }
+    for (let i = 0; i <= MAX_CARDS; i++) {
+        const c = stats.count[i] || 0;
+        const halfWidth = c * maxHalfWidth / globalMax;
+        const yPos = yscale(i);
+        points.push({x: centerX - halfWidth, y: yPos});
     }
 
+    return points;
+}
+
+function drawViolin(lineGenerator, points, svg, color, fill, yscale, stats, margin) {
+    svg.append("path")
+       .datum(points)
+       .attr("d", lineGenerator)
+       .attr("stroke", color)
+       .attr("stroke-width", 3)
+       .attr("fill", fill)
+       .attr("opacity", 0.8)
+       .on("mousemove", function(event) {
+           const cardValue = Math.round(yscale.invert(event.offsetY));
+           const count = stats.count[cardValue] || 0;
+           tooltip
+               .style("opacity", 1)
+               .style("left", (event.pageX + 12) + "px")
+               .style("top", (event.pageY - 30) + "px")
+               .html(`
+                   <strong>${cardValue} yellow cards</strong><br>
+                   ${count} matches (${(count / stats.size * 100).toFixed(1)}%)
+               `)
+               .style("font-size", "20px")
+       })
+       .on("mouseout", function() {
+           tooltip.style("opacity", 0);
+       });
+}
+
 d3.json("data/viz/beeswarm.json").then(function(data) {
-    console.log(data);
+
+    const sameConf = data.filter(d => d.same_conf == true);
+    const diffConf = data.filter(d => d.same_conf == false); 
+
+    const sameStats = getCardCounts(sameConf);
+    const diffStats = getCardCounts(diffConf); 
+    const globalMax = Math.max(sameStats.maxCount, diffStats.maxCount);
 
     const yScaleBee = d3.scaleLinear()
-                        .domain(d3.extent(data, d => d.yellow_card))
-                        .range([700, 0])
+                        .domain([0, 9])
+                        .range([height - margin.bottom, margin.top])
     
     const yBee = svg2.append("g")
                      .attr("class", "y-axis")
                      .style("font-size", "16px")
                      .style("font-weight", 'bold')
                      .style("font-family", "Source Sans 3")
-                     .attr("transform", `translate(20, 50)`)
+                     .attr("transform", `translate(150, 0)`)
 
     const y_grid = svg2.append("g")
                   .attr("class", "y-grid")
-                  .attr("transform", "translate(20, 50)")
-
+                  .attr("transform", "translate(150, 0)")
+    
     y_grid.call(d3.axisLeft(yScaleBee)
-                  .tickSizeInner(-width)
+                  .tickSizeInner(-1200)
                   .tickSizeOuter(0)
                   .tickFormat(""));
-    
+
     yBee.call(d3.axisLeft(yScaleBee));
 
-    sameConf = data.filter(d => d.same_conf == true);
-    diffConf = data.filter(d => d.same_conf == false); 
+    const samePoints = returnPoints(sameStats, centerSame, globalMax, yScaleBee);
+    const diffPoints = returnPoints(diffStats, centerDiff, globalMax, yScaleBee); 
 
-    const columnWidth = 680;
-    const sameCenter = 320;
-    const diffCenter = 950;
+    const lineGenerator = d3.line()
+                            .x(d => d.x)
+                            .y(d => d.y)
 
-    const sameDots = returnBeeData(sameConf, sameCenter, yScaleBee, 550);
-    const diffDots = returnBeeData(diffConf, diffCenter, yScaleBee, columnWidth);
+    console.log(sameStats.size);
+    console.log(diffStats.size);
 
-
-    svg2.selectAll("circle.same")
-        .data(sameDots)
-        .enter()
-        .append("circle")
-        .attr("class", "same")
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y + 50)
-        .attr("r", 3)
-        .attr("fill", "#43aa8b")
-        .on("mouseover", function(event, d) {
-                                tooltip.style("opacity", 1)
-                                       .html(` <strong>${d.datum.team_name}</strong><br>
-                                                <span style="color:#888">${d.datum.match_id.split('-')[1]} World Cup</span><br>
-                                                ${d.datum.team_confederation} vs ${d.datum.ref_confederation} referee<br>
-                                                Yellow cards: ${d.datum.yellow_card}<br>
-                                                ✅ Same confederation`)
-                                svg2.selectAll("circle")
-                                    .attr("opacity", "0.6")
-                                d3.select(this)
-                                  .attr("r", 10)
-                                  .attr("opacity", 1)
-                                  .attr("stroke", "black")
-                                  .attr("cursor", "pointer")
-                           })
-                           .on("mousemove", function(event, d) {
-                                tooltip.style("left", (event.pageX - 40) + "px")
-                                       .style("top", (event.pageY + 10) + "px")
-                                       .style("position", "absolute")
-                           })
-                           .on("mouseout", function(event, d) {
-                                tooltip.style("opacity", 0)
-                                svg2.selectAll("circle")
-                                    .attr("r", 3)
-                                    .attr("opacity", 1)
-                                    .attr("stroke", "none")
-                            })
-
-    svg2.selectAll("circle.diff")
-        .data(diffDots)
-        .enter()
-        .append("circle")
-        .attr("class", "diff")
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y + 50)
-        .attr("r", 3)
-        .attr("fill", "#e84855")
-        .on("mouseover", function(event, d) {
-                                tooltip.style("opacity", 1)
-                                       .html(` <strong>${d.datum.team_name}</strong><br>
-                                                <span style="color:#888">${d.datum.match_id.split('-')[1]} World Cup</span><br>
-                                                ${d.datum.team_confederation} vs ${d.datum.ref_confederation} referee<br>
-                                                Yellow cards: ${d.datum.yellow_card}<br>
-                                                ❌ Different confederation`)
-                                svg2.selectAll("circle")
-                                    .attr("opacity", "0.6")
-                                
-                                d3.select(this)
-                                  .attr("r", 10)
-                                  .attr("opacity", 1)
-                                  .attr("stroke", "black")
-                                  .attr("cursor", "pointer")
-                           })
-                           .on("mousemove", function(event, d) {
-                                tooltip.style("left", (event.pageX - 40) + "px")
-                                       .style("top", (event.pageY + 10) + "px")
-                                       .style("position", "absolute")
-                           })
-                           .on("mouseout", function(event, d) {
-                                tooltip.style("opacity", 0)
-                                svg2.selectAll("circle")
-                                    .attr("r", 3)
-                                    .attr("opacity", 1)
-                                    .attr("stroke", "none")
-                            })
-    
-    svg2.append("text")
-        .attr("class", "same-conf-labels") 
-        .text("Same Confederation")
-        .attr("transform", `translate(${sameCenter - 80}, ${height + 30})`)
+    drawViolin(lineGenerator, samePoints, svg2, "blue", "lightblue", yScaleBee, sameStats, margin);
+    drawViolin(lineGenerator, diffPoints, svg2, "orange", "#FAD5A5", yScaleBee, diffStats, margin);
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
-        .text("Different Confederation")
-        .attr("transform", `translate(${diffCenter - 75}, ${height + 30})`)
+        .text("SAME CONFEDERATION")
+        .attr("transform", `translate(320, 770)`)
 
     svg2.append("text")
-        .attr("class", "axislabel")
-        .attr("x", margin.left - 35)
-        .attr("y", margin.top - 20)
-        .text("Yellow Cards Issued")
+        .attr("class", "same-conf-labels") 
+        .text("n = 407")
+        .attr("transform", `translate(390, 800)`)
+
+    svg2.append("text")
+        .attr("class", "same-conf-labels") 
+        .text("DIFFERENT CONFEDERATION")
+        .attr("transform", `translate(810, 770)`)
+
+    svg2.append("text")
+        .attr("class", "same-conf-labels") 
+        .text("n = 1121")
+        .attr("transform", `translate(890, 800)`)
+
+    svg2.append("text")
+        .attr("class", "axislabel")                    
+        .text("Yellow Cards Issue")
+        .attr("transform", d => "translate(100, 450), rotate(-90)")
 }) 
