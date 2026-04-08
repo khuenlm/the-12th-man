@@ -1,17 +1,21 @@
 p {
     font-family: 'Source Sans 3';
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body {
     font-family: 'Source Sans 3';
     overflow-x: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .container {
+    max-width: 900px;
+    margin: 10% auto;
     margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 0 5%;
+
 }
 
 .container_h1 {
@@ -24,7 +28,7 @@ h2 {
 
 .tab-button {
     font-family: 'Source Sans 3';
-    font-size: 20px;
+    font-size: 18px;
     color: grey;
     background-color: white;
     text-align: center;
@@ -43,7 +47,7 @@ h2 {
 
 .button-clicked {
     font-family: 'Source Sans 3';
-    font-size: 20px;
+    font-size: 18px;
     color: goldenrod;
     font-weight: bolder;
     background-color: white;
@@ -108,20 +112,20 @@ h2 {
 
 .description {
     font-family: 'Source Sans 3';
-    font-size: 15px; 
+    font-size: 18px; 
     color: gray;
-    margin-left: 170px;
-    margin-right: 130px;
+    margin-left: 100px;
+    margin-right: 80px;
     text-align: center;
     display: none
 }
 
 .description-selected {
     font-family: 'Source Sans 3';
-    font-size: 15px; 
+    font-size: 18px; 
     color: gray;
-    margin-left: 170px;
-    margin-right: 130px;
+    margin-left: 100px;
+    margin-right: 80px;
     text-align: center;
     display: block
 }
@@ -136,7 +140,16 @@ h2 {
   stroke-opacity: 0.1;
 }
 
-html{
-    overflow-x: hidden;
-    font-size: 90% !important;
+.text {
+    font-family: "Source Sans 3";
+    font-size: 18px
+}
+
+.text p strong {
+    font-family: "Source Sans 3";
+    font-size: 18px
+}
+
+h4 {
+    padding-top: 10px;
 }

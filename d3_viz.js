@@ -11,7 +11,7 @@ const margin = {
 }
 
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
-let svg2 = d3.select("#tab-2").append("svg").attr("width", '100%').attr("height", 850)
+let svg2 = d3.select("#tab-2").insert("svg", "#results").attr("width", '90%').attr("height", 750)
 let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 750)
 let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
 
@@ -24,11 +24,15 @@ let description1 = d3.select("#des1")
 
 let description2 = d3.select("#des2")
                      .append("p")
-                     .html(`Hello from the University of Illinois`)
+                     .html(`Each violin represents the full distribution of yellow cards issued per team per match — 
+                            blue for matches where the referee shared a confederation with the team, orange for 
+                            cross-confederation assignments. The width of the violin at each card count encodes 
+                            how many matches produced that outcome. The visual difference between the two groups is subtle but consistent — 
+                            scroll down to see whether it holds up statistically.`)
 
 const xScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
-                 .range([margin.left * 5, 1000])
+                 .range([200, 900])
                  .padding(0.5)
 
 const gx = svg1.append("g")
@@ -40,7 +44,7 @@ const gx = svg1.append("g")
 
 const yScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
-                 .range([0, 980 - margin.left * 5])
+                 .range([0, 680])
                  .padding(0.5)
 
 const gy = svg1.append("g")
@@ -48,7 +52,7 @@ const gy = svg1.append("g")
                .style("font-size", "16px")
                .style("font-weight", 'bold')
                .style("font-family", "Source Sans 3")
-               .attr("transform", `translate(${margin.left * 5 + 10}, 50)`)
+               .attr("transform", `translate(210, 50)`)
 
 const tooltip = d3.select("body")
                   .append("div")
@@ -140,13 +144,13 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Team Confederation")
-        .attr("transform", `translate(${margin.left * 9.5}, 25)`)
+        .attr("transform", `translate(490, 25)`)
         .style("opacity", 0.5)
 
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Referee Confederation")
-        .attr("transform", d => "translate(190, 450), rotate(-90)")
+        .attr("transform", d => "translate(90, 450), rotate(-90)")
         .style("opacity", 0.5)
         
     const defs = svg1.append("defs")
@@ -167,7 +171,7 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     const legendWidth = 300;
     const legendHeight = 15;
 
-    const legendX = 500;
+    const legendX = 400;
     const legendY = 750;
 
     svg1.append("rect")
@@ -192,13 +196,13 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     svg1.append("text")
         .attr("class", "legend-labels") 
         .text("Less Cards")
-        .attr("transform", "translate(460, 790)")
+        .attr("transform", "translate(360, 790)")
         .attr("font-family", "Source Sans 3")
 
     svg1.append("text")
         .attr("class", "legend-labels") 
         .text("More Cards")
-        .attr("transform", "translate(760, 790)")
+        .attr("transform", "translate(660, 790)")
 })
 
 function getCardCounts(data) {
@@ -218,13 +222,13 @@ function getCardCounts(data) {
     return {count, sorted, size, median, q1, q3, maxCount};
 }
 
-const violinWidth = 500;  
-const centerSame = 420;
-const centerDiff = 920;
+const violinWidth = 300;  
+const centerSame = 300;
+const centerDiff = 750;
 const MAX_CARDS = 9; 
 
 function returnPoints(stats, centerX, globalMax, yscale) {
-    const maxHalfWidth = 250;
+    const maxHalfWidth = 150;
     
     const points = [];
 
@@ -263,7 +267,6 @@ function drawViolin(lineGenerator, points, svg, color, fill, yscale, stats, marg
                    <strong>${cardValue} yellow cards</strong><br>
                    ${count} matches (${(count / stats.size * 100).toFixed(1)}%)
                `)
-               .style("font-size", "20px")
        })
        .on("mouseout", function() {
            tooltip.style("opacity", 0);
@@ -281,21 +284,21 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
 
     const yScaleBee = d3.scaleLinear()
                         .domain([0, 9])
-                        .range([height - margin.bottom, margin.top])
+                        .range([600, margin.top])
     
     const yBee = svg2.append("g")
                      .attr("class", "y-axis")
                      .style("font-size", "16px")
                      .style("font-weight", 'bold')
                      .style("font-family", "Source Sans 3")
-                     .attr("transform", `translate(150, 0)`)
+                     .attr("transform", `translate(130, 0)`)
 
     const y_grid = svg2.append("g")
                   .attr("class", "y-grid")
-                  .attr("transform", "translate(150, 0)")
+                  .attr("transform", "translate(130, 0)")
     
     y_grid.call(d3.axisLeft(yScaleBee)
-                  .tickSizeInner(-1200)
+                  .tickSizeInner(-1100)
                   .tickSizeOuter(0)
                   .tickFormat(""));
 
@@ -314,28 +317,135 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
     drawViolin(lineGenerator, samePoints, svg2, "blue", "lightblue", yScaleBee, sameStats, margin);
     drawViolin(lineGenerator, diffPoints, svg2, "orange", "#FAD5A5", yScaleBee, diffStats, margin);
 
+    svg2.append("rect")
+        .attr("x", centerSame - 20)
+        .attr("y", yScaleBee(sameStats.q3))
+        .attr("width", 40)
+        .attr("height", yScaleBee(sameStats.q1) - yScaleBee(sameStats.q3))
+        .attr("stroke", "blue")
+        .attr("stroke-width", 2)
+        .attr("fill", "transparent")
+        .on("mouseover", function(event) {
+            tooltip.style("opacity", 1)
+                   .html(`<strong>Interquartile Range</strong><br>
+                            The middle 50% of matches fall between<br>
+                            <strong>${sameStats.q1}</strong> and <strong>${sameStats.q3}</strong> yellow cards<br>
+                            <span style="color:#999; font-size:11px">25% of matches had ≤ ${sameStats.q1} cards<br>
+                            75% of matches had ≤ ${sameStats.q3} cards</span>`)
+        })
+        .on("mousemove", function(event, d) {
+            tooltip.style("left", (event.pageX - 60) + "px")
+                   .style("top", (event.pageY - 140) + "px")
+        })
+        .on("mouseout", function(event) {
+            tooltip.style("opacity", 0)
+        })
+
+    svg2.append("circle")
+        .attr("cx", centerSame)
+        .attr("cy", d => yScaleBee(sameStats.median))
+        .attr("r", 8)
+        .attr("fill", "blue")  
+        .on("mouseover", function(event) {
+            tooltip.style("opacity", 1)
+                   .html(` <strong>Median: ${sameStats.median} yellow cards</strong><br>
+                            Half of all matches with team and referee <br> from the same confederation received<br>
+                            ${sameStats.median} or fewer yellow cards<br>
+                            <span style="color:#999; font-size:11px">n = ${sameStats.size} matches total</span>`)
+        })
+        .on("mousemove", function(event, d) {
+            tooltip.style("left", (event.pageX - 60) + "px")
+                   .style("top", (event.pageY - 140) + "px")
+        })
+        .on("mouseout", function(event) {
+            tooltip.style("opacity", 0)
+        })
+        
+    svg2.append("rect")
+        .attr("x", centerDiff - 20)
+        .attr("y", yScaleBee(diffStats.q3))
+        .attr("width", 40)
+        .attr("height", yScaleBee(diffStats.q1) - yScaleBee(diffStats.q3))
+        .attr("stroke", "orange")
+        .attr("stroke-width", 2)
+        .attr("fill", "transparent")
+        .on("mouseover", function(event) {
+            tooltip.style("opacity", 1)
+                   .html(`<strong>Interquartile Range</strong><br>
+                            The middle 50% of matches fall between<br>
+                            <strong>${diffStats.q1}</strong> and <strong>${diffStats.q3}</strong> yellow cards<br>
+                            <span style="color:#999; font-size:11px">25% of matches had ≤ ${diffStats.q1} cards<br>
+                            75% of matches had ≤ ${diffStats.q3} cards</span>`)
+        })
+        .on("mousemove", function(event, d) {
+            tooltip.style("left", (event.pageX - 60) + "px")
+                   .style("top", (event.pageY - 140) + "px")
+        })
+        .on("mouseout", function(event) {
+            tooltip.style("opacity", 0)
+        })
+    
+    svg2.append("circle")
+        .attr("cx", centerDiff)
+        .attr("cy", d => yScaleBee(diffStats.median))
+        .attr("r", 8)
+        .attr("fill", "orange")  
+        .on("mouseover", function(event) {
+            tooltip.style("opacity", 1)
+                   .html(` <strong>Median: ${diffStats.median} yellow cards</strong><br>
+                            Half of all matches with team and referee <br> from the same confederation received<br>
+                            ${diffStats.median} or fewer yellow cards<br>
+                            <span style="color:#999; font-size:11px">n = ${diffStats.size} matches total</span>`)
+        })
+        .on("mousemove", function(event, d) {
+            tooltip.style("left", (event.pageX - 60) + "px")
+                   .style("top", (event.pageY - 140) + "px")
+        })
+        .on("mouseout", function(event) {
+            tooltip.style("opacity", 0)
+        })
+    
+    svg2.append("line")
+        .attr("x1", centerSame - 55)
+        .attr("x2", centerSame + 55)
+        .attr("y1", yScaleBee(sameStats.median))
+        .attr("y2", yScaleBee(sameStats.median))
+        .attr("stroke", "blue")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-dasharray", "5,4")
+
+    svg2.append("line")
+        .attr("x1", centerDiff - 125)
+        .attr("x2", centerDiff + 125)
+        .attr("y1", yScaleBee(diffStats.median))
+        .attr("y2", yScaleBee(diffStats.median))
+        .attr("stroke", "orange")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-dasharray", "5,4")
+
     svg2.append("text")
         .attr("class", "same-conf-labels") 
-        .text("SAME CONFEDERATION")
-        .attr("transform", `translate(320, 770)`)
+        .text("Same Confederation")
+        .attr("transform", `translate(220, 650)`)
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
         .text("n = 407")
-        .attr("transform", `translate(390, 800)`)
+        .attr("transform", `translate(270, 680)`)
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
-        .text("DIFFERENT CONFEDERATION")
-        .attr("transform", `translate(810, 770)`)
+        .text("Different Confederation")
+        .attr("transform", `translate(650, 650)`)
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
         .text("n = 1121")
-        .attr("transform", `translate(890, 800)`)
+        .attr("transform", `translate(720, 680)`)
 
     svg2.append("text")
         .attr("class", "axislabel")                    
         .text("Yellow Cards Issue")
-        .attr("transform", d => "translate(100, 450), rotate(-90)")
+        .attr("transform", d => "translate(90, 410), rotate(-90)")
 }) 
+

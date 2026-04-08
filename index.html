@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
     <script src = "https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.min.css">
@@ -74,7 +77,30 @@
             <div class="description" id = "des3"></div>
             <div class="description" id = "des4"></div>
         <div class="visualization visualization-selected" id = "tab-1"></div>
-        <div class="visualization" id = "tab-2"></div>
+        <div class="visualization" id = "tab-2">
+            <div class="test" id="results">
+                <h3>Statistical Test - Mann-Whitney U Hypothesis Testing</h3>
+                    <div class="text">
+                    The difference in yellow card distribution showned by the violin plots is subtle, so we added a statistical element to verify if there is a statistically significant difference between the two groups of team-referee matchups.
+                    We decided to use the Mann-Whitney U Test rather than a t-test because yellow card counts are discrete integers that do not follow a normal distribution — making a non-parametric test the more appropriate choice.
+                    </div>
+                    <h4>Hypotheses</h4>
+                        <p> - H₀: Same-confederation teams receive yellow cards at the same rate as cross-confederation teams (any observed difference is due to chance).<br>
+                         - H₁: Same-confederation teams receive <em>fewer</em> yellow cards than cross-confederation teams — consistent with referee bias.</p>
+                    <h4>Test Results</h4>
+                    <div class="text"></div>
+                        <p>
+                        At a significance level of α = 0.05, the test yields <br></p>
+                            <ul>
+                                <li><strong>U = 203,682</strong></li>
+                                <li><strong>p = 0.000488</strong> (one-tailed)</li>
+                            </ul>
+                        <p>The p value is well below the threshold. Therefore, we <strong>reject the null hypothesis</strong> and conclude that there is evidence that 
+                        the difference in yellow cards in two groups - same- and different-confederation team-referee matchup - is statistically significant. </p>
+                        <p>This result supports the visual pattern observed earlier, motivating a deeper investigation into whether this effect persists over time and under different match conditions.</p>
+                    </div>
+            </div>
+            
         <div class="visualization" id = "tab-3"></div>
         <div class="visualization" id = "tab-4"></div>
     </section>
