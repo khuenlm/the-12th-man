@@ -82,10 +82,6 @@ h2 {
     display: block
 }
 
-#tab-3 {
-    background-color: lightpink;
-}
-
 #tab-4 {
     background-color: lightyellow;
 }
@@ -152,4 +148,13 @@ h2 {
 
 h4 {
     padding-top: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #CC5801;
 }

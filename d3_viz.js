@@ -7,7 +7,7 @@ const margin = {
   top: 70,
   right: 40,
   bottom: 30,
-  left: 62
+  left: 100
 }
 
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
@@ -32,7 +32,7 @@ let description2 = d3.select("#des2")
 
 const xScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
-                 .range([200, 900])
+                 .range([250, 950])
                  .padding(0.5)
 
 const gx = svg1.append("g")
@@ -44,7 +44,7 @@ const gx = svg1.append("g")
 
 const yScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
-                 .range([0, 680])
+                 .range([0, 700])
                  .padding(0.5)
 
 const gy = svg1.append("g")
@@ -52,7 +52,7 @@ const gy = svg1.append("g")
                .style("font-size", "16px")
                .style("font-weight", 'bold')
                .style("font-family", "Source Sans 3")
-               .attr("transform", `translate(210, 50)`)
+               .attr("transform", `translate(260, 50)`)
 
 const tooltip = d3.select("body")
                   .append("div")
@@ -144,13 +144,13 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Team Confederation")
-        .attr("transform", `translate(490, 25)`)
+        .attr("transform", `translate(510, 25)`)
         .style("opacity", 0.5)
 
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Referee Confederation")
-        .attr("transform", d => "translate(90, 450), rotate(-90)")
+        .attr("transform", d => "translate(140, 450), rotate(-90)")
         .style("opacity", 0.5)
         
     const defs = svg1.append("defs")
@@ -171,7 +171,7 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     const legendWidth = 300;
     const legendHeight = 15;
 
-    const legendX = 400;
+    const legendX = 450;
     const legendY = 750;
 
     svg1.append("rect")
@@ -196,13 +196,13 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     svg1.append("text")
         .attr("class", "legend-labels") 
         .text("Less Cards")
-        .attr("transform", "translate(360, 790)")
+        .attr("transform", "translate(410, 790)")
         .attr("font-family", "Source Sans 3")
 
     svg1.append("text")
         .attr("class", "legend-labels") 
         .text("More Cards")
-        .attr("transform", "translate(660, 790)")
+        .attr("transform", "translate(710, 790)")
 })
 
 function getCardCounts(data) {
@@ -223,8 +223,8 @@ function getCardCounts(data) {
 }
 
 const violinWidth = 300;  
-const centerSame = 300;
-const centerDiff = 750;
+const centerSame = 400;
+const centerDiff = 770;
 const MAX_CARDS = 9; 
 
 function returnPoints(stats, centerX, globalMax, yscale) {
@@ -291,11 +291,11 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
                      .style("font-size", "16px")
                      .style("font-weight", 'bold')
                      .style("font-family", "Source Sans 3")
-                     .attr("transform", `translate(130, 0)`)
+                     .attr("transform", `translate(150, 0)`)
 
     const y_grid = svg2.append("g")
                   .attr("class", "y-grid")
-                  .attr("transform", "translate(130, 0)")
+                  .attr("transform", "translate(150, 0)")
     
     y_grid.call(d3.axisLeft(yScaleBee)
                   .tickSizeInner(-1100)
@@ -334,7 +334,7 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
                             75% of matches had ≤ ${sameStats.q3} cards</span>`)
         })
         .on("mousemove", function(event, d) {
-            tooltip.style("left", (event.pageX - 60) + "px")
+            tooltip.style("left", (event.pageX - 120) + "px")
                    .style("top", (event.pageY - 140) + "px")
         })
         .on("mouseout", function(event) {
@@ -354,7 +354,7 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
                             <span style="color:#999; font-size:11px">n = ${sameStats.size} matches total</span>`)
         })
         .on("mousemove", function(event, d) {
-            tooltip.style("left", (event.pageX - 60) + "px")
+            tooltip.style("left", (event.pageX - 120) + "px")
                    .style("top", (event.pageY - 140) + "px")
         })
         .on("mouseout", function(event) {
@@ -378,7 +378,7 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
                             75% of matches had ≤ ${diffStats.q3} cards</span>`)
         })
         .on("mousemove", function(event, d) {
-            tooltip.style("left", (event.pageX - 60) + "px")
+            tooltip.style("left", (event.pageX - 120) + "px")
                    .style("top", (event.pageY - 140) + "px")
         })
         .on("mouseout", function(event) {
@@ -398,7 +398,7 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
                             <span style="color:#999; font-size:11px">n = ${diffStats.size} matches total</span>`)
         })
         .on("mousemove", function(event, d) {
-            tooltip.style("left", (event.pageX - 60) + "px")
+            tooltip.style("left", (event.pageX - 120) + "px")
                    .style("top", (event.pageY - 140) + "px")
         })
         .on("mouseout", function(event) {
@@ -426,26 +426,117 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
     svg2.append("text")
         .attr("class", "same-conf-labels") 
         .text("Same Confederation")
-        .attr("transform", `translate(220, 650)`)
+        .attr("transform", `translate(320, 650)`)
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
         .text("n = 407")
-        .attr("transform", `translate(270, 680)`)
+        .attr("transform", `translate(370, 680)`)
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
         .text("Different Confederation")
-        .attr("transform", `translate(650, 650)`)
+        .attr("transform", `translate(670, 650)`)
 
     svg2.append("text")
         .attr("class", "same-conf-labels") 
         .text("n = 1121")
-        .attr("transform", `translate(720, 680)`)
+        .attr("transform", `translate(740, 680)`)
 
     svg2.append("text")
         .attr("class", "axislabel")                    
         .text("Yellow Cards Issue")
-        .attr("transform", d => "translate(90, 410), rotate(-90)")
+        .attr("transform", d => "translate(110, 410), rotate(-90)")
 }) 
 
+d3.json("data/viz/timeline.json").then(function(data) {
+
+    console.log(data["overall"]);
+    console.log(d3.extent(data["overall"], d => d.bias_index));
+
+    const xScaleTime = d3.scaleLinear()
+                        .domain([1970, 2022])
+                        .range([margin.left, width - margin.right])
+    
+    const xTime = svg3.append("g")
+                     .attr("class", "x-axis")
+                     .style("font-size", "16px")
+                     .style("font-weight", 'bold')
+                     .style("font-family", "Source Sans 3")
+                     .attr("transform", `translate(0, 650)`)
+    const years = [1970,1974,1978,1982,1986,1990,1994,1998,2002,2006,2010,2014,2018,2022];
+    xTime.call(d3.axisBottom(xScaleTime)
+                 .tickValues(years)
+                 .tickFormat(d => d));
+
+    const yScaleTime = d3.scaleLinear()
+                        .domain([d3.min(data["overall"], d => d.lower_bound) - 0.1, 1.6])
+                        .range([650, 100])
+    
+    const yTime = svg3.append("g")
+                     .attr("class", "y-axis")
+                     .style("font-size", "16px")
+                     .style("font-weight", 'bold')
+                     .style("font-family", "Source Sans 3")
+                     .attr("transform", `translate(${margin.left}, 0)`)
+
+    yTime.call(d3.axisLeft(yScaleTime));
+
+    svg3.append("line")
+        .attr("x1", margin.left)
+        .attr("y1", yScaleTime(0))
+        .attr("x2", width - margin.right)
+        .attr("y2", yScaleTime(0))
+        .attr("stroke", "")
+        .attr("stroke", "#999")
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", "5,4")
+
+    svg3.append("text")
+        .attr("class", "axislabel")                    
+        .text("Year of Tournament")
+        .attr("transform", `translate(550, ${height - margin.bottom - 10})`)
+
+    svg3.append("text")
+        .attr("class", "axislabel")                    
+        .text("Bias Index")
+        .attr("transform", d => `translate(${margin.left - 50}, ${height / 2 + 10}), rotate(-90)`)
+
+    const line = d3.line()
+                   .x(d => xScaleTime(d.year))
+                   .y(d => yScaleTime(d.bias_index))
+
+    console.log(typeof line);
+
+    svg3.append("path")
+        .datum(data["overall"])
+        .attr("d", line)
+        .attr("fill", "none")
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 5)
+
+     svg3.selectAll("circle")
+        .data(data["overall"])
+        .enter()
+        .append("circle")
+        .attr("cx", d => xScaleTime(d.year))
+        .attr("cy", d => yScaleTime(d.bias_index))
+        .attr("r", 6)
+        .attr("fill", "navy")
+        .attr("stroke", "black")
+        .on("mouseover", function(event, d) {
+            tooltip.style("opacity", 1)
+                   .html(`<strong>FIFA World Cup ${d.year}</strong><br>
+                            <strong>Bias Index</strong> = ${d.bias_index.toFixed(3)} <br>
+                            <strong>95% Confidence Interval</strong>: [${d.lower_bound.toFixed(3)}, ${d.upper_bound.toFixed(3)}]<br>
+                            Same-conf matches: ${d.match_same}<br>
+                            Diff-conf matches: ${d.match_diff}`)
+        })
+        .on("mousemove", function(event, d) {
+            tooltip.style("left", (event.pageX - 120) + "px")
+                   .style("top", (event.pageY - 140) + "px")
+        })
+        .on("mouseout", function(event) {
+            tooltip.style("opacity", 0)
+        })
+}) 
