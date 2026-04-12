@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import json
 from pathlib import Path
 from scipy.stats import norm
@@ -39,8 +40,8 @@ def return_json(data, year):
     se_same = df_same["yellow_card"].std() / (match_same ** (1/2))
     se_diff = df_diff["yellow_card"].std() / (match_diff ** (1/2))
     se = (se_same ** 2 + se_diff ** 2) ** (1/2)
-    lower_bound = round(bias_index - se * norm.cdf(0.025), 5)
-    upper_bound = round(bias_index + se * norm.cdf(0.975), 5)
+    lower_bound = round(bias_index - se * norm.ppf(0.025), 5)
+    upper_bound = round(bias_index + se * norm.ppf(0.975), 5)
 
   d = {
       "year": int(year),
@@ -68,8 +69,23 @@ data2 = []
 for year in years: 
   d = return_json(df, year)
   data2.append(d)
+
+data2 = sorted(data2, key=lambda x: x["year"])
+
+for i, d in enumerate(data2):
+    window = data2[max(0, i-1):min(len(data2), i+2)]
+    valid = [w["bias_index"] for w in window if w["bias_index"] is not None]
+    d["rolling_avg"] = round(sum(valid) / len(valid), 5) if valid else None
+
 big_data["overall"] = data2
 
+for conf in confs:
+    conf_data = sorted(big_data[conf], key=lambda x: x["year"])
+    for i, d in enumerate(conf_data):
+        window = conf_data[max(0, i-1):min(len(conf_data), i+2)]
+        valid = [w["bias_index"] for w in window if w["bias_index"] is not None]
+        d["rolling_avg"] = round(sum(valid) / len(valid), 5) if valid else None
+    big_data[conf] = conf_data
 
 with open("../data/viz/timeline.json", 'w') as f: 
   json.dump(big_data, f, indent = 4)

@@ -8,7 +8,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.2
         },
         {
             "year": 1974,
@@ -18,7 +19,8 @@
             "cards_diff": 6,
             "bias_index": -1.2,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.2
         },
         {
             "year": 1978,
@@ -28,7 +30,8 @@
             "cards_diff": 2,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.2
         },
         {
             "year": 1982,
@@ -38,7 +41,8 @@
             "cards_diff": 3,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": 0.77778
         },
         {
             "year": 1986,
@@ -48,7 +52,8 @@
             "cards_diff": 11,
             "bias_index": 0.7777777777777777,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.11111
         },
         {
             "year": 1990,
@@ -58,7 +63,8 @@
             "cards_diff": 12,
             "bias_index": -1.0,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.11111
         },
         {
             "year": 1994,
@@ -68,7 +74,8 @@
             "cards_diff": 29,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.0
         },
         {
             "year": 1998,
@@ -78,7 +85,8 @@
             "cards_diff": 39,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.85714
         },
         {
             "year": 2002,
@@ -88,7 +96,8 @@
             "cards_diff": 39,
             "bias_index": -0.8571428571428572,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.03641
         },
         {
             "year": 2006,
@@ -97,8 +106,9 @@
             "match_diff": 17,
             "cards_diff": 49,
             "bias_index": -1.2156862745098038,
-            "lower_bound": -1.70197,
-            "upper_bound": -0.41926
+            "lower_bound": 0.65325,
+            "upper_bound": 0.65325,
+            "rolling_avg": -1.03641
         },
         {
             "year": 2010,
@@ -108,7 +118,8 @@
             "cards_diff": 48,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.88562
         },
         {
             "year": 2014,
@@ -117,8 +128,9 @@
             "match_diff": 18,
             "cards_diff": 37,
             "bias_index": -0.5555555555555554,
-            "lower_bound": -0.85492,
-            "upper_bound": -0.06527
+            "lower_bound": 0.59498,
+            "upper_bound": 0.59498,
+            "rolling_avg": -0.55556
         },
         {
             "year": 2018,
@@ -128,7 +140,8 @@
             "cards_diff": 44,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.55556
         },
         {
             "year": 2022,
@@ -138,7 +151,8 @@
             "cards_diff": 25,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         }
     ],
     "CAF": [
@@ -150,7 +164,8 @@
             "cards_diff": 7,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1974,
@@ -160,7 +175,8 @@
             "cards_diff": 3,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1978,
@@ -170,7 +186,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1982,
@@ -180,7 +197,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1986,
@@ -190,7 +208,8 @@
             "cards_diff": 6,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1990,
@@ -200,7 +219,8 @@
             "cards_diff": 4,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1994,
@@ -210,7 +230,8 @@
             "cards_diff": 15,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1998,
@@ -220,7 +241,8 @@
             "cards_diff": 44,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2002,
@@ -230,7 +252,8 @@
             "cards_diff": 19,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2006,
@@ -240,7 +263,8 @@
             "cards_diff": 7,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2010,
@@ -250,7 +274,8 @@
             "cards_diff": 21,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2014,
@@ -260,7 +285,8 @@
             "cards_diff": 19,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2018,
@@ -270,7 +296,8 @@
             "cards_diff": 25,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2022,
@@ -280,7 +307,8 @@
             "cards_diff": 16,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         }
     ],
     "CONCACAF": [
@@ -292,7 +320,8 @@
             "cards_diff": 2,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1974,
@@ -302,7 +331,8 @@
             "cards_diff": 10,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1978,
@@ -312,7 +342,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1982,
@@ -322,7 +353,8 @@
             "cards_diff": 6,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1986,
@@ -332,7 +364,8 @@
             "cards_diff": 13,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.28571
         },
         {
             "year": 1990,
@@ -342,7 +375,8 @@
             "cards_diff": 9,
             "bias_index": -0.2857142857142858,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.28571
         },
         {
             "year": 1994,
@@ -352,7 +386,8 @@
             "cards_diff": 28,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.28571
         },
         {
             "year": 1998,
@@ -362,7 +397,8 @@
             "cards_diff": 25,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2002,
@@ -372,7 +408,8 @@
             "cards_diff": 40,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2006,
@@ -382,7 +419,8 @@
             "cards_diff": 27,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2010,
@@ -392,7 +430,8 @@
             "cards_diff": 36,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2014,
@@ -402,7 +441,8 @@
             "cards_diff": 21,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2018,
@@ -412,7 +452,8 @@
             "cards_diff": 25,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2022,
@@ -422,7 +463,8 @@
             "cards_diff": 29,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         }
     ],
     "CONMEBOL": [
@@ -434,7 +476,8 @@
             "cards_diff": 17,
             "bias_index": -0.5454545454545454,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.54545
         },
         {
             "year": 1974,
@@ -444,7 +487,8 @@
             "cards_diff": 13,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.54545
         },
         {
             "year": 1978,
@@ -454,7 +498,8 @@
             "cards_diff": 6,
             "bias_index": -0.5454545454545454,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -0.18939
         },
         {
             "year": 1982,
@@ -463,8 +508,9 @@
             "match_diff": 18,
             "cards_diff": 24,
             "bias_index": 0.16666666666666674,
-            "lower_bound": -0.11372,
-            "upper_bound": 0.62588
+            "lower_bound": 1.24427,
+            "upper_bound": 1.24427,
+            "rolling_avg": 0.64567
         },
         {
             "year": 1986,
@@ -474,7 +520,8 @@
             "cards_diff": 32,
             "bias_index": 2.3157894736842106,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": 1.24123
         },
         {
             "year": 1990,
@@ -484,7 +531,8 @@
             "cards_diff": 24,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": 0.46742
         },
         {
             "year": 1994,
@@ -494,7 +542,8 @@
             "cards_diff": 50,
             "bias_index": -1.380952380952381,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.38095
         },
         {
             "year": 1998,
@@ -504,7 +553,8 @@
             "cards_diff": 46,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": -1.38095
         },
         {
             "year": 2002,
@@ -514,7 +564,8 @@
             "cards_diff": 57,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2006,
@@ -524,7 +575,8 @@
             "cards_diff": 84,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2010,
@@ -534,7 +586,8 @@
             "cards_diff": 50,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2014,
@@ -544,7 +597,8 @@
             "cards_diff": 33,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": 0.48276
         },
         {
             "year": 2018,
@@ -554,7 +608,8 @@
             "cards_diff": 44,
             "bias_index": 0.48275862068965525,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": 0.48276
         },
         {
             "year": 2022,
@@ -564,7 +619,8 @@
             "cards_diff": 50,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": 0.48276
         }
     ],
     "OFC": [
@@ -576,7 +632,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1974,
@@ -586,7 +643,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1978,
@@ -596,7 +654,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1982,
@@ -606,7 +665,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1986,
@@ -616,7 +676,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1990,
@@ -626,7 +687,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1994,
@@ -636,7 +698,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 1998,
@@ -646,7 +709,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2002,
@@ -656,7 +720,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2006,
@@ -666,7 +731,8 @@
             "cards_diff": 0,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2010,
@@ -676,7 +742,8 @@
             "cards_diff": 1,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2014,
@@ -686,7 +753,8 @@
             "cards_diff": 2,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2018,
@@ -696,7 +764,8 @@
             "cards_diff": 1,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         },
         {
             "year": 2022,
@@ -706,7 +775,8 @@
             "cards_diff": 1,
             "bias_index": null,
             "lower_bound": null,
-            "upper_bound": null
+            "upper_bound": null,
+            "rolling_avg": null
         }
     ],
     "UEFA": [
@@ -717,8 +787,9 @@
             "match_diff": 19,
             "cards_diff": 10,
             "bias_index": 0.1258581235697941,
-            "lower_bound": -0.03442,
-            "upper_bound": 0.38835
+            "lower_bound": 0.74184,
+            "upper_bound": 0.74184,
+            "rolling_avg": -0.24395
         },
         {
             "year": 1974,
@@ -727,8 +798,9 @@
             "match_diff": 21,
             "cards_diff": 30,
             "bias_index": -0.6137566137566138,
-            "lower_bound": -0.74342,
-            "upper_bound": -0.40139
+            "lower_bound": -0.11541,
+            "upper_bound": -0.11541,
+            "rolling_avg": -0.03483
         },
         {
             "year": 1978,
@@ -737,8 +809,9 @@
             "match_diff": 23,
             "cards_diff": 10,
             "bias_index": 0.38339920948616607,
-            "lower_bound": 0.27108,
-            "upper_bound": 0.56736
+            "lower_bound": 0.81508,
+            "upper_bound": 0.81508,
+            "rolling_avg": -0.0861
         },
         {
             "year": 1982,
@@ -747,8 +820,9 @@
             "match_diff": 14,
             "cards_diff": 15,
             "bias_index": -0.02795031055900621,
-            "lower_bound": -0.1779,
-            "upper_bound": 0.21763
+            "lower_bound": 0.54834,
+            "upper_bound": 0.54834,
+            "rolling_avg": -0.04136
         },
         {
             "year": 1986,
@@ -757,8 +831,9 @@
             "match_diff": 18,
             "cards_diff": 29,
             "bias_index": -0.47953216374269014,
-            "lower_bound": -0.6489,
-            "upper_bound": -0.20214
+            "lower_bound": 0.1714,
+            "upper_bound": 0.1714,
+            "rolling_avg": -0.48107
         },
         {
             "year": 1990,
@@ -767,8 +842,9 @@
             "match_diff": 28,
             "cards_diff": 64,
             "bias_index": -0.9357142857142855,
-            "lower_bound": -1.09695,
-            "upper_bound": -0.67165
+            "lower_bound": -0.31604,
+            "upper_bound": -0.31604,
+            "rolling_avg": -0.54044
         },
         {
             "year": 1994,
@@ -777,8 +853,9 @@
             "match_diff": 22,
             "cards_diff": 50,
             "bias_index": -0.20606060606060606,
-            "lower_bound": -0.36572,
-            "upper_bound": 0.05543
+            "lower_bound": 0.40757,
+            "upper_bound": 0.40757,
+            "rolling_avg": -0.37844
         },
         {
             "year": 1998,
@@ -787,8 +864,9 @@
             "match_diff": 25,
             "cards_diff": 45,
             "bias_index": 0.006451612903225712,
-            "lower_bound": -0.14501,
-            "upper_bound": 0.25452
+            "lower_bound": 0.58858,
+            "upper_bound": 0.58858,
+            "rolling_avg": -0.31246
         },
         {
             "year": 2002,
@@ -797,8 +875,9 @@
             "match_diff": 26,
             "cards_diff": 70,
             "bias_index": -0.7377622377622379,
-            "lower_bound": -1.02354,
-            "upper_bound": -0.26973
+            "lower_bound": 0.36055,
+            "upper_bound": 0.36055,
+            "rolling_avg": -0.12401
         },
         {
             "year": 2006,
@@ -807,8 +886,9 @@
             "match_diff": 31,
             "cards_diff": 84,
             "bias_index": 0.3592880978865409,
-            "lower_bound": 0.14058,
-            "upper_bound": 0.71749
+            "lower_bound": 1.19985,
+            "upper_bound": 1.19985,
+            "rolling_avg": 0.27458
         },
         {
             "year": 2010,
@@ -817,8 +897,9 @@
             "match_diff": 34,
             "cards_diff": 59,
             "bias_index": 1.2022058823529411,
-            "lower_bound": 0.88079,
-            "upper_bound": 1.72862
+            "lower_bound": 2.43751,
+            "upper_bound": 2.43751,
+            "rolling_avg": 0.39713
         },
         {
             "year": 2014,
@@ -827,8 +908,9 @@
             "match_diff": 31,
             "cards_diff": 49,
             "bias_index": -0.37011884550084884,
-            "lower_bound": -0.51526,
-            "upper_bound": -0.13241
+            "lower_bound": 0.18769,
+            "upper_bound": 0.18769,
+            "rolling_avg": 0.26105
         },
         {
             "year": 2018,
@@ -837,8 +919,9 @@
             "match_diff": 26,
             "cards_diff": 45,
             "bias_index": -0.04895104895104896,
-            "lower_bound": -0.21574,
-            "upper_bound": 0.22421
+            "lower_bound": 0.59206,
+            "upper_bound": 0.59206,
+            "rolling_avg": -0.30496
         },
         {
             "year": 2022,
@@ -847,8 +930,9 @@
             "match_diff": 34,
             "cards_diff": 80,
             "bias_index": -0.4957983193277311,
-            "lower_bound": -0.82123,
-            "upper_bound": 0.03719
+            "lower_bound": 0.75493,
+            "upper_bound": 0.75493,
+            "rolling_avg": -0.27237
         }
     ],
     "overall": [
@@ -859,8 +943,9 @@
             "match_diff": 40,
             "cards_diff": 36,
             "bias_index": -0.2333333333333334,
-            "lower_bound": -0.3778,
-            "upper_bound": 0.00328
+            "lower_bound": 0.3219,
+            "upper_bound": 0.3219,
+            "rolling_avg": -0.36964
         },
         {
             "year": 1974,
@@ -869,8 +954,9 @@
             "match_diff": 48,
             "cards_diff": 62,
             "bias_index": -0.505952380952381,
-            "lower_bound": -0.62344,
-            "upper_bound": -0.31354
+            "lower_bound": -0.05443,
+            "upper_bound": -0.05443,
+            "rolling_avg": -0.12458
         },
         {
             "year": 1978,
@@ -879,8 +965,9 @@
             "match_diff": 42,
             "cards_diff": 18,
             "bias_index": 0.36554621848739494,
-            "lower_bound": 0.26989,
-            "upper_bound": 0.52221
+            "lower_bound": 0.73317,
+            "upper_bound": 0.73317,
+            "rolling_avg": 0.02165
         },
         {
             "year": 1982,
@@ -889,8 +976,9 @@
             "match_diff": 56,
             "cards_diff": 48,
             "bias_index": 0.2053571428571429,
-            "lower_bound": 0.11643,
-            "upper_bound": 0.351
+            "lower_bound": 0.54713,
+            "upper_bound": 0.54713,
+            "rolling_avg": 0.12468
         },
         {
             "year": 1986,
@@ -899,8 +987,9 @@
             "match_diff": 64,
             "cards_diff": 91,
             "bias_index": -0.1968749999999999,
-            "lower_bound": -0.314,
-            "upper_bound": -0.00505
+            "lower_bound": 0.25327,
+            "upper_bound": 0.25327,
+            "rolling_avg": -0.14438
         },
         {
             "year": 1990,
@@ -909,8 +998,9 @@
             "match_diff": 62,
             "cards_diff": 113,
             "bias_index": -0.4416282642089093,
-            "lower_bound": -0.56358,
-            "upper_bound": -0.2419
+            "lower_bound": 0.02705,
+            "upper_bound": 0.02705,
+            "rolling_avg": -0.3208
         },
         {
             "year": 1994,
@@ -919,8 +1009,9 @@
             "match_diff": 73,
             "cards_diff": 172,
             "bias_index": -0.3239063190455149,
-            "lower_bound": -0.4519,
-            "upper_bound": -0.11429
+            "lower_bound": 0.16799,
+            "upper_bound": 0.16799,
+            "rolling_avg": -0.33688
         },
         {
             "year": 1998,
@@ -929,8 +1020,9 @@
             "match_diff": 97,
             "cards_diff": 199,
             "bias_index": -0.24509477884935138,
-            "lower_bound": -0.37234,
-            "upper_bound": -0.0367
+            "lower_bound": 0.24393,
+            "upper_bound": 0.24393,
+            "rolling_avg": -0.26627
         },
         {
             "year": 2002,
@@ -939,8 +1031,9 @@
             "match_diff": 105,
             "cards_diff": 225,
             "bias_index": -0.22981366459627317,
-            "lower_bound": -0.4271,
-            "upper_bound": 0.0933
+            "lower_bound": 0.52842,
+            "upper_bound": 0.52842,
+            "rolling_avg": -0.05066
         },
         {
             "year": 2006,
@@ -949,8 +1042,9 @@
             "match_diff": 96,
             "cards_diff": 251,
             "bias_index": 0.3229166666666665,
-            "lower_bound": 0.13584,
-            "upper_bound": 0.62931
+            "lower_bound": 1.0419,
+            "upper_bound": 1.0419,
+            "rolling_avg": 0.37032
         },
         {
             "year": 2010,
@@ -959,8 +1053,9 @@
             "match_diff": 112,
             "cards_diff": 215,
             "bias_index": 1.0178571428571428,
-            "lower_bound": 0.70866,
-            "upper_bound": 1.52425
+            "lower_bound": 2.20619,
+            "upper_bound": 2.20619,
+            "rolling_avg": 0.35807
         },
         {
             "year": 2014,
@@ -969,8 +1064,9 @@
             "match_diff": 107,
             "cards_diff": 161,
             "bias_index": -0.2665776591010236,
-            "lower_bound": -0.37383,
-            "upper_bound": -0.09092
+            "lower_bound": 0.14563,
+            "upper_bound": 0.14563,
+            "rolling_avg": 0.23152
         },
         {
             "year": 2018,
@@ -979,8 +1075,9 @@
             "match_diff": 105,
             "cards_diff": 184,
             "bias_index": -0.056728778467908914,
-            "lower_bound": -0.17674,
-            "upper_bound": 0.13983
+            "lower_bound": 0.40452,
+            "upper_bound": 0.40452,
+            "rolling_avg": -0.07644
         },
         {
             "year": 2022,
@@ -989,8 +1086,9 @@
             "match_diff": 114,
             "cards_diff": 201,
             "bias_index": 0.09398496240601517,
-            "lower_bound": -0.19332,
-            "upper_bound": 0.56452
+            "lower_bound": 1.19816,
+            "upper_bound": 1.19816,
+            "rolling_avg": 0.01863
         }
     ]
 }
