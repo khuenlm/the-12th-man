@@ -30,6 +30,15 @@ let description2 = d3.select("#des2")
                             how many matches produced that outcome. The visual difference between the two groups is subtle but consistent — 
                             scroll down to see whether it holds up statistically.`)
 
+let description3 = d3.select("#des3")
+                     .append("p")
+                     .html(`The bias index measures the difference in mean yellow cards between same-confederation 
+                            and cross-confederation referee assignments per tournament. A negative value indicates 
+                            same-confederation teams received fewer cards — consistent with referee bias. The orange 
+                            line smooths year-to-year volatility using a 3-tournament rolling average, revealing the 
+                            long-term trend. Vertical markers indicate significant moments in FIFA's officiating history. 
+                            Hover over each dot to explore individual tournament statistics.`)
+
 const xScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
                  .range([250, 950])
@@ -57,7 +66,7 @@ const gy = svg1.append("g")
 const tooltip = d3.select("body")
                   .append("div")
                   .attr("class", "tooltip")
-                  .style("position", "fixed")
+                  .style("position", "absolute")
                   .style("background-color", "white")
                   .style("padding", "10px")
                   .style("border", "1px solid black")
@@ -451,27 +460,45 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
 
 d3.json("data/viz/timeline.json").then(function(data) {
 
-    console.log(data["overall"]);
-    console.log(d3.extent(data["overall"], d => d.bias_index));
+    const years = [1970,1974,1978,1982,1986,1990,1994,1998,2002,2006,2010,2014,2018,2022];
 
     const xScaleTime = d3.scaleLinear()
                         .domain([1970, 2022])
                         .range([margin.left, width - margin.right])
     
+    const x_grid_time = svg3.append("g")
+                  .attr("class", "x-grid")
+                  .attr("transform", `translate(0, 650)`)
+    
+    x_grid_time.call(d3.axisBottom(xScaleTime)
+                  .tickSizeInner(-550)
+                  .tickSizeOuter(0)
+                  .tickValues(years)
+                  .tickFormat(""));
+
     const xTime = svg3.append("g")
                      .attr("class", "x-axis")
                      .style("font-size", "16px")
                      .style("font-weight", 'bold')
                      .style("font-family", "Source Sans 3")
                      .attr("transform", `translate(0, 650)`)
-    const years = [1970,1974,1978,1982,1986,1990,1994,1998,2002,2006,2010,2014,2018,2022];
+    
     xTime.call(d3.axisBottom(xScaleTime)
                  .tickValues(years)
                  .tickFormat(d => d));
 
     const yScaleTime = d3.scaleLinear()
-                        .domain([d3.min(data["overall"], d => d.lower_bound) - 0.1, 1.6])
+                        .domain([- 0.8, 1.2])
                         .range([650, 100])
+
+    const y_grid_time = svg3.append("g")
+                  .attr("class", "y-grid")
+                  .attr("transform", `translate(${margin.left}, 0)`)
+    
+    y_grid_time.call(d3.axisLeft(yScaleTime)
+                  .tickSizeInner(-width + 140)
+                  .tickSizeOuter(0)
+                  .tickFormat(""));
     
     const yTime = svg3.append("g")
                      .attr("class", "y-axis")
@@ -502,11 +529,83 @@ d3.json("data/viz/timeline.json").then(function(data) {
         .text("Bias Index")
         .attr("transform", d => `translate(${margin.left - 50}, ${height / 2 + 10}), rotate(-90)`)
 
+    svg3.append("line")
+        .attr("x1", xScaleTime(2018))
+        .attr("y1", 100)
+        .attr("x2", xScaleTime(2018))
+        .attr("y2", 650)
+        .attr("stroke", "")
+        .attr("stroke", "red")
+        .attr("stroke-width", 3)
+        .attr("stroke-dasharray", "5,4")
+
+    svg3.append("line")
+        .attr("x1", xScaleTime(1990))
+        .attr("y1", 100)
+        .attr("x2", xScaleTime(1990))
+        .attr("y2", 650)
+        .attr("stroke", "")
+        .attr("stroke", "red")
+        .attr("stroke-width", 3)
+        .attr("stroke-dasharray", "5,4")
+
+    svg3.append("line")
+        .attr("x1", xScaleTime(1982))
+        .attr("y1", 30)
+        .attr("x2", xScaleTime(1986))
+        .attr("y2", 30)
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 5)
+
+    svg3.append("line")
+        .attr("x1", xScaleTime(1998))
+        .attr("y1", 30)
+        .attr("x2", xScaleTime(2002))
+        .attr("y2", 30)
+        .attr("stroke", "darkorange")
+        .attr("stroke-width", 5)
+        .attr("opacity", 0.7)
+
+    svg3.append("text")
+        .text("Year-by-year bias index")
+        .attr("class", "legendTime")
+        .attr("x", d => xScaleTime(1986.5))
+        .attr("y", 35)
+
+    svg3.append("text")
+        .text("3-tournament rolling average")
+        .attr("class", "legendTime")
+        .attr("x", d => xScaleTime(2002.5))
+        .attr("y", 35)
+
+    svg3.append("text")
+        .html("<a href = 'https://en.wikipedia.org/wiki/Video_assistant_referee' target = 'blank'>VAR</a> Introduced")
+        .attr("class", "landmark")
+        .attr("x", d => xScaleTime(2018))
+        .attr("y", 95)
+
+    svg3.append("text")
+        .text("Assistant Referees Expansion")
+        .attr("class", "landmark")
+        .attr("x", d => xScaleTime(1990))
+        .attr("y", 95)
+    
     const line = d3.line()
                    .x(d => xScaleTime(d.year))
                    .y(d => yScaleTime(d.bias_index))
 
-    console.log(typeof line);
+    const line_rolling = d3.line()
+                           .x(d => xScaleTime(d.year))
+                           .y(d => yScaleTime(d.rolling_avg))
+                           .curve(d3.curveCatmullRom)
+
+    svg3.append("path")
+        .datum(data["overall"])
+        .attr("d", line_rolling)
+        .attr("fill", "none")
+        .attr("stroke", "darkorange")
+        .attr("stroke-width", 5)
+        .attr("opacity", 0.7)
 
     svg3.append("path")
         .datum(data["overall"])
@@ -515,28 +614,29 @@ d3.json("data/viz/timeline.json").then(function(data) {
         .attr("stroke", "steelblue")
         .attr("stroke-width", 5)
 
-     svg3.selectAll("circle")
+    svg3.selectAll("circle")
         .data(data["overall"])
         .enter()
         .append("circle")
         .attr("cx", d => xScaleTime(d.year))
         .attr("cy", d => yScaleTime(d.bias_index))
-        .attr("r", 6)
+        .attr("r", d => 7)
         .attr("fill", "navy")
         .attr("stroke", "black")
         .on("mouseover", function(event, d) {
             tooltip.style("opacity", 1)
                    .html(`<strong>FIFA World Cup ${d.year}</strong><br>
                             <strong>Bias Index</strong> = ${d.bias_index.toFixed(3)} <br>
-                            <strong>95% Confidence Interval</strong>: [${d.lower_bound.toFixed(3)}, ${d.upper_bound.toFixed(3)}]<br>
                             Same-conf matches: ${d.match_same}<br>
                             Diff-conf matches: ${d.match_diff}`)
         })
         .on("mousemove", function(event, d) {
-            tooltip.style("left", (event.pageX - 120) + "px")
-                   .style("top", (event.pageY - 140) + "px")
+            tooltip.style("left", (event.pageX - 90) + "px")
+                   .style("top", (event.pageY - 120) + "px")
         })
         .on("mouseout", function(event) {
             tooltip.style("opacity", 0)
         })
+
+
 }) 

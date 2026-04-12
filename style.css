@@ -131,7 +131,7 @@ h2 {
     font-size: 20px;
 }
 
-.y-grid{
+.y-grid, .x-grid{
   stroke: #e5e5e5;
   stroke-opacity: 0.1;
 }
@@ -157,4 +157,14 @@ h4 {
 .link:hover {
     text-decoration: underline;
     color: #CC5801;
+}
+
+.landmark {
+    font-family: "Source Sans 3";
+    font-size: 13px;
+}
+
+.legendTime {
+    font-family: "Source Sans 3";
+    font-size: 15px;
 }
