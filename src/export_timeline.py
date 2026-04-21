@@ -33,10 +33,12 @@ def return_json(data, year):
 
   if match_same == 0 or match_diff == 0:
     bias_index = None
+    dispersion = None
     lower_bound = None
     upper_bound = None
   else: 
     bias_index = (cards_same / match_same) - (cards_diff / match_diff) 
+    dispersion = df_same["yellow_card"].std() - df_diff["yellow_card"].std()
     se_same = df_same["yellow_card"].std() / (match_same ** (1/2))
     se_diff = df_diff["yellow_card"].std() / (match_diff ** (1/2))
     se = (se_same ** 2 + se_diff ** 2) ** (1/2)
@@ -50,6 +52,7 @@ def return_json(data, year):
       "match_diff": match_diff,
       "cards_diff": cards_diff, 
       "bias_index": bias_index,
+      "dispersion": clean_nan(dispersion),
       "lower_bound": clean_nan(lower_bound),
       "upper_bound": clean_nan(upper_bound)
   }
