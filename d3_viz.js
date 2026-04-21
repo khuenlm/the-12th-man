@@ -12,7 +12,7 @@ const margin = {
 
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
 let svg2 = d3.select("#tab-2").insert("svg", "#results").attr("width", '90%').attr("height", 750)
-let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 750)
+let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 800)
 let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
 
 let description1 = d3.select("#des1")
@@ -37,7 +37,7 @@ let description3 = d3.select("#des3")
                             same-confederation teams received fewer cards — consistent with referee bias. The orange 
                             line smooths year-to-year volatility using a 3-tournament rolling average, revealing the 
                             long-term trend. Vertical markers indicate significant moments in FIFA's officiating history. 
-                            Hover over each dot to explore individual tournament statistics.`)
+                            Hover over each dot to explore individual tournament statistics. <br>(<em>Bias Index = μ<sub>same</sub> − μ<sub>diff</sub></em>)`)
 
 const xScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
@@ -463,15 +463,15 @@ d3.json("data/viz/timeline.json").then(function(data) {
     const years = [1970,1974,1978,1982,1986,1990,1994,1998,2002,2006,2010,2014,2018,2022];
 
     const xScaleTime = d3.scaleLinear()
-                        .domain([1970, 2022])
+                        .domain([1968, 2022])
                         .range([margin.left, width - margin.right])
     
     const x_grid_time = svg3.append("g")
                   .attr("class", "x-grid")
-                  .attr("transform", `translate(0, 650)`)
+                  .attr("transform", `translate(0, 700)`)
     
     x_grid_time.call(d3.axisBottom(xScaleTime)
-                  .tickSizeInner(-550)
+                  .tickSizeInner(-600)
                   .tickSizeOuter(0)
                   .tickValues(years)
                   .tickFormat(""));
@@ -481,15 +481,15 @@ d3.json("data/viz/timeline.json").then(function(data) {
                      .style("font-size", "16px")
                      .style("font-weight", 'bold')
                      .style("font-family", "Source Sans 3")
-                     .attr("transform", `translate(0, 650)`)
+                     .attr("transform", `translate(0, 700)`)
     
     xTime.call(d3.axisBottom(xScaleTime)
                  .tickValues(years)
                  .tickFormat(d => d));
 
     const yScaleTime = d3.scaleLinear()
-                        .domain([- 0.8, 1.2])
-                        .range([650, 100])
+                        .domain([- 0.8, d3.max(data["overall"], d => d.bias_index + d.dispersion) + 0.1])
+                        .range([700, 100])
 
     const y_grid_time = svg3.append("g")
                   .attr("class", "y-grid")
@@ -522,12 +522,12 @@ d3.json("data/viz/timeline.json").then(function(data) {
     svg3.append("text")
         .attr("class", "axislabel")                    
         .text("Year of Tournament")
-        .attr("transform", `translate(550, ${height - margin.bottom - 10})`)
+        .attr("transform", `translate(550, ${height - margin.bottom + 40})`)
 
     svg3.append("text")
         .attr("class", "axislabel")                    
         .text("Bias Index")
-        .attr("transform", d => `translate(${margin.left - 50}, ${height / 2 + 10}), rotate(-90)`)
+        .attr("transform", d => `translate(${margin.left - 50}, ${height / 2 + 60}), rotate(-90)`)
 
     svg3.append("line")
         .attr("x1", xScaleTime(2018))
@@ -550,32 +550,47 @@ d3.json("data/viz/timeline.json").then(function(data) {
         .attr("stroke-dasharray", "5,4")
 
     svg3.append("line")
-        .attr("x1", xScaleTime(1982))
+        .attr("x1", xScaleTime(1974))
         .attr("y1", 30)
-        .attr("x2", xScaleTime(1986))
+        .attr("x2", xScaleTime(1978))
         .attr("y2", 30)
         .attr("stroke", "steelblue")
         .attr("stroke-width", 5)
 
     svg3.append("line")
-        .attr("x1", xScaleTime(1998))
+        .attr("x1", xScaleTime(1988))
         .attr("y1", 30)
-        .attr("x2", xScaleTime(2002))
+        .attr("x2", xScaleTime(1992))
         .attr("y2", 30)
         .attr("stroke", "darkorange")
         .attr("stroke-width", 5)
         .attr("opacity", 0.7)
 
+    svg3.append("line")
+        .attr("x1", xScaleTime(2004))
+        .attr("y1", 30)
+        .attr("x2", xScaleTime(2008))
+        .attr("y2", 30)
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 5)
+        .attr("opacity", 0.3)
+
     svg3.append("text")
         .text("Year-by-year bias index")
         .attr("class", "legendTime")
-        .attr("x", d => xScaleTime(1986.5))
+        .attr("x", d => xScaleTime(1978.5))
         .attr("y", 35)
 
     svg3.append("text")
         .text("3-tournament rolling average")
         .attr("class", "legendTime")
-        .attr("x", d => xScaleTime(2002.5))
+        .attr("x", d => xScaleTime(1992.5))
+        .attr("y", 35)
+
+    svg3.append("text")
+        .text("Match-level spread (±1 SD)")
+        .attr("class", "legendTime")
+        .attr("x", d => xScaleTime(2008.5))
         .attr("y", 35)
 
     svg3.append("text")
@@ -607,6 +622,19 @@ d3.json("data/viz/timeline.json").then(function(data) {
         .attr("stroke-width", 5)
         .attr("opacity", 0.7)
 
+    svg3.selectAll("line.dispersion")
+        .data(data["overall"])
+        .enter()
+        .append("line")
+        .attr("class", "dispersion")
+        .attr("x1", d => xScaleTime(d.year))
+        .attr("x2", d => xScaleTime(d.year))
+        .attr("y1", d => yScaleTime(d.bias_index + d.dispersion))
+        .attr("y2", d => yScaleTime(d.bias_index - d.dispersion))
+        .attr("stroke", "steelblue")
+        .attr("stroke-width", 7)
+        .attr("opacity", 0.3)
+
     svg3.append("path")
         .datum(data["overall"])
         .attr("d", line)
@@ -637,6 +665,5 @@ d3.json("data/viz/timeline.json").then(function(data) {
         .on("mouseout", function(event) {
             tooltip.style("opacity", 0)
         })
-
 
 }) 
