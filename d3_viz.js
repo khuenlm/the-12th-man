@@ -667,3 +667,26 @@ d3.json("data/viz/timeline.json").then(function(data) {
         })
 
 }) 
+
+d3.json("data/viz/strip.json").then(function(data) {
+
+    const stageOrder = ["group stage", "round of 16", "quarter-finals", "semi-finals", "third-place match", "final"];
+    const labels = ["Group Stage", "Round of 16", "Quarter-finals", "Semi-finals", "Third-place Match", "Final"];
+    
+    const stages = stageOrder.filter(s => data.some(d => d.stage_name === s));
+
+    const xScaleStrip = d3.scaleBand()
+                          .domain(stages)
+                          .range([200, 1000])
+           
+    const gxStrip = svg4.append("g")
+                        .attr("class", "x-axis")
+                        .style("font-size", "16px")
+                        .style("font-weight", 'bold')
+                        .style("font-family", "Source Sans 3")
+                        .attr("transform", "translate(0, 600)")
+
+    gxStrip.call(d3.axisBottom(xScaleStrip)
+                   .tickFormat((d, i) => labels[i])
+                   .tickSizeOuter(0))
+    })
