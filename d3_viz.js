@@ -678,6 +678,18 @@ d3.json("data/viz/strip.json").then(function(data) {
     const xScaleStrip = d3.scaleBand()
                           .domain(stages)
                           .range([200, 1000])
+
+    const xGridStrip = svg4.append("g")
+                        .attr("class", "x-grid")
+                        .style("font-size", "16px")
+                        .style("font-weight", 'bold')
+                        .style("font-family", "Source Sans 3")
+                        .attr("transform", `translate(${xScaleStrip.bandwidth() / 2}, 600)`)
+
+    xGridStrip.call(d3.axisBottom(xScaleStrip)
+                      .tickFormat("")
+                      .tickSizeOuter(0)
+                      .tickSizeInner(-(600 - margin.top)))
            
     const gxStrip = svg4.append("g")
                         .attr("class", "x-axis")
@@ -689,4 +701,48 @@ d3.json("data/viz/strip.json").then(function(data) {
     gxStrip.call(d3.axisBottom(xScaleStrip)
                    .tickFormat((d, i) => labels[i])
                    .tickSizeOuter(0))
+
+    const yScaleStrip = d3.scaleLinear()
+                          .domain(d3.extent(data, d => d["card_difference"]))
+                          .range([600, margin.top])
+
+    const gyStrip = svg4.append("g")
+                        .attr("class", "y-axis")
+                        .style("font-size", "16px")
+                        .style("font-weight", 'bold')
+                        .style("font-family", "Source Sans 3")
+                        .attr("transform", "translate(200, 0)")
+
+    gyStrip.call(d3.axisLeft(yScaleStrip)
+                   .tickSizeOuter(0))
+
+    svg4.append("text")
+        .attr("class", "axis-labels")                    
+        .text("Stages")
+        .attr("transform", `translate(570, ${height - margin.bottom - 60})`)
+        .style("opacity", 0.5)
+
+    svg4.append("text")
+        .attr("class", "axis-labels")                    
+        .text("Card Difference")
+        .attr("transform", d => "translate(150, 380), rotate(-90)")
+        .style("opacity", 0.5)
+
+    svg4.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("cy", d => yScaleStrip(d["card_difference"]))
+        .attr("cx", d => xScaleStrip(d["stage_name"]) + (xScaleStrip.bandwidth() / 2) + (Math.random() - 0.5) * xScaleStrip.bandwidth() * 0.6)
+        .attr("r", 5)
+        .attr("opacity", 0.5)
+        .attr("fill", function(d) {
+            if (d["home_team_confederation"] == d["ref_confederation"] || d["away_team_confederation"] == d["ref_confederation"]) {
+                return "blue";
+            } else {
+                return "orange";
+            }
+        })
+
+    console.log(xScaleStrip.bandwidth() / 2);
     })
