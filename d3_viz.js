@@ -13,7 +13,7 @@ const margin = {
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
 let svg2 = d3.select("#tab-2").insert("svg", "#results").attr("width", '90%').attr("height", 750)
 let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 800)
-let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 700)
+let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
 
 let description1 = d3.select("#des1")
                      .append("p")
@@ -454,8 +454,9 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
 
     svg2.append("text")
         .attr("class", "axislabel")                    
-        .text("Yellow Cards Issue")
+        .text("Yellow Cards Issued")
         .attr("transform", d => "translate(110, 410), rotate(-90)")
+        .style("opacity", 0.5)
 }) 
 
 d3.json("data/viz/timeline.json").then(function(data) {
@@ -685,27 +686,27 @@ d3.json("data/viz/strip.json").then(function(data) {
                         .style("font-weight", 'bold')
                         .style("font-family", "Source Sans 3")
                         .style("stroke-opacity", 0.2)
-                        .attr("transform", `translate(${xScaleStrip.bandwidth() / 2}, 600)`)
+                        .attr("transform", `translate(${xScaleStrip.bandwidth() / 2}, 650)`)
 
     xGridStrip.call(d3.axisBottom(xScaleStrip)
                       .tickFormat("")
                       .tickSizeOuter(0)
-                      .tickSizeInner(-(600 - margin.top)))
+                      .tickSizeInner(-(650 - margin.top)))
            
     const gxStrip = svg4.append("g")
                         .attr("class", "x-axis")
                         .style("font-size", "16px")
                         .style("font-weight", 'bold')
                         .style("font-family", "Source Sans 3")
-                        .attr("transform", "translate(0, 600)")
+                        .attr("transform", "translate(0, 650)")
 
     gxStrip.call(d3.axisBottom(xScaleStrip)
                    .tickFormat((d, i) => labels[i])
                    .tickSizeOuter(0))
 
     const yScaleStrip = d3.scaleLinear()
-                          .domain(d3.extent(data, d => d["card_difference"]))
-                          .range([600, margin.top])
+                          .domain([-6, 5])
+                          .range([650, margin.top])
 
     const gyStrip = svg4.append("g")
                         .attr("class", "y-axis")
@@ -715,12 +716,12 @@ d3.json("data/viz/strip.json").then(function(data) {
                         .attr("transform", "translate(150, 0)")
 
     gyStrip.call(d3.axisLeft(yScaleStrip)
-                   .tickSizeOuter(0))
+                   .tickSizeOuter(0))            
 
     svg4.append("text")
         .attr("class", "axis-labels")                    
         .text("Stages")
-        .attr("transform", `translate(570, ${height - margin.bottom - 60})`)
+        .attr("transform", `translate(570, ${height - margin.bottom - 10})`)
         .style("opacity", 0.5)
 
     svg4.append("text")
@@ -758,6 +759,18 @@ d3.json("data/viz/strip.json").then(function(data) {
         .attr("stroke-dasharray", "5,4")
         .attr("opacity", 0.6)
 
+    cells = [-5.5, -4.5, -3.5, -2.5, -1.5, -0.5, 0.5, 1.5, 2.5, 3.5, 4.5];
+    cells.forEach(cell => {
+        svg4.append("line")
+            .attr("x1", 150)
+            .attr("x2", 1050)
+            .attr("y1", yScaleStrip(cell))
+            .attr("y2", yScaleStrip(cell))
+            .attr("stroke", "gray")
+            .attr("stroke-width", 1.5)
+            .attr("opacity", 0.2)
+    })
+    
     svg4.selectAll("circle")
         .data(data.filter(d => d.same_conf == true))
         .enter()
@@ -799,14 +812,28 @@ d3.json("data/viz/strip.json").then(function(data) {
     stagess.forEach(stage => {
         const stageData = data.filter(d => d.stage_name === stage);
         const mean = d3.mean(stageData, d => d.card_difference);
-        
-        svg4.append("line")
-    .attr("x1", cx - 20)
-    .attr("x2", cx + 20)
-    .attr("y1", yScaleStrip(mean))
-    .attr("y2", yScaleStrip(mean))
-    .attr("stroke", "black")
-    .attr("stroke-width", 3)
+
+        svg4.append("circle")
+            .attr("cx", xScaleStrip(stage) + xScaleStrip.bandwidth() / 2)
+            .attr("cy", yScaleStrip(mean))
+            .attr("r", 9)
+            .attr("fill", "gold")
+            .attr("stroke", "black")
+            .attr("stroke-width", 1)
+            .attr("opacity", 0.7)
+            .on("mouseover", function(event, d) {
+                d3.select(this).attr("r", 15)
+                tooltip.style("opacity", 1)
+                       .html(`Mean card difference in <b>${stage.charAt(0).toUpperCase() + stage.slice(1)}</b>: <br> ${mean.toFixed(3)} yellow cards`);
+            })
+            .on("mousemove", function(event, d) {
+                tooltip.style("left", (event.pageX - 120) + "px")
+                    .style("top", (event.pageY - 90) + "px")
+            })
+            .on("mouseout", function(event, d) {
+                d3.select(this).attr("r", 9)
+                tooltip.style("opacity", 0);
+            })
         });
 
     })
