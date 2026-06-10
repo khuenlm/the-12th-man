@@ -29,4 +29,40 @@ df["card_difference"] = df["home_team_yellow_card"] - df["away_team_yellow_card"
 df = df.drop(columns = ["family_name", "given_name", "referee_id"])
 df = df.rename(columns = {"confederation_code": "ref_confederation"})
 
+def same_conf(row):
+    if (row["home_team_confederation"] == row["ref_confederation"]) or (row["away_team_confederation"] == row["ref_confederation"]):
+        return True
+    else: 
+        return False
+    
+df["same_conf"] = df.apply(same_conf, axis = 1)
+
+def card_diff(row):
+    if row["home_team_confederation"] == row["ref_confederation"]:
+        return row["home_team_yellow_card"] - row["away_team_yellow_card"]
+    elif row["away_team_confederation"] == row["ref_confederation"]:
+        return row["away_team_yellow_card"] - row["home_team_yellow_card"]
+    else: return 0
+
+df["card_difference"] = df.apply(card_diff, axis = 1)
+
+df["year"] = df["match_id"].str.split("-").str[1].astype("int")
+
+def same_conf_team(row):
+    if row["home_team_confederation"] == row["ref_confederation"]:
+        return row["home_team_name"]
+    elif row["away_team_confederation"] == row["ref_confederation"]:
+        return row["away_team_name"]
+    else: return None
+
+def diff_conf_team(row):
+    if row["home_team_confederation"] == row["ref_confederation"]:
+        return row["away_team_name"]
+    elif row["away_team_confederation"] == row["ref_confederation"]:
+        return row["home_team_name"]
+    else: return None
+
+df["same_conf_team"] = df.apply(same_conf_team, axis = 1)
+df["diff_conf_team"] = df.apply(diff_conf_team, axis = 1)
+
 df.to_json("../data/viz/strip.json", orient = "records", indent = 4)
