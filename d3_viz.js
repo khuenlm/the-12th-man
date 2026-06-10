@@ -671,6 +671,19 @@ d3.json("data/viz/timeline.json").then(function(data) {
 
 d3.json("data/viz/strip.json").then(function(data) {
 
+    const stripColorScaleLegend = d3.scaleSequential()
+                                    .domain([10, 14])
+                                    .interpolator(d3.interpolateLab("#d7445cff", "#3866d1ff"));
+
+    [10, 11, 12, 13, 14].forEach(point => {
+        svg4.append("circle")
+            .attr("cx", point * 40 + 100)
+            .attr("cy", 20)
+            .attr("r", 10)
+            .attr("fill", stripColorScaleLegend(point))
+            .attr("opacity, 0.7")
+    })
+
     const stageOrder = ["group stage", "round of 16", "quarter-finals", "semi-finals", "third-place match", "final"];
     const labels = ["Group Stage", "Round of 16", "Quarter-finals", "Semi-finals", "Third-place Match", "Final"];
     
@@ -737,11 +750,11 @@ d3.json("data/viz/strip.json").then(function(data) {
         if (d.card_difference > 1) {
             return `${d.same_conf_team} receives ${d.card_difference} cards more than ${d.diff_conf_team}`;
         } else if (d.card_difference < -1) {
-            return `${d.same_conf_team} receives ${d.card_difference} cards less than ${d.diff_conf_team}`;
+            return `${d.same_conf_team} receives ${Math.abs(d.card_difference)} cards less than ${d.diff_conf_team}`;
         } else if (d.card_difference == 1) {
             return `${d.same_conf_team} receives ${d.card_difference} card more than ${d.diff_conf_team}`;
         } else if (d.card_difference == -1) {
-            return `${d.same_conf_team} receives ${d.card_difference} card less than ${d.diff_conf_team}`;
+            return `${d.same_conf_team} receives ${Math.abs(d.card_difference)} card less than ${d.diff_conf_team}`;
         } else if (d.home_team_yellow_card == 1) {
             return `Equal Cards (${d.home_team_yellow_card} yellow card each team)`; 
         } else {
@@ -824,7 +837,7 @@ d3.json("data/viz/strip.json").then(function(data) {
             .on("mouseover", function(event, d) {
                 d3.select(this).attr("r", 15)
                 tooltip.style("opacity", 1)
-                       .html(`Mean card difference in <b>${stage.charAt(0).toUpperCase() + stage.slice(1)}</b>: <br> ${mean.toFixed(3)} yellow cards`);
+                       .html(`Mean card difference in <b>${stage.charAt(0).toUpperCase() + stage.slice(1)}</b>: <br> ${Math.abs(mean.toFixed(3))} yellow cards`);
             })
             .on("mousemove", function(event, d) {
                 tooltip.style("left", (event.pageX - 120) + "px")
