@@ -13,7 +13,7 @@ const margin = {
 let svg1 = d3.select("#tab-1").append("svg").attr("width", '100%').attr("height", 800)
 let svg2 = d3.select("#tab-2").insert("svg", "#results").attr("width", '90%').attr("height", 750)
 let svg3 = d3.select("#tab-3").append("svg").attr("width", '100%').attr("height", 800)
-let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 750)
+let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height", 700)
 
 let description1 = d3.select("#des1")
                      .append("p")
@@ -677,13 +677,14 @@ d3.json("data/viz/strip.json").then(function(data) {
 
     const xScaleStrip = d3.scaleBand()
                           .domain(stages)
-                          .range([200, 1000])
+                          .range([150, 1050])
 
     const xGridStrip = svg4.append("g")
                         .attr("class", "x-grid")
                         .style("font-size", "16px")
                         .style("font-weight", 'bold')
                         .style("font-family", "Source Sans 3")
+                        .style("stroke-opacity", 0.2)
                         .attr("transform", `translate(${xScaleStrip.bandwidth() / 2}, 600)`)
 
     xGridStrip.call(d3.axisBottom(xScaleStrip)
@@ -711,7 +712,7 @@ d3.json("data/viz/strip.json").then(function(data) {
                         .style("font-size", "16px")
                         .style("font-weight", 'bold')
                         .style("font-family", "Source Sans 3")
-                        .attr("transform", "translate(200, 0)")
+                        .attr("transform", "translate(150, 0)")
 
     gyStrip.call(d3.axisLeft(yScaleStrip)
                    .tickSizeOuter(0))
@@ -725,24 +726,87 @@ d3.json("data/viz/strip.json").then(function(data) {
     svg4.append("text")
         .attr("class", "axis-labels")                    
         .text("Card Difference")
-        .attr("transform", d => "translate(150, 380), rotate(-90)")
+        .attr("transform", d => "translate(100, 380), rotate(-90)")
         .style("opacity", 0.5)
 
+    const stripColorScale = d3.scaleSequential()
+                              .interpolator(d3.interpolateLab("#d7445cff", "#3866d1ff"));
+
+    function returnCardDiffText(d) {
+        if (d.card_difference > 1) {
+            return `${d.same_conf_team} receives ${d.card_difference} cards more than ${d.diff_conf_team}`;
+        } else if (d.card_difference < -1) {
+            return `${d.same_conf_team} receives ${d.card_difference} cards less than ${d.diff_conf_team}`;
+        } else if (d.card_difference == 1) {
+            return `${d.same_conf_team} receives ${d.card_difference} card more than ${d.diff_conf_team}`;
+        } else if (d.card_difference == -1) {
+            return `${d.same_conf_team} receives ${d.card_difference} card less than ${d.diff_conf_team}`;
+        } else if (d.home_team_yellow_card == 1) {
+            return `Equal Cards (${d.home_team_yellow_card} yellow card each team)`; 
+        } else {
+            return `Equal Cards (${d.home_team_yellow_card} yellow cards each team)`; 
+        }
+    }
+
+    svg4.append("line")
+        .attr("x1", 150)
+        .attr("x2", 1050)
+        .attr("y1", yScaleStrip(0))
+        .attr("y2", yScaleStrip(0))
+        .attr("stroke", "gray")
+        .attr("stroke-width", 1.5)
+        .attr("stroke-dasharray", "5,4")
+        .attr("opacity", 0.6)
+
     svg4.selectAll("circle")
-        .data(data)
+        .data(data.filter(d => d.same_conf == true))
         .enter()
         .append("circle")
-        .attr("cy", d => yScaleStrip(d["card_difference"]))
-        .attr("cx", d => xScaleStrip(d["stage_name"]) + (xScaleStrip.bandwidth() / 2) + (Math.random() - 0.5) * xScaleStrip.bandwidth() * 0.6)
-        .attr("r", 5)
-        .attr("opacity", 0.5)
-        .attr("fill", function(d) {
-            if (d["home_team_confederation"] == d["ref_confederation"] || d["away_team_confederation"] == d["ref_confederation"]) {
-                return "blue";
+        .attr("cy", d => {
+            return yScaleStrip(d["card_difference"]) + (Math.random() - 0.5) * 0.1 * xScaleStrip.bandwidth()})
+        .attr("cx", d => {
+            if (d.stage_name == "group stage") {
+                return xScaleStrip(d["stage_name"]) + (Math.random() - 0.5) * xScaleStrip.bandwidth() * 0.8 + xScaleStrip.bandwidth() / 2;
             } else {
-                return "orange";
+                return xScaleStrip(d["stage_name"]) + (Math.random() - 0.5) * xScaleStrip.bandwidth() * 0.6 + xScaleStrip.bandwidth() / 2;
             }
         })
+        .attr("r", 5)
+        .attr("opacity", 0.5)
+        .attr("stroke", "white")
+        .attr("stroke-weight", 0.6)
+        .attr("fill", d => stripColorScale(d.card_difference))
+        .on("mouseover", function(event, d) {
+            d3.select(this).attr("r", 13)
+            tooltip.style("opacity", 1)
+                   .html(`<b>FIFA World Cup ${d.year}</b><br> 
+                    ${d.stage_name.charAt(0).toUpperCase() + d.stage_name.slice(1)} <br>
+                    <b>${d.home_team_name}</b> (${d.home_team_confederation}) vs <b>${d.away_team_name}</b> (${d.away_team_confederation}) <br>
+                    Referee: ${d.referee_name} (${d.ref_confederation}) <br> 
+                    ${returnCardDiffText(d)}`);
+        })
+        .on("mousemove", function(event, d) {
+            tooltip.style("left", (event.pageX - 140) + "px")
+                   .style("top", (event.pageY - 150) + "px")
+        })
+        .on("mouseout", function(event, d) {
+            d3.select(this).attr("r", 5)
+            tooltip.style("opacity", 0);
+        })
 
-    console.log(xScaleStrip.bandwidth() / 2);
+    const stagess = [...new Set(data.map(d => d.stage_name))];
+
+    stagess.forEach(stage => {
+        const stageData = data.filter(d => d.stage_name === stage);
+        const mean = d3.mean(stageData, d => d.card_difference);
+        
+        svg4.append("line")
+    .attr("x1", cx - 20)
+    .attr("x2", cx + 20)
+    .attr("y1", yScaleStrip(mean))
+    .attr("y2", yScaleStrip(mean))
+    .attr("stroke", "black")
+    .attr("stroke-width", 3)
+        });
+
     })
