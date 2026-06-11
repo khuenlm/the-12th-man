@@ -122,7 +122,7 @@ h2 {
     display: block
 }
 
-.same-conf-labels, .axislabel {
+.same-conf-labels {
     font-family: 'Source Sans 3';
     font-size: 20px;
 }
