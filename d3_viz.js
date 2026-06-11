@@ -37,7 +37,18 @@ let description3 = d3.select("#des3")
                             same-confederation teams received fewer cards — consistent with referee bias. The orange 
                             line smooths year-to-year volatility using a 3-tournament rolling average, revealing the 
                             long-term trend. Vertical markers indicate significant moments in FIFA's officiating history. 
-                            Hover over each dot to explore individual tournament statistics. <br>(<em>Bias Index = μ<sub>same</sub> − μ<sub>diff</sub></em>)`)
+                            Hover over each dot to explore individual tournament statistics. <br>(<em>Bias Index = μ<sub>same</sub> 
+                            − μ<sub>diff</sub></em>)`)
+                
+let description4 = d3.select("#des4")
+                     .append("p")
+                     .html(`There is (slight) evidence in previous layers suggesting referee bias at the FIFA Men’s 
+                        World Cup by confederation. Does this bias persist under higher stakes, or does it fade as the 
+                        tournament progresses? In this last visualization, each dot represents one World Cup match where 
+                        the referee came from the same confederation as one of the two teams. The card difference axis 
+                        indicates how many more or fewer cards the same-confederation team received compared to their opponents. 
+                        Hover over any dot for match details. <br>(<em>Card Difference = Yellow Cards<sub>same-conf team</sub> 
+                        − Yellow Cards<sub>diff-conf team</sub></em>)`)
 
 const xScale = d3.scaleBand()
                  .domain(["AFC", "CAF", "CONCACAF", "CONMEBOL", "OFC", "UEFA"])
@@ -153,13 +164,13 @@ d3.json("data/viz/heatmap.json").then(function(data) {
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Team Confederation")
-        .attr("transform", `translate(510, 25)`)
+        .attr("transform", `translate(530, 25)`)
         .style("opacity", 0.5)
 
     svg1.append("text")
         .attr("class", "axis-labels")                    
         .text("Referee Confederation")
-        .attr("transform", d => "translate(140, 450), rotate(-90)")
+        .attr("transform", d => "translate(140, 470), rotate(-90)")
         .style("opacity", 0.5)
         
     const defs = svg1.append("defs")
@@ -453,7 +464,7 @@ d3.json("data/viz/beeswarm.json").then(function(data) {
         .attr("transform", `translate(740, 680)`)
 
     svg2.append("text")
-        .attr("class", "axislabel")                    
+        .attr("class", "axis-labels")                    
         .text("Yellow Cards Issued")
         .attr("transform", d => "translate(110, 410), rotate(-90)")
         .style("opacity", 0.5)
@@ -521,14 +532,16 @@ d3.json("data/viz/timeline.json").then(function(data) {
         .attr("stroke-dasharray", "5,4")
 
     svg3.append("text")
-        .attr("class", "axislabel")                    
+        .attr("class", "axis-labels")                    
         .text("Year of Tournament")
         .attr("transform", `translate(550, ${height - margin.bottom + 40})`)
+        .attr("opacity", 0.5)
 
     svg3.append("text")
-        .attr("class", "axislabel")                    
+        .attr("class", "axis-labels")                    
         .text("Bias Index")
         .attr("transform", d => `translate(${margin.left - 50}, ${height / 2 + 60}), rotate(-90)`)
+        .attr("opacity", 0.5)
 
     svg3.append("line")
         .attr("x1", xScaleTime(2018))
@@ -677,12 +690,54 @@ d3.json("data/viz/strip.json").then(function(data) {
 
     [10, 11, 12, 13, 14].forEach(point => {
         svg4.append("circle")
-            .attr("cx", point * 40 + 100)
+            .attr("cx", point * 40 - 40)
             .attr("cy", 20)
             .attr("r", 10)
             .attr("fill", stripColorScaleLegend(point))
-            .attr("opacity, 0.7")
+            .attr("opacity", 0.7)
     })
+
+    svg4.append("text")
+        .attr("x", 230)
+        .attr("y", 15)
+        .append("tspan")
+        .attr("font-size", 14)
+        .text("Same-conf team")
+        .append("tspan")
+        .text("got fewer cards")
+        .attr("x", 235)
+        .attr("y", 30)
+
+    svg4.append("text")
+        .attr("x", 545)
+        .attr("y", 15)
+        .append("tspan")
+        .attr("font-size", 14)
+        .text("Same-conf team")
+        .append("tspan")
+        .text("got more cards")
+        .attr("x", 550)
+        .attr("y", 30)
+
+    svg4.append("circle")
+        .attr("cx", 760)
+        .attr("cy", 20)
+        .attr("r", 10)
+        .attr("fill", "gold")
+        .attr("stroke", "black")
+        .attr("stroke-width", 1)
+        .attr("opacity", 0.7)
+
+    svg4.append("text")
+        .attr("x", 780)
+        .attr("y", 15)
+        .append("tspan")
+        .attr("font-size", 14)
+        .text("Mean card difference")
+        .append("tspan")
+        .text("of each stage")
+        .attr("x", 785)
+        .attr("y", 30)
 
     const stageOrder = ["group stage", "round of 16", "quarter-finals", "semi-finals", "third-place match", "final"];
     const labels = ["Group Stage", "Round of 16", "Quarter-finals", "Semi-finals", "Third-place Match", "Final"];
@@ -740,8 +795,50 @@ d3.json("data/viz/strip.json").then(function(data) {
     svg4.append("text")
         .attr("class", "axis-labels")                    
         .text("Card Difference")
-        .attr("transform", d => "translate(100, 380), rotate(-90)")
+        .attr("transform", d => "translate(100, 400), rotate(-90)")
         .style("opacity", 0.5)
+
+    svg4.append("text")
+        .attr("class", "axis-labels") 
+        .attr("x", 0)
+        .attr("y", 100)                   
+        .text("Favor different-")
+        .attr("fill", "#3866d1ff")
+    
+    svg4.append("text")
+        .attr("class", "axis-labels") 
+        .attr("x", 0)
+        .attr("y", 115)                   
+        .text("confederation →")
+        .attr("fill", "#3866d1ff")
+
+    svg4.append("text")
+        .attr("class", "axis-labels") 
+        .attr("x", 0)
+        .attr("y", 130)                   
+        .text("team matches")
+        .attr("fill", "#3866d1ff")
+
+    svg4.append("text")
+        .attr("class", "axis-labels")  
+        .attr("x", 0)
+        .attr("y", 580)                   
+        .text("Favor same-")
+        .attr("fill", "#d7445cff")
+
+    svg4.append("text")
+        .attr("class", "axis-labels") 
+        .attr("x", 0)
+        .attr("y", 595)                   
+        .text("confederation →")
+        .attr("fill", "#d7445cff")
+
+    svg4.append("text")
+        .attr("class", "axis-labels") 
+        .attr("x", 0)
+        .attr("y", 610)                   
+        .text("team matches")
+        .attr("fill", "#d7445cff")
 
     const stripColorScale = d3.scaleSequential()
                               .interpolator(d3.interpolateLab("#d7445cff", "#3866d1ff"));
