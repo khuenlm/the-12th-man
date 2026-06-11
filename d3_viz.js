@@ -847,11 +847,11 @@ d3.json("data/viz/strip.json").then(function(data) {
         if (d.card_difference > 1) {
             return `${d.same_conf_team} receives ${d.card_difference} cards more than ${d.diff_conf_team}`;
         } else if (d.card_difference < -1) {
-            return `${d.same_conf_team} receives ${Math.abs(d.card_difference)} cards less than ${d.diff_conf_team}`;
+            return `${d.same_conf_team} receives ${Math.abs(d.card_difference)} cards fewer than ${d.diff_conf_team}`;
         } else if (d.card_difference == 1) {
             return `${d.same_conf_team} receives ${d.card_difference} card more than ${d.diff_conf_team}`;
         } else if (d.card_difference == -1) {
-            return `${d.same_conf_team} receives ${Math.abs(d.card_difference)} card less than ${d.diff_conf_team}`;
+            return `${d.same_conf_team} receives ${Math.abs(d.card_difference)} card fewer than ${d.diff_conf_team}`;
         } else if (d.home_team_yellow_card == 1) {
             return `Equal Cards (${d.home_team_yellow_card} yellow card each team)`; 
         } else {
@@ -881,6 +881,14 @@ d3.json("data/viz/strip.json").then(function(data) {
             .attr("opacity", 0.2)
     })
     
+    svg4.append("line")
+        .attr("x1", 1050)
+        .attr("x2", 1150)
+        .attr("y1", 650)
+        .attr("y2", 650)
+        .attr("stroke", "white")
+        .attr("stroke-width", 1.5)
+
     svg4.selectAll("circle")
         .data(data.filter(d => d.same_conf == true))
         .enter()

@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <header id="navbar">
+        <div><p class="nav-name">Khue Nguyen</p></div>
+        <div><p class="nav-text">Data Science Undergraduate @ UIUC</p></div>
+    </header>
     <div class="container">
         <div class="container_h1">
             <h1>The Twelfth Man</h1>
@@ -40,7 +44,7 @@
     </section>
 
     <section>
-        <h2>Project Overview</h2>
+        <h2 class="section-title">Project Overview</h2>
             <h4>Context</h4>
                 <p>The FIFA World Cup is the most watched sporting event on the planet — and the referees who officiate it carry enormous influence over its outcomes. FIFA assigns referees carefully, explicitly attempting to avoid assigning officials to matches involving teams from their own confederation. But does this policy work in practice?</p>
             <h4>Research Questions</h4>
@@ -55,7 +59,7 @@
     </section>
 
     <section>
-        <h2>Interactive Data Visualizations</h2>
+        <h2 class="section-title">Interactive Data Visualizations</h2>
             <div class="container-tab">
                 <input type = "button" 
                     class = "tab-button button-clicked" 
@@ -97,7 +101,7 @@
                                 <li><strong>U = 203,682</strong></li>
                                 <li><strong>p = 0.000488</strong> (one-tailed)</li>
                             </ul>
-                        <p>The p value is well below the threshold. Therefore, we <strong>reject the null hypothesis</strong> and conclude that there is evidence that 
+                        <p>The p-value is well below the threshold. Therefore, we <strong>reject the null hypothesis</strong> and conclude that there is evidence that 
                         the difference in yellow cards in two groups - same- and different-confederation team-referee matchup - is statistically significant. </p>
                         <p>This result supports the visual pattern observed earlier, motivating a deeper investigation into whether this effect persists over time and under different match conditions.</p>
                     </div>
@@ -108,14 +112,14 @@
     </section>
 
     <section>
-        <h2>Findings</h2>
+        <h2 class="section-title">Findings</h2>
         <p>Preliminary regression results suggest the the “Twelfth Man effect” (the referee’s regional bias) is most pronounced in high-stakes knockout stages, specifically between UEFA and CONMEBOL counterparts. 
         <br><br>
         There is a statistically significant correlation (p < 0.05) between shared language/culture groups. Furthermore, officiating quality metrics provided by independent analysts show that UEFA referees tend to permit more physical play within their own confederation but revert to strict rule adherence when officiating AFC or CAF teams.</p>
     </section>
 
     <section>
-        <h2>Acknowledgements</h2>
+        <h2 class="section-title">Acknowledgements</h2>
         <p>This project was built as part of an independent data science exploration at the <a href = "illinois.edu" target = "_blank" class = "link">University of Illinois Urbana-Champaign</a>. All match, booking, and referee appointment data were sourced from the <a href = "https://github.com/jfjelstul/worldcup" target = "_blank" class = "link">World Cup datasets compiled by Joshua C. Fjelstul</a>, which provides comprehensive coverage of FIFA World Cup matches from 1930 to 2022. Visualizations were built using <a href = "d3js.org" target = "_blank" class = "link">D3.js (v7)</a>. Statistical testing was performed using <a href = "scipy.org" target = "_blank" class = "link">SciPy</a> in Python. 
        
     </section>

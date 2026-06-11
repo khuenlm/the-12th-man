@@ -42,13 +42,13 @@ h2 {
 }
 
 .tab-button:hover {
-    color: goldenrod
+    color: rgb(31, 31, 136)
 }
 
 .button-clicked {
     font-family: 'Source Sans 3';
     font-size: 18px;
-    color: goldenrod;
+    color: rgb(31, 31, 136);
     font-weight: bolder;
     background-color: white;
     text-align: center;
@@ -56,7 +56,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     height: 70px;
-    border-bottom: 5px solid goldenrod;
+    border-bottom: 5px solid rgb(31, 31, 136);
     cursor: pointer;
     white-space: normal;
 }
@@ -163,4 +163,44 @@ h4 {
 .legendTime {
     font-family: "Source Sans 3";
     font-size: 15px;
+}
+
+.section-title {
+    background-color: rgb(15, 35, 79);
+    max-width: max-content;
+    font-style: italic;
+    color: white;
+    padding: 5px;
+}
+
+#navbar {
+    margin-left: -20%;
+    margin-right: -20%;
+    padding: 16px 10%; 
+    padding-top: 30px;
+    background: rgb(15, 35, 79);
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    z-index: 100;
+    height: 110px
+}
+
+.nav-name {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: -550px;
+    margin-top: -10px;
+    opacity: 0.8;
+}
+
+.nav-text {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: -590px;
+    opacity: 0.8;
 }
