@@ -690,6 +690,7 @@ d3.json("data/viz/strip.json").then(function(data) {
 
     [10, 11, 12, 13, 14].forEach(point => {
         svg4.append("circle")
+            .attr("class", "legend")
             .attr("cx", point * 40 - 40)
             .attr("cy", 20)
             .attr("r", 10)
@@ -720,6 +721,7 @@ d3.json("data/viz/strip.json").then(function(data) {
         .attr("y", 30)
 
     svg4.append("circle")
+        .attr("class", "legend")
         .attr("cx", 760)
         .attr("cy", 20)
         .attr("r", 10)
@@ -893,6 +895,7 @@ d3.json("data/viz/strip.json").then(function(data) {
         .data(data.filter(d => d.same_conf == true))
         .enter()
         .append("circle")
+        .attr("class", "dot")
         .attr("cy", d => {
             return yScaleStrip(d["card_difference"]) + (Math.random() - 0.5) * 0.1 * xScaleStrip.bandwidth()})
         .attr("cx", d => {
@@ -908,7 +911,9 @@ d3.json("data/viz/strip.json").then(function(data) {
         .attr("stroke-weight", 0.6)
         .attr("fill", d => stripColorScale(d.card_difference))
         .on("mouseover", function(event, d) {
-            d3.select(this).attr("r", 13)
+            svg4.selectAll("circle.dot").attr("opacity", 0.2)
+            svg4.selectAll("circle.mean").attr("opacity", 0.2)
+            d3.select(this).attr("r", 13).attr("opacity", 0.5)
             tooltip.style("opacity", 1)
                    .html(`<b>FIFA World Cup ${d.year}</b><br> 
                     ${d.stage_name.charAt(0).toUpperCase() + d.stage_name.slice(1)} <br>
@@ -921,6 +926,8 @@ d3.json("data/viz/strip.json").then(function(data) {
                    .style("top", (event.pageY - 150) + "px")
         })
         .on("mouseout", function(event, d) {
+            svg4.selectAll("circle.dot").attr("opacity", 0.5)
+            svg4.selectAll("circle.mean").attr("opacity", 7)
             d3.select(this).attr("r", 5)
             tooltip.style("opacity", 0);
         })
@@ -932,23 +939,28 @@ d3.json("data/viz/strip.json").then(function(data) {
         const mean = d3.mean(stageData, d => d.card_difference);
 
         svg4.append("circle")
+            .attr("class", "mean")
             .attr("cx", xScaleStrip(stage) + xScaleStrip.bandwidth() / 2)
             .attr("cy", yScaleStrip(mean))
             .attr("r", 9)
             .attr("fill", "gold")
             .attr("stroke", "black")
             .attr("stroke-width", 1)
-            .attr("opacity", 0.7)
+            .attr("opacity", 0.9)
             .on("mouseover", function(event, d) {
-                d3.select(this).attr("r", 15)
+                svg4.selectAll("circle.dot").attr("opacity", 0.2)
+                svg4.selectAll("circle.mean").attr("opacity", 0.2)
+                d3.select(this).attr("r", 15).attr("opacity", 0.9)
                 tooltip.style("opacity", 1)
                        .html(`Mean card difference in <b>${stage.charAt(0).toUpperCase() + stage.slice(1)}</b>: <br> ${Math.abs(mean.toFixed(3))} yellow cards`);
             })
             .on("mousemove", function(event, d) {
                 tooltip.style("left", (event.pageX - 120) + "px")
-                    .style("top", (event.pageY - 90) + "px")
+                       .style("top", (event.pageY - 90) + "px")
             })
             .on("mouseout", function(event, d) {
+                svg4.selectAll("circle.dot").attr("opacity", 0.5)
+                svg4.selectAll("circle.mean").attr("opacity", 0.9)
                 d3.select(this).attr("r", 9)
                 tooltip.style("opacity", 0);
             })

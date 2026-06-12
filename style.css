@@ -152,7 +152,7 @@ h4 {
 
 .link:hover {
     text-decoration: underline;
-    color: #CC5801;
+    color: #18752e;
 }
 
 .landmark {
@@ -166,7 +166,7 @@ h4 {
 }
 
 .section-title {
-    background-color: #0d371b;
+    background-color: #144223;
     max-width: max-content;
     font-style: italic;
     color: white;
