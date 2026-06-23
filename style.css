@@ -1,4 +1,4 @@
-p {
+p, .text {
     font-family: 'Source Sans 3';
     font-size: 18px;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: fit-content;
     margin: 10% auto;
     margin-top: 60px;
     padding: 0 5%;
@@ -132,10 +132,6 @@ h2 {
   stroke-opacity: 0.1;
 }
 
-.text {
-    font-family: "Source Sans 3";
-    font-size: 18px
-}
 
 .text p strong {
     font-family: "Source Sans 3";
@@ -203,4 +199,26 @@ h4 {
     margin-top: 30px;
     margin-left: -590px;
     opacity: 0.8;
+}
+
+#footbar {
+    margin-left: -20%;
+    margin-right: -20%;
+
+    padding-top: 35px;
+    background: #0d371b;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    z-index: 100;
+    height: 100px
+}
+
+.foot-name {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.9;
 }

@@ -50,7 +50,16 @@
             <h4>Research Questions</h4>
                 <p>This project investigates whether World Cup referees issue fewer yellow cards to teams from their own confederation — a measurable proxy for unconscious or conscious bias in officiating decisions. Using match and booking data from 1970 to 2022 across 13 tournaments and 764 matches, we ask: <em>do same-confederation matchups result in systematically lower card counts for the home confederation's teams?</em></p>
             <h4>Methodology</h4>
-                <p>Yellow cards issued per team per match are used as the primary measure of referee discipline. For each match, the referee's confederation is compared against the team's confederation to derive a same-confederation flag. A bias index — the difference in mean yellow cards between same-confederation and cross-confederation matchups — is computed overall, per referee confederation, and per tournament stage. Statistical significance is assessed using the Mann-Whitney U test.</p>
+                <p>This project uses the number of yellow cards issued per team per match as the primary measure of referee bias. Yellow cards are chosen because they represent a broad and more discretionary range of disciplinary decisions <em>(meanwhile, red cards are relatively rare and often issued for clear violent conduct, which leaves less room for subjective judgment)</em>. </p>
+                <p>Referee bias is explored through four layers of data visualizations, from looking at the overall picture to investigating bias at the granular match level: </p>
+                <div class="text">
+                <ul>
+                    <li><b>Layer 1 - Confederation Bias Matrix: </b>a heatmap showing mean yellow cards issued across all referee-team confederation pairings</li>
+                    <li><b>Layer 2 - Compare Card Distribution: </b>distribution of yellow cards for same-confederation vs. cross-confederation matchups, supported by statistical test</li>
+                    <li><b>Layer 3 - Bias Over Time: </b>bias index tracked across all tournaments since 1970, with a rolling average to reveal the pattern over five decades</li>
+                    <li><b>Layer 4 - High Stakes Spotlight: </b>individual match card difference by tournament stage, examining if referee bias persists under the highest pressure.</li>
+                </ul>
+                </div>
             <h4>Project Repository</h4>
                 <p>Check out the project's source code at this <a href = "https://github.com/khuenlm/the-12th-man"
                                                                     target = "_blank"
@@ -67,7 +76,7 @@
                     onclick = "clickNavButton(this, 'tab-1', 'des1')">
                 <input type = "button" 
                     class = "tab-button" 
-                    value = "2 - The Match-Level Evidence"
+                    value = "2 - Compare Card Distribution"
                     onclick = "clickNavButton(this, 'tab-2', 'des2')">
                 <input type = "button" 
                     class = "tab-button" 
@@ -113,17 +122,59 @@
 
     <section>
         <h2 class="section-title">Findings</h2>
-        <p>Preliminary regression results suggest the the “Twelfth Man effect” (the referee’s regional bias) is most pronounced in high-stakes knockout stages, specifically between UEFA and CONMEBOL counterparts. 
-        <br><br>
-        There is a statistically significant correlation (p < 0.05) between shared language/culture groups. Furthermore, officiating quality metrics provided by independent analysts show that UEFA referees tend to permit more physical play within their own confederation but revert to strict rule adherence when officiating AFC or CAF teams.</p>
+        <h4>Overall Findings</h4>
+        <p>
+            Visualizations and statistical tests suggest that, across 13 FIFA World Cup tournaments from 1970 and 2022, same-confederation referee assignments are associated with fewer yellow cards issued to the favored team, and this pattern persists across different confederation pairings. Bias fluctuated over time, and it tends to weaken at the highest stakes matches
+        </p>
+
+        <h4>Layer 1 - Confederation Bias Matrix</h4>
+        <div class="text">
+        <ul>
+            <li>Diagonal cells (same-confederation matchup) consistently show lower mean yellow card counts than off-diagonal cells in the same row,  which suggests that referees tend to give teams from their confederation fewer yellow cards</li>
+            <li>UEFA diagonal (1.518) is noticeably among the lowest values in its row (and in the whole matrix) despite UEFA referee - UEFA team dominating referee appointments</li>
+        </ul>
+        </div>
+
+        <h4>Layer 2 - Compare Card Distribution</h4>
+        <div class="text">
+        <ul>
+            <li>Same-confederation matchups produce a median of 1 yellow card per team per match, compared to 2 for cross-confederation matchups</li>
+            <li>The difference is statistically significant (U = 203,682, p < 0.001, one-tailed, α = 0.05). The violin distributions are visually subtle but the statistical test confirms the signal is real</li>
+        </ul>
+        </div>
+
+        <h4>Layer 3 - Bias Over Time</h4>
+        <div class="text">
+        <ul>
+            <li>Same-confederation matchups produce a median of 1 yellow card per team per match, compared to 2 for cross-confederation matchups</li>
+            <li>The difference is statistically significant (U = 203,682, p < 0.001, one-tailed, α = 0.05). The violin distributions are visually subtle but the statistical test confirms the signal is real</li>
+        </ul>
+        </div>
+
+        <h4>Layer 4 - High-Stakes Spotlight</h4>
+        <div class="text">
+        <ul>
+            <li>Same-confederation matchups produce a median of 1 yellow card per team per match, compared to 2 for cross-confederation matchups</li>
+            <li>The difference is statistically significant (U = 203,682, p < 0.001, one-tailed, α = 0.05). The violin distributions are visually subtle but the statistical test confirms the signal is real</li>
+        </ul>
+        </div>
+
     </section>
 
     <section>
-        <h2 class="section-title">Acknowledgements</h2>
-        <p>This project was built as part of an independent data science exploration at the <a href = "illinois.edu" target = "_blank" class = "link">University of Illinois Urbana-Champaign</a>. All match, booking, and referee appointment data were sourced from the <a href = "https://github.com/jfjelstul/worldcup" target = "_blank" class = "link">World Cup datasets compiled by Joshua C. Fjelstul</a>, which provides comprehensive coverage of FIFA World Cup matches from 1930 to 2022. Visualizations were built using <a href = "d3js.org" target = "_blank" class = "link">D3.js (v7)</a>. Statistical testing was performed using <a href = "scipy.org" target = "_blank" class = "link">SciPy</a> in Python. 
+        <h2 class="section-title">Credits & Acknowledgements</h2>
+        <p>This data visualization project was built using public data sourced from the  <a href = "https://github.com/jfjelstul/worldcup" target = "_blank" class = "link">
+            World Cup datasets compiled by Joshua C. Fjelstul</a>, which includes all matches, bookings, and referee appointment of all FIFA World Cup tournaments since 1930. 
+            Analysis is limited to tournaments from 1970 onward, reflecting the formal introduction of the yellow and red card system. Visualizations were built using <a href 
+            = "d3js.org" target = "_blank" class = "link">D3.js (v7)</a>. Statistical testing was performed using <a href = "scipy.org" target = "_blank" class = "link">SciPy</a> 
+            and <a href = "https://pandas.pydata.org/docs/" target = "_blank" class = "link">Pandas</a> in Python. 
        
     </section>
     </div>
+
+    <footer id="footbar">
+        <div><p class="foot-name">© The Twelfth Man · Khue Nguyen · UIUC</p></div>
+    </footer>
 
     <script src = "tip_function.js"></script>
     <script src = "nav_function.js"></script>

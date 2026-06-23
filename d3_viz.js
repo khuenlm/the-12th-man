@@ -17,14 +17,16 @@ let svg4 = d3.select("#tab-4").append("svg").attr("width", '100%').attr("height"
 
 let description1 = d3.select("#des1")
                      .append("p")
-                     .html(`Each cell of the heat map below shows the mean yellow cards issued to teams \
+                     .html(`The whole story starts by verifying if there is any bias signal among referees and teams 
+                            from various confederations. Each cell of the heat map below shows the mean yellow cards issued to teams \
                             from a given confederation (displayed in columns) when refereed by officials from \
                             another confederation (displayed in rows). Diagonal cells, where referee and team are \
                             from the same confederation, are highlighted in gold. Grey cells indicate insufficient data (n < 2).`)
 
 let description2 = d3.select("#des2")
                      .append("p")
-                     .html(`Each violin represents the full distribution of yellow cards issued per team per match — 
+                     .html(`A degree of bias is signaled by the diagonal in the previous visualization, and this layer 
+                            helps verify it visually and statistically. Each violin represents the full distribution of yellow cards issued per team per match — 
                             blue for matches where the referee shared a confederation with the team, orange for 
                             cross-confederation assignments. The width of the violin at each card count encodes 
                             how many matches produced that outcome. The visual difference between the two groups is subtle but consistent — 
@@ -32,7 +34,9 @@ let description2 = d3.select("#des2")
 
 let description3 = d3.select("#des3")
                      .append("p")
-                     .html(`The bias index measures the difference in mean yellow cards between same-confederation 
+                     .html(`New policies have been introduced by FIFA to eliminate referee bias, 
+                            and this visualization verifies if these implementations were effective.
+                            The bias index measures the difference in mean yellow cards between same-confederation 
                             and cross-confederation referee assignments per tournament. A negative value indicates 
                             same-confederation teams received fewer cards — consistent with referee bias. The orange 
                             line smooths year-to-year volatility using a 3-tournament rolling average, revealing the 
